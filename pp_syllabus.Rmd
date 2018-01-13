@@ -1,0 +1,72 @@
+---
+title: "Syllabus for Peer Production (Open Source Software, Wikipedia, & Beyond)"
+subtitle: "INF 385T - Special Topics in Information Science"
+author: "James Howison"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tibble)
+header <- tribble(
+  ~`Course`, ~`INF 385T Peer Production (Open Source Software, Wikipedia, and Beyond)`,
+  #----------------
+  "Professor", "James Howison",
+  "Meeting Time", "Tuesdays 9—11:45am",
+  "Location", "UTA 1.212",
+  "Semester", "Spring 2018",
+  "Unique No.", "27310",
+  "Office Hours", "By appointment (please email)",
+  "Contact Email", "jhowison@ischool.utexas.edu"
+)
+library(knitr)
+```
+
+```{r header_output}
+kable(header)
+```
+
+
+## Learning Objectives
+
+This course explores "peer production" which is a name for the open collaborations that produce things like open source software and Wikipedia.  Perhaps not coincidentally the Wikipedia page on [Peer Production](https://en.wikipedia.org/wiki/Peer_production) is quite useful: 
+
+> [A] way of producing goods and services that relies on self-organizing communities of individuals. In such communities, the labor of a large number of people is coordinated towards a shared outcome.
+
+As we learn about peer production we'll learn to distinguish it from different kinds of online collaborations, such as crowdsourcing, citizen science, question and answer sites, and mere sharing of code. Near synonyms for the way of working taught in this course are: "The open source way", "Open collaboration", "Open mass production".
+
+This is a sociotechnical course. In practice this means that we'll be learning both conceptual insight and practical skills. The course weaves together learning how to use key technologies of collaboration (e.g., git, github, travisCI, markdown) at the same time that we learn social and organizational theory about peer production (e.g., the role copyright licenses, motivations of participants, governance models, coordination theory, models of collaboration risk, cultures of collaboration). 
+
+## Learning Objectives
+
+Students will be able to:
+
+- Conceptually distinguish peer production from other organizational forms or phenomena, such as corporations, crowdsourcing, open access publishing, and communities of practice.
+- Reason about how, why, and when peer production works (and when it does not!)
+- Engage critically with published research and popular discourse about peer production
+
+Practically students will be able to:
+
+- Install and use `git` to manage versions in their own work
+- Participate in `github` hosted peer production (making and receiving pull requests)
+- Create and publish documents in `markdown` and `wikitext` format
+- Apply a machine-readable Creative Commons license to works
+- Ask technical questions that people want to answer
+- Participate in a peer production project of their choice
+
+## Assessments
+
+```{r assessments_table, include=FALSE}
+assessments <- tribble(
+  ~`Assignment`, ~`Percentage of Course Grade`,
+  #-----------------------
+  "Participation in class discussion and activites", "25%",
+  "Technical challenges", "25%",
+  "Peer production adaptation paper", "25%",
+  "Peer production participation and presentation", "25%"
+)
+```
+```{r assessment_output}
+kable(assessments)
+```
