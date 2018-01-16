@@ -94,7 +94,7 @@ The paper will be authored in Markdown and submitted via a pull request to the c
 
 ### Peer production participation and presentation
 
-Students will identify and participate in an active peer production community of their choosing. If you are already involved in a peer production project you may use that, but most will be entering afresh. There are three graded components, each to be submitted via a pull request.
+Students will identify and participate in an active peer production community of their choosing. The activity does not have to be software development and does not have to use `git` or `github`. For example, it could be reading and contributing a chapter of a book to [LibriVox](https://librivox.org/). If you are already involved in a peer production project you may use that, but most will be entering afresh. There are three graded components, each to be submitted via a pull request.
 
 1. Identifying and describing a peer production community. ~500 words. Authored in plain text or markdown. This paper should clearly identify the community and argue for it being a peer production community. The paper should describe how the student thinks the peer production community works and their expectations about participation.
 
