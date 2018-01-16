@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(kableExtra)
 
 library(tidyverse)
+library(glue)
 header <- tribble(
   ~`Course`, ~`INF 385T Peer Production (Open Source Software, Wikipedia, and Beyond)`,
   #----------------
@@ -133,6 +134,8 @@ Professional courtesy and sensitivity are especially important with respect to i
 
 ## Course Outline
 
+Table below shows classes and topics planned. Each class has both an insight (aka theory, conceptual) and a skills (aka tech, practical) component. These will become links to materials for the class.
+
 ```{r courseoutline, include=FALSE}
 skills_topics <- tribble(
   ~skill_topic, ~tech_commands, ~materials,
@@ -148,7 +151,7 @@ skills_topics <- tribble(
   "Documentation and Q&A", "github flavored markdown", "https://guides.github.com/features/mastering-markdown/",
   "Wikipedia Editing", "wiki syntax, referencing", "Wikipedia Student Tutorial: https://en.wikipedia.org/wiki/Wikipedia:Training/For_students",
   "Executable Papers", "rmarkdown, knitr, rstudio", "Datacamp Rmarkdown - Chapter 1",
-  "Machine Readable Creative Commons Licenses", "", "https://wiki.creativecommons.org/wiki/Marking_your_work_with_a_CC_license and https://wiki.creativecommons.org/wiki/Best_practices_for_attribution"
+  "Machine Readable Creative Commons Licenses", "CC web tools and xml", "https://wiki.creativecommons.org/wiki/Marking_your_work_with_a_CC_license and https://wiki.creativecommons.org/wiki/Best_practices_for_attribution"
 ) %>% rownames_to_column()
 
 insight_topics <- tribble(
@@ -169,7 +172,8 @@ insight_topics <- tribble(
 ) %>% rownames_to_column()
 
 content_classes <- full_join(insight_topics, skills_topics, by="rowname") %>% 
-  select(skill_topic, insight_topic) %>% 
+ #  mutate(skill_topic = glue_data(., "{skill_topic}{tech_commands}")) %>% 
+  select(insight_topic, skill_topic, tech_commands) %>% 
   rownames_to_column(var = "class_name") %>% 
   mutate(class_name = str_c("Content", "class", class_name, sep=" "))
 
@@ -227,6 +231,7 @@ meetings %>%
   mutate(class_day = format_datetime(class_day, format = "%a %b %d")) %>% 
   mutate(class_day = cell_spec(class_day, "html", color = ifelse(meets == TRUE, "green", "red"))) %>% 
   select(-meets) %>% 
+  replace_na(list(skill_topic = "none", insight_topic = "none", tech_commands = "none")) %>% 
   kable("html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = c("responsive", "striped"))
 ```

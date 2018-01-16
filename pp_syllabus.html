@@ -279,6 +279,7 @@ $(document).ready(function () {
 </div>
 <div id="course-outline" class="section level2">
 <h2>Course Outline</h2>
+<p>Table below shows classes and topics planned. Each class has both an insight (aka theory, conceptual) and a skills (aka tech, practical) component. These will become links to materials for the class.</p>
 <table class="table table-responsive table-striped" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -289,10 +290,13 @@ class_day
 class_name
 </th>
 <th style="text-align:left;">
+insight_topic
+</th>
+<th style="text-align:left;">
 skill_topic
 </th>
 <th style="text-align:left;">
-insight_topic
+tech_commands
 </th>
 </tr>
 </thead>
@@ -305,10 +309,13 @@ insight_topic
 No meeting: Weather Cancellation
 </td>
 <td style="text-align:left;">
-NA
+none
 </td>
 <td style="text-align:left;">
-NA
+none
+</td>
+<td style="text-align:left;">
+none
 </td>
 </tr>
 <tr>
@@ -319,10 +326,13 @@ NA
 Introductory activity and Syllabus Review
 </td>
 <td style="text-align:left;">
-NA
+none
 </td>
 <td style="text-align:left;">
-NA
+none
+</td>
+<td style="text-align:left;">
+none
 </td>
 </tr>
 <tr>
@@ -333,10 +343,13 @@ NA
 Content class 1
 </td>
 <td style="text-align:left;">
+Peer production vs other organizational forms
+</td>
+<td style="text-align:left;">
 Tech setup workshop
 </td>
 <td style="text-align:left;">
-Peer production vs other organizational forms
+terminal, command line, git install, github account
 </td>
 </tr>
 <tr>
@@ -347,10 +360,13 @@ Peer production vs other organizational forms
 Content class 2
 </td>
 <td style="text-align:left;">
+Peer production case studies
+</td>
+<td style="text-align:left;">
 Files. diffs, versions
 </td>
 <td style="text-align:left;">
-Peer production case studies
+git diff, add, commit (locally)
 </td>
 </tr>
 <tr>
@@ -361,10 +377,13 @@ Peer production case studies
 Content class 3
 </td>
 <td style="text-align:left;">
+Licenses
+</td>
+<td style="text-align:left;">
 Servers and sharing work
 </td>
 <td style="text-align:left;">
-Licenses
+github fork, git clone, push, pull request
 </td>
 </tr>
 <tr>
@@ -375,10 +394,13 @@ Licenses
 Content class 4
 </td>
 <td style="text-align:left;">
+Motivations
+</td>
+<td style="text-align:left;">
 Rewinding work
 </td>
 <td style="text-align:left;">
-Motivations
+revert, other undos, checking out old versions, rewriting history
 </td>
 </tr>
 <tr>
@@ -389,10 +411,13 @@ Motivations
 Content class 5
 </td>
 <td style="text-align:left;">
+Coordination Theory, Collaboration Risks
+</td>
+<td style="text-align:left;">
 Branching
 </td>
 <td style="text-align:left;">
-Coordination Theory, Collaboration Risks
+git checkout, manual merge
 </td>
 </tr>
 <tr>
@@ -403,10 +428,13 @@ Coordination Theory, Collaboration Risks
 Content class 6
 </td>
 <td style="text-align:left;">
+Governance
+</td>
+<td style="text-align:left;">
 Sharing and conflicts
 </td>
 <td style="text-align:left;">
-Governance
+pull upstream, merge, conflicts, mark resolved
 </td>
 </tr>
 <tr>
@@ -417,10 +445,13 @@ Governance
 No meeting: Spring break
 </td>
 <td style="text-align:left;">
-NA
+none
 </td>
 <td style="text-align:left;">
-NA
+none
+</td>
+<td style="text-align:left;">
+none
 </td>
 </tr>
 <tr>
@@ -431,10 +462,13 @@ NA
 Content class 7
 </td>
 <td style="text-align:left;">
+Agile vs Waterfall, Test Driven Development
+</td>
+<td style="text-align:left;">
 Testing and Continuous Integration
 </td>
 <td style="text-align:left;">
-Agile vs Waterfall, Test Driven Development
+Test suites, Travis CI integration, github bots
 </td>
 </tr>
 <tr>
@@ -445,10 +479,13 @@ Agile vs Waterfall, Test Driven Development
 Content class 8
 </td>
 <td style="text-align:left;">
+Knowledge Sharing
+</td>
+<td style="text-align:left;">
 Release management
 </td>
 <td style="text-align:left;">
-Knowledge Sharing
+github releases, git tag
 </td>
 </tr>
 <tr>
@@ -459,10 +496,13 @@ Knowledge Sharing
 Content class 9
 </td>
 <td style="text-align:left;">
+Bias and lack of diversity
+</td>
+<td style="text-align:left;">
 Documentation and Q&amp;A
 </td>
 <td style="text-align:left;">
-Bias and lack of diversity
+github flavored markdown
 </td>
 </tr>
 <tr>
@@ -473,10 +513,13 @@ Bias and lack of diversity
 Content class 10
 </td>
 <td style="text-align:left;">
+Peer production in Wikipedia
+</td>
+<td style="text-align:left;">
 Wikipedia Editing
 </td>
 <td style="text-align:left;">
-Peer production in Wikipedia
+wiki syntax, referencing
 </td>
 </tr>
 <tr>
@@ -487,10 +530,13 @@ Peer production in Wikipedia
 Content class 11
 </td>
 <td style="text-align:left;">
+Peer production in Science
+</td>
+<td style="text-align:left;">
 Executable Papers
 </td>
 <td style="text-align:left;">
-Peer production in Science
+rmarkdown, knitr, rstudio
 </td>
 </tr>
 <tr>
@@ -501,10 +547,13 @@ Peer production in Science
 Content class 12
 </td>
 <td style="text-align:left;">
+Peer production in Art and Culture
+</td>
+<td style="text-align:left;">
 Machine Readable Creative Commons Licenses
 </td>
 <td style="text-align:left;">
-Peer production in Art and Culture
+CC web tools and xml
 </td>
 </tr>
 <tr>
@@ -515,10 +564,13 @@ Peer production in Art and Culture
 Presentations
 </td>
 <td style="text-align:left;">
-NA
+none
 </td>
 <td style="text-align:left;">
-NA
+none
+</td>
+<td style="text-align:left;">
+none
 </td>
 </tr>
 </tbody>
