@@ -63,12 +63,14 @@ Practically students will be able to:
 
 ```{r assessments_table, include=FALSE}
 assessments <- tribble(
-  ~`Assignment`, ~`Percentage of Course Grade`,
+  ~`Assignment`, ~`Percentage of Course Grade`,~`Due Date`,
   #-----------------------
-  "Participation in class discussion and activites", "25%",
-  "Technical challenges", "25%",
-  "Peer production adaptation paper", "25%",
-  "Peer production participation and presentation", "25%"
+  "Class Participation (discussion and activites)", "25%", "Throughout course",
+  "Technical challenges", "25%", "Weekly from Jan 30 through March 6",
+  "PP Participation Project: community identification", "10%", "Sun 25 March at 11:59pm",
+  "Peer production adaptation paper", "20%", "Sun 8 April at 11:59pm",
+  "PP Participation Project: experience report", "10%", "Sun 29 April at 11:59pm",
+  "PP Participation Project: presentation", "10%", "Final class, May 1"
 )
 ```
 ```{r assessment_output}
@@ -92,9 +94,11 @@ For this assignment students will write a 2,000 word scholarly essay describing 
 
 The paper will be authored in Markdown and submitted via a pull request to the class github.
 
-### Peer production participation and presentation
+### Peer Production Participation Project
 
-Students will identify and participate in an active peer production community of their choosing. The activity does not have to be software development and does not have to use `git` or `github`. For example, it could be reading and contributing a chapter of a book to [LibriVox](https://librivox.org/). If you are already involved in a peer production project you may use that, but most will be entering afresh. There are three graded components, each to be submitted via a pull request.
+Students will identify and participate in an active peer production community of their choosing. The activity does not have to be software development and does not have to use `git` or `github`. For example, it could be reading and contributing a chapter of a book to [LibriVox](https://librivox.org/) or working with a [WikiProject](https://en.wikipedia.org/wiki/Wikipedia:WikiProject). If you are already involved in a peer production project you may use that, but most will be entering afresh. All components should reference the insight readings that we do througout the course.
+
+There are three graded components, each to be submitted via a pull request.
 
 1. Identifying and describing a peer production community. ~500 words. Authored in plain text or markdown. This paper should clearly identify the community and argue for it being a peer production community. The paper should describe how the student thinks the peer production community works and their expectations about participation.
 
@@ -137,21 +141,75 @@ Professional courtesy and sensitivity are especially important with respect to i
 Table below shows classes and topics planned. Each class has both an insight (aka theory, conceptual) and a skills (aka tech, practical) component. These will become links to materials for the class.
 
 ```{r courseoutline, include=FALSE}
+
+readings <- tribble(
+  ~reading_text, ~reading_link, ~topic_assigned,
+  #----------------------------
+  "DataCamp Git Chapter 1 - Basic Workflow",
+    "https://campus.datacamp.com/courses/introduction-to-git-for-data-science/basic-workflow", 
+    "Files. diffs, versions",
+  "DataCamp Git Chapter 2 - Repositories",
+    "https://campus.datacamp.com/courses/introduction-to-git-for-data-science/repositories", 
+    "Servers and sharing work",
+  "DataCamp Git Chapter 3 - Undo",
+    "https://campus.datacamp.com/courses/introduction-to-git-for-data-science/undo",
+    "Rewinding work",
+  "DataCamp Git Chapter 4 - Branches",
+    "https://campus.datacamp.com/courses/introduction-to-git-for-data-science/working-with-branches", 
+    "Branching",
+  "DataCamp Git Chapter 5 - Collaborating",
+    "https://campus.datacamp.com/courses/introduction-to-git-for-data-science/collaborating", 
+    "Sharing and conflicts",
+  "TravisCI For Beginners", 
+    "https://docs.travis-ci.com/user/for-beginners/", 
+    "Testing and Continuous Integration",
+  "TravisCI Getting Started",
+    "https://docs.travis-ci.com/user/getting-started/", 
+    "Testing and Continuous Integration",
+  "Github Release Announcement",
+    "https://github.com/blog/1547-release-your-software", 
+    "Release management", 
+  "Github Help on Releases",
+    "https://help.github.com/articles/creating-releases/", 
+    "Release management",
+  "Github Markdown", 
+    "https://guides.github.com/features/mastering-markdown/", 
+    "Documentation and Q&A",
+  "Wikipedia Student Tutorial", 
+    "https://en.wikipedia.org/wiki/Wikipedia:Training/For_students",
+    "Wikipedia Editing", 
+  "Datacamp Rmarkdown - Chapter 1",
+    "https://campus.datacamp.com/courses/reporting-with-r-markdown/chapter-one-authoring-r-markdown-reports",
+    "Executable Papers",
+  "Marking your work with a CC license",
+    "https://wiki.creativecommons.org/wiki/Marking_your_work_with_a_CC_license",
+    "Machine Readable Creative Commons Licenses",
+  "CC Best practices for attribution",
+    "https://wiki.creativecommons.org/wiki/Best_practices_for_attribution",
+    "Machine Readable Creative Commons Licenses"
+)
+
+insight_readings <- tribble(
+  ~reading_text, ~reading_link, ~week_assigned,
+  #--------------------------------
+  
+)
+
 skills_topics <- tribble(
-  ~skill_topic, ~tech_commands, ~materials,
+  ~skill_topic, ~tech_commands,
   #-------------------------------------
-  "Tech setup workshop", "terminal, command line, git install, github account", "",
-  "Files. diffs, versions", "git diff, add, commit (locally)", "DataCamp Git Chapter 1 - Basic Workflow",
-  "Servers and sharing work", "github fork, git clone, push, pull request", "DataCamp Git Chapter 2 - Repositories",
-  "Rewinding work", "revert, other undos, checking out old versions, rewriting history", "DataCamp Git Chapter 3 - Undo",
-  "Branching", "git checkout, manual merge", "DataCamp Git Chapter 4 - Branches", 
-  "Sharing and conflicts", "pull upstream, merge, conflicts, mark resolved", "DataCamp Git Chapter 5 - Collaborating",
-  "Testing and Continuous Integration", "Test suites, Travis CI integration, github bots", "https://docs.travis-ci.com/user/for-beginners/ https://docs.travis-ci.com/user/getting-started/",
-  "Release management", "github releases, git tag", "https://github.com/blog/1547-release-your-software https://help.github.com/articles/creating-releases/",
-  "Documentation and Q&A", "github flavored markdown", "https://guides.github.com/features/mastering-markdown/",
-  "Wikipedia Editing", "wiki syntax, referencing", "Wikipedia Student Tutorial: https://en.wikipedia.org/wiki/Wikipedia:Training/For_students",
-  "Executable Papers", "rmarkdown, knitr, rstudio", "Datacamp Rmarkdown - Chapter 1",
-  "Machine Readable Creative Commons Licenses", "CC web tools and xml", "https://wiki.creativecommons.org/wiki/Marking_your_work_with_a_CC_license and https://wiki.creativecommons.org/wiki/Best_practices_for_attribution"
+  "Tech setup workshop", "terminal, command line, git install, github account",
+  "Files. diffs, versions", "git diff, add, commit (locally)",
+  "Servers and sharing work", "github fork, git clone, push, pull request", 
+  "Rewinding work", "revert, other undos, checking out old versions, rewriting history", 
+  "Branching", "git checkout, manual merge",  
+  "Sharing and conflicts", "pull upstream, merge, conflicts, mark resolved",
+  "Testing and Continuous Integration", "Test suites, Travis CI integration, github bots", 
+  "Release management", "github releases, git tag",
+  "Documentation and Q&A", "github flavored markdown", 
+  "Wikipedia Editing", "wiki syntax, referencing", 
+  "Executable Papers", "rmarkdown, knitr, rstudio", 
+  "Machine Readable Creative Commons Licenses", "CC web tools and xml"
 ) %>% rownames_to_column()
 
 insight_topics <- tribble(
@@ -234,6 +292,34 @@ meetings %>%
   replace_na(list(skill_topic = "none", insight_topic = "none", tech_commands = "none")) %>% 
   kable("html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = c("responsive", "striped"))
+```
+
+## Readings
+
+```{r}
+
+# get dates for readings.
+dated_readings <- readings %>% left_join(meetings, by = c("topic_assigned" = "skill_topic"))
+
+group_counts <- dated_readings %>% 
+  arrange(class_day) %>% 
+  group_by(week_assigned) %>% 
+  summarize(group_size = n())
+
+group_indexes <- setNames(group_counts$group_size, group_counts$week_assigned)
+
+dated_readings %>% 
+  arrange(class_day) %>% 
+  select(reading_text, reading_link) %>% 
+  kable("html", escape = FALSE) %>% 
+  kable_styling(bootstrap_options = c("responsive", "striped")) %>% 
+  group_rows(index = group_indexes)
+
+# readings %>% 
+#   group_by(week_assigned) %>% 
+#   do(output_table(.))
+
+  
 ```
 
 ## Policies
