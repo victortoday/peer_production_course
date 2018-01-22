@@ -190,9 +190,23 @@ readings <- tribble(
 )
 
 insight_readings <- tribble(
-  ~reading_text, ~reading_link, ~week_assigned,
+  ~reading_text, ~reading_link, ~topic_assigned,
   #--------------------------------
-  
+  "Benkler, Peer Production and Cooperation.",
+    "http://www.benkler.org/Peer%20production%20and%20cooperation%2009.pdf", 
+    "Peer production vs other organizational forms",
+  "Levine, S. S., & Prietula, M. J. (2013). Open Collaboration for Innovation: Principles and Performance. Organization Science, 25(5), 1414–1433.",
+    "https://doi.org/10.1287/orsc.2013.0872",
+    "Peer production vs other organizational forms",
+  "Eric Raymond. The Cathdral and the Bazaar",
+    "http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/",
+    "Peer production vs other organizational forms",
+  "Richard Millington. Types of online communities.",
+  "https://www.feverbee.com/types-of-community-and-activity-within-the-community/",
+  "Peer production vs other organizational forms",
+  "Don Tapscott. Wikinomics. Chpt 3: \"Peer Pioneers\" (p. 77)",
+    "http://www.labeee.ufsc.br/~luis/egcec/livros/globaliz/Wikinomics.pdf",
+    "Peer production vs other organizational forms"
 )
 
 skills_topics <- tribble(
@@ -294,7 +308,7 @@ meetings %>%
   kable_styling(bootstrap_options = c("responsive", "striped"))
 ```
 
-## Readings
+## Skills Readings
 
 ```{r}
 
@@ -303,10 +317,10 @@ dated_readings <- readings %>% left_join(meetings, by = c("topic_assigned" = "sk
 
 group_counts <- dated_readings %>% 
   arrange(class_day) %>% 
-  group_by(week_assigned) %>% 
+  group_by(topic_assigned) %>% 
   summarize(group_size = n())
 
-group_indexes <- setNames(group_counts$group_size, group_counts$week_assigned)
+group_indexes <- setNames(group_counts$group_size, group_counts$topic_assigned)
 
 dated_readings %>% 
   arrange(class_day) %>% 
@@ -314,12 +328,29 @@ dated_readings %>%
   kable("html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = c("responsive", "striped")) %>% 
   group_rows(index = group_indexes)
+```
 
-# readings %>% 
-#   group_by(week_assigned) %>% 
-#   do(output_table(.))
+## Insight Readings
 
-  
+Often I can link directly to websites or PDFs, but sometimes I will provide links to articles in journals etc. You must be able to get the article through the library, generally speaking using the [web VPN](http://vpn.utexas.edu) is the most convenient approach. Another option that can sometimes work is [UnPaywall](http://unpaywall.org/) which works to find an open access article version when looking at a publisher's page for the article.
+
+```{r}
+insight_dated <- insight_readings %>% left_join(meetings, by = c("topic_assigned" = "insight_topic"))
+
+group_counts <- insight_dated %>% 
+  arrange(class_day) %>% 
+  group_by(topic_assigned) %>% 
+  summarize(group_size = n())
+
+group_indexes <- setNames(group_counts$group_size, group_counts$topic_assigned)
+
+insight_dated %>% 
+  arrange(class_day) %>% 
+  select(reading_text, reading_link) %>% 
+  kable("html", escape = FALSE) %>% 
+  kable_styling(bootstrap_options = c("responsive", "striped")) %>% 
+  group_rows(index = group_indexes)
+
 ```
 
 ## Policies
