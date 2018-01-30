@@ -227,7 +227,7 @@ insight_readings <- tribble(
 skills_topics <- tribble(
   ~skill_topic, ~tech_commands,
   #-------------------------------------
-  "Tech setup workshop", "terminal, command line, git install, github account",
+  "Tech setup workshop", "[terminal, command line, git install, github account](./tech_setup.html)",
   "Files. diffs, versions", "git diff, add, commit (locally)",
   "Servers and sharing work", "github fork, git clone, push, pull request", 
   "Rewinding work", "revert, other undos, checking out old versions, rewriting history", 
