@@ -210,8 +210,17 @@ insight_readings <- tribble(
   "Howison, J., & Crowston, K. (2014). Collaboration through open superposition: A theory of the open source way. MIS Quarterly, 38(1), 29–50.",
   "http://james.howison.name/pubs/howison-2014-superposition.pdf",
   "Peer production case studies",
-  "Chapter 3 of Kelty, C. M. (2008). Two Bits: The Cultural Significance of Free Software. Durham: Duke University Press Books.",
+  "Chapter \"Coordinating Collaboration\" of Kelty, C. M. (2008). Two Bits: The Cultural Significance of Free Software. Durham: Duke University Press Books.",
   "http://twobits.net/pub/Kelty-TwoBits.pdf",
+  "Peer production case studies",
+  "Giving it Away: How Red Hat Software Stumbled Across a New Economic Model and Helped Improve an Industry. Robert Young (Founder of RedHat software)",
+  "http://www.oreilly.com/openbook/opensources/book/young.html",
+  "Peer production case studies",
+  "Freeing the Source: The Story of Mozilla (Jim Hamerly and Tom Paquin with Susan Walton)",
+  "http://www.oreilly.com/openbook/opensources/book/netrev.html",
+  "Peer production case studies",
+  "Geiger, R. S., & Ribes, D. (2010). The Work of Sustaining Order in Wikipedia: The Banning of a Vandal. In Proceedings of the 2010 ACM Conference on Computer Supported Cooperative Work (pp. 117–126). New York, NY, USA: ACM. https://doi.org/10.1145/1718918.1718941",
+  "https://www.researchgate.net/profile/Rstuart_Geiger/publication/262312242_Writing_up_rather_than_writing_down_becoming_Wikipedia_literate/links/00b7d539f03bec053d000000.pdf",
   "Peer production case studies"
 )
 
