@@ -206,7 +206,13 @@ insight_readings <- tribble(
   "Peer production vs other organizational forms",
   "Don Tapscott. Wikinomics. Chpt 3: \"Peer Pioneers\" (p. 77)",
     "http://www.labeee.ufsc.br/~luis/egcec/livros/globaliz/Wikinomics.pdf",
-    "Peer production vs other organizational forms"
+    "Peer production vs other organizational forms",
+  "Howison, J., & Crowston, K. (2014). Collaboration through open superposition: A theory of the open source way. MIS Quarterly, 38(1), 29–50.",
+  "http://james.howison.name/pubs/howison-2014-superposition.pdf",
+  "Peer production case studies",
+  "Chapter 3 of Kelty, C. M. (2008). Two Bits: The Cultural Significance of Free Software. Durham: Duke University Press Books.",
+  "http://twobits.net/pub/Kelty-TwoBits.pdf",
+  "Peer production case studies"
 )
 
 skills_topics <- tribble(
@@ -317,17 +323,20 @@ dated_readings <- readings %>% left_join(meetings, by = c("topic_assigned" = "sk
 
 group_counts <- dated_readings %>% 
   arrange(class_day) %>% 
-  group_by(topic_assigned) %>% 
-  summarize(group_size = n())
+  group_by(topic_assigned, class_day) %>% 
+  summarize(group_size = n()) %>% 
+  arrange(class_day) %>% 
+  select(-class_day) %>% 
+  deframe()
 
-group_indexes <- setNames(group_counts$group_size, group_counts$topic_assigned)
+# group_indexes <- setNames(group_counts$group_size, group_counts$topic_assigned)
 
 dated_readings %>% 
   arrange(class_day) %>% 
   select(reading_text, reading_link) %>% 
   kable("html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = c("responsive", "striped")) %>% 
-  group_rows(index = group_indexes)
+  group_rows(index = group_counts)
 ```
 
 ## Insight Readings
@@ -339,17 +348,20 @@ insight_dated <- insight_readings %>% left_join(meetings, by = c("topic_assigned
 
 group_counts <- insight_dated %>% 
   arrange(class_day) %>% 
-  group_by(topic_assigned) %>% 
-  summarize(group_size = n())
+  group_by(topic_assigned, class_day) %>% 
+  summarize(group_size = n()) %>% 
+  arrange(class_day) %>% 
+  select(-class_day) %>% 
+  deframe
 
-group_indexes <- setNames(group_counts$group_size, group_counts$topic_assigned)
+# group_indexes <- setNames(group_counts$group_size, group_counts$topic_assigned)
 
 insight_dated %>% 
   arrange(class_day) %>% 
   select(reading_text, reading_link) %>% 
   kable("html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = c("responsive", "striped")) %>% 
-  group_rows(index = group_indexes)
+  group_rows(index = group_counts)
 
 ```
 
