@@ -207,7 +207,7 @@ insight_readings <- tribble(
   "Don Tapscott. Wikinomics. Chpt 3: \"Peer Pioneers\" (p. 77)",
     "http://www.labeee.ufsc.br/~luis/egcec/livros/globaliz/Wikinomics.pdf",
     "Peer production vs other organizational forms",
-  "Howison, J., & Crowston, K. (2014). Collaboration through open superposition: A theory of the open source way. MIS Quarterly, 38(1), 29–50.",
+  "Section \"Discovery: Participation Observation\" in Howison, J., & Crowston, K. (2014). Collaboration through open superposition: A theory of the open source way. MIS Quarterly, 38(1), 29–50.",
   "http://james.howison.name/pubs/howison-2014-superposition.pdf",
   "Peer production case studies",
   "Chapter \"Coordinating Collaboration\" of Kelty, C. M. (2008). Two Bits: The Cultural Significance of Free Software. Durham: Duke University Press Books.",
