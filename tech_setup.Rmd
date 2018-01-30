@@ -19,7 +19,11 @@ Initially we won't use RStudio, but we will later in the semester when we consid
 
 When you get to Installing Git I require you to use Windows Option 1 (Git for Windows) and Mac OS Option 3 (homebrew). We won't use git or Github GUIs in this class.
 
-On Mac OS, when you get to configuring an editor set it to `nano` rather than `emacs`. On Windows the editor should already be set to `notepad` which will be fine. We will rarely use this editor.
+Change the git editor to `nano`
+
+```
+git config --global core.editor "nano"
+```
 
 ## Shell intro
 
@@ -29,4 +33,6 @@ We will follow the [intro to shell commands from my Data Wrangling class.](https
 
 We will be using DataCamp in the course. During this class you should receive an email from DataCamp to whatever email address you have in Canvas. That email from DataCamp should show you how to sign up and bring you into the course on DataCamp.
 
+## Link to DataWrangling syllabus and materials
 
+Perhaps of interest [DataWrangling](https://utexas.instructure.com/courses/1189186/assignments/syllabus)
