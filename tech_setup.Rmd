@@ -1,0 +1,32 @@
+---
+title: "tech_setup"
+author: "James Howison"
+date: "1/30/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Set up git and github
+
+For this course we will need to install some open source software (unsurprisingly :)
+
+We will basically follow the instructions (used for an R workshop) from the [Happy Git with R](http://happygitwithr.com/workshops.html#pre-workshop-set-up) book and workshop. Initially we will only do the steps before "Prove local git can talk to Github."
+
+Initially we won't use RStudio, but we will later in the semester when we consider peer production in Science and Data Science, including Executable Papers and rmarkdown for formatting documents.
+
+When you get to Installing Git I require you to use Windows Option 1 (Git for Windows) and Mac OS Option 3 (homebrew). We won't use git or Github GUIs in this class.
+
+On Mac OS, when you get to configuring an editor set it to `nano` rather than `emacs`. On Windows the editor should already be set to `notepad` which will be fine. We will rarely use this editor.
+
+## Shell intro
+
+We will follow the [intro to shell commands from my Data Wrangling class.](https://howisonlab.github.io/datawrangling/class_modules/02_command_line/) with the main difference that we will not `ssh` to another server, since we will have git installed locally.
+
+## DataCamp
+
+We will be using DataCamp in the course. During this class you should receive an email from DataCamp to whatever email address you have in Canvas. That email from DataCamp should show you how to sign up and bring you into the course on DataCamp.
+
+
