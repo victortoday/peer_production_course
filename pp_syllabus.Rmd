@@ -220,7 +220,7 @@ insight_readings <- tribble(
   "http://www.oreilly.com/openbook/opensources/book/netrev.html",
   "Peer production case studies",
   "Geiger, R. S., & Ribes, D. (2010). The Work of Sustaining Order in Wikipedia: The Banning of a Vandal. In Proceedings of the 2010 ACM Conference on Computer Supported Cooperative Work (pp. 117–126). New York, NY, USA: ACM. https://doi.org/10.1145/1718918.1718941",
-  "https://www.researchgate.net/profile/Rstuart_Geiger/publication/262312242_Writing_up_rather_than_writing_down_becoming_Wikipedia_literate/links/00b7d539f03bec053d000000.pdf",
+  "https://doi.org/10.1145/1718918.1718941",
   "Peer production case studies"
 )
 
@@ -274,7 +274,7 @@ schedule <- bind_rows(first_class, content_classes, last_classes) %>% rownames_t
 ```{r figure_class_meets, include=F}
 
 expand_days <- function(start, end) {
-  return(seq(from = parse_datetime(start), to = parse_datetime(end), by = "day"))
+  tibble(days_list = seq(from = parse_datetime(start), to = parse_datetime(end), by = "day"))
 }
 
 no_meetings <- tribble(
@@ -286,7 +286,7 @@ no_meetings <- tribble(
 ) %>% 
   mutate(days_list = map2(period_start, period_end, expand_days)) %>% 
   select(class_name, days_list) %>% 
-  unnest(days_list) 
+  unnest() 
 
 first_class_day = parse_datetime("2018-01-16")
 
