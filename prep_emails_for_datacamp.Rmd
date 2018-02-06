@@ -1,0 +1,30 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(here)
+library(tidyverse)
+library(janitor)
+library(glue)
+library(clipr)
+```
+
+```{r}
+from_clips <- read_tsv(here("../clips_nro4.WBY"), n_max = 18) %>% 
+  janitor::clean_names() %>% 
+  pull(email) %>%
+  str_c(collapse = ",") %>%
+  write_clip()
+
+  select(student, email) %>% 
+  mutate(student = student %>% str_to_title()) %>% 
+  separate(student, into = c("last", "other"), sep = "; ") %>% 
+  unite(name, other, last, sep = " ") %>% 
+  glue_data("{name} <{email}>") %>% 
+  str_c(collapse = ",") %>% 
+  write_clip()
+  
+```
+
