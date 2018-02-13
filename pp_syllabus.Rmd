@@ -228,6 +228,9 @@ insight_readings <- tribble(
   "Chapter \"Writing Copyright Licenses\" of Kelty, C. M. (2008). Two Bits: The Cultural Significance of Free Software. Durham: Duke University Press Books.",
     "http://twobits.net/pub/Kelty-TwoBits.pdf",
     "Licenses",
+  "The GNU Project",
+    "https://www.gnu.org/gnu/thegnuproject.en.html",
+    "Licenses",
   "Creative Commons v4.0 license BY-SA (read others if you have time)",
     "https://creativecommons.org/licenses/by-sa/4.0/",
     "Licenses",
@@ -246,6 +249,7 @@ insight_readings <- tribble(
   "Broadening node.js contributions (Contributor Agreement)",
     "https://www.joyent.com/blog/broadening-node-js-contributions",
     "Licenses",
+
   "Nov, O. (2007). What motivates Wikipedians? Communications of the ACM, 50(11), ACM New York, NY, USA.",
   "https://doi.org/10.1145/1297797.1297798",
     "Motivations",
