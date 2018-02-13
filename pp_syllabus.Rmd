@@ -245,7 +245,26 @@ insight_readings <- tribble(
     "Licenses",
   "Broadening node.js contributions (Contributor Agreement)",
     "https://www.joyent.com/blog/broadening-node-js-contributions",
-    "Licenses"
+    "Licenses",
+  "Nov, O. (2007). What motivates Wikipedians? Communications of the ACM, 50(11), ACM New York, NY, USA.",
+  "https://doi.org/10.1145/1297797.1297798",
+    "Motivations",
+  "Lakhani, K., & von Hippel, E. (2003). How open source software works: \"free\" user-to-user assistance. Research Policy, 32(6), 923–943.",
+    "https://doi.org/10.1016/S0048-7333(02)00095-1",
+    "Motivations",
+  "Ryan, R. M., & Deci, E. L. (2000). Intrinsic and Extrinsic Motivations: Classic Definitions and New Directions. Contemporary Educational Psychology, 25(1), 54–67.",
+    "https://doi.org/10.1006/ceps.1999.1020",
+    "Motivations",
+  "Section on Motivations in: Crowston, K., Wei, K., Howison, J., & Wiggins, A. (2012). Free (Libre) Open Source Software Development: What We Know and What We Do Not Know. ACM Computing Surveys, 44(2), Article 7.",
+    "https://doi.org/10.1145/2089125.2089127",
+    "Motivations",
+  "Lee, A., Carver, J. C., & Bosu, A. (2017). Understanding the Impressions, Motivations, and Barriers of One Time Code Contributors to FLOSS Projects: A Survey. In Proceedings of the 39th International Conference on Software Engineering (pp. 187–197). Piscataway, NJ, USA: IEEE Press.",
+  "https://doi.org/10.1109/ICSE.2017.25",
+  "Motivations",
+  "Crowston, K., & Fagnot, I. (2018). Stages of motivation for contributing user-generated content: A theory and empirical test. International Journal of Human-Computer Studies, 109, 89–101.",
+    "https://doi.org/10.1016/j.ijhcs.2017.08.005",
+    "Motivations"
+
 )
 
 skills_topics <- tribble(
