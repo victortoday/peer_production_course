@@ -270,9 +270,26 @@ insight_readings <- tribble(
   "Motivations",
   "Crowston, K., & Fagnot, I. (2018). Stages of motivation for contributing user-generated content: A theory and empirical test. International Journal of Human-Computer Studies, 109, 89–101.",
     "https://doi.org/10.1016/j.ijhcs.2017.08.005",
-    "Motivations"
-
-)
+    "Motivations",
+  "Malone, T. W., & Crowston, K. (1994). The interdisciplinary theory of coordination. ACM Computing Surveys, 26(1), 87–119.",
+    "https://doi.org/10.1145/174666.174668",
+    "Coordination",
+  "Expectancy Theory (Wikipedia)",
+    "https://en.wikipedia.org/wiki/Expectancy_theory",
+    "Coordination",
+  "Expectancy Theory (useful figure)",
+    "https://iedunote.com/expentancey-theory",
+    "Coordination",
+  "Kiggundu, M. N. (1983). Task interdependence and job design: Test of a theory. Organizational Behavior and Human Performance, 31(2), 145–172.",
+    "https://doi.org/10.1016/0030-5073(83)90118-6",
+    "Coordination",
+  "Rest of Howison, J., & Crowston, K. (2014). Collaboration through open superposition: A theory of the open source way. MIS Quarterly, 38(1), 29–50.",
+    "http://james.howison.name/pubs/howison-2014-superposition.pdf",
+    "Coordination",
+  "Lindberg, A., Berente, N., Gaskin, J., & Lyytinen, K. (2016). Coordinating Interdependencies in Online Communities: A Study of an Open Source Software Project. Information Systems Research, 27(4), 751–772.",
+    "https://doi.org/10.1287/isre.2016.0673",
+    "Coordination"
+  )
 
 skills_topics <- tribble(
   ~skill_topic, ~tech_commands,
