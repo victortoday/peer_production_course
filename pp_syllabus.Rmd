@@ -6,6 +6,9 @@ output:
   html_document:
     toc: true
     toc_depth: 2
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 
 ```{r setup, include=FALSE}
@@ -32,7 +35,7 @@ library(knitr)
 kable(header)
 ```
 
-# Course Objectives and Assignments
+# Objectives and Assignments
 
 This course explores "peer production" which is a name for the open collaborations that produce things like open source software and Wikipedia.  Perhaps not coincidentally the Wikipedia page on [Peer Production](https://en.wikipedia.org/wiki/Peer_production) is quite useful: 
 
@@ -204,7 +207,7 @@ insight_readings <- tribble(
   "Freeing the Source: The Story of Mozilla (Jim Hamerly and Tom Paquin with Susan Walton)",
     "http://www.oreilly.com/openbook/opensources/book/netrev.html",
     "Peer production case studies",
-  "Geiger, R. S., & Ribes, D. (2010). The Work of Sustaining Order in Wikipedia: The Banning of a Vandal. In Proceedings of the 2010 ACM Conference on Computer Supported Cooperative Work (pp. 117–126). New York, NY, USA: ACM. https://doi.org/10.1145/1718918.1718941",
+  "Geiger, R. S., & Ribes, D. (2010). The Work of Sustaining Order in Wikipedia: The Banning of a Vandal. In Proceedings of the 2010 ACM Conference on Computer Supported Cooperative Work (pp. 117–126). New York, NY, USA: ACM.",
     "https://doi.org/10.1145/1718918.1718941",
     "Peer production case studies",
   "GNU General Public License v 3.0",
@@ -390,9 +393,10 @@ group_counts <- dated_readings %>%
 # group_indexes <- setNames(group_counts$group_size, group_counts$topic_assigned)
 
 dated_readings %>% 
+  mutate(reading_link = glue("[link]({reading_link})")) %>% 
   arrange(class_day) %>% 
   select(reading_text, reading_link) %>% 
-  kable("html", escape = FALSE) %>% 
+  kable("html", escape = FALSE, col.names = NULL) %>% 
   kable_styling(bootstrap_options = c("responsive", "striped")) %>% 
   group_rows(index = group_counts)
 ```
@@ -415,9 +419,10 @@ group_counts <- insight_dated %>%
 # group_indexes <- setNames(group_counts$group_size, group_counts$topic_assigned)
 
 insight_dated %>% 
+  mutate(reading_link = glue("[link]({reading_link})")) %>% 
   arrange(class_day) %>% 
   select(reading_text, reading_link) %>% 
-  kable("html", escape = FALSE) %>% 
+  kable("html", escape = FALSE, col.names = NULL) %>% 
   kable_styling(bootstrap_options = c("responsive", "striped")) %>% 
   group_rows(index = group_counts)
 
