@@ -273,7 +273,10 @@ insight_readings <- tribble(
     "Coordination",
   "Lindberg, A., Berente, N., Gaskin, J., & Lyytinen, K. (2016). Coordinating Interdependencies in Online Communities: A Study of an Open Source Software Project. Information Systems Research, 27(4), 751–772.",
     "https://doi.org/10.1287/isre.2016.0673",
-    "Coordination"
+    "Coordination",
+  "Giddings, R. V. (1984). Accommodating Uncertainty in Software Design. Commun. ACM, 27(5), 428–434.",
+    "https://doi.org/10.1145/358189.358066",
+    "Agile and Test Driven Development"
   )
 
 skills_topics <- tribble(
@@ -300,9 +303,9 @@ insight_topics <- tribble(
   "Peer production case studies",
   "Licenses",
   "Motivations",
-  "Coordination Theory, Collaboration Risks",
+  "Coordination",
   "Governance",
-  "Agile vs Waterfall, Test Driven Development",
+  "Agile and Test Driven Development",
   "Knowledge Sharing",
   "Bias and lack of diversity",
   "Peer production in Wikipedia",
