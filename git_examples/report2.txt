@@ -1,3 +1,5 @@
 1. Write report
 2. File expenses
+ 2.1 Get receipts
+ 2.2 Photocopy
 3. Profit and celebrate!
