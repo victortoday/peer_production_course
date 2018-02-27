@@ -1,3 +1,5 @@
 1) Write report
 2) Submit expenses
+  2.1) collect receipts
+  2.2) submit receipts
 3) Profit.
