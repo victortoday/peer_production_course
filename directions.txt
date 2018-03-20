@@ -1,4 +1,4 @@
-Step 1: Do 1111
+Step A: Do nothing
 Step 2: Do Y
 Step 3: Do Z
 Step 4: Do A
