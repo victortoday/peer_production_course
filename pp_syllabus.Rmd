@@ -292,9 +292,18 @@ insight_readings <- tribble(
   "Optional (except for Doctoral and aspiring doctoral students) Shaikh, M., & Henfridsson, O. (2017). Governing open source software through coordination processes. Information and Organization, 27(2), 116–135.",
     "https://doi.org/10.1016/j.infoandorg.2017.04.001",
     "Governance", 
+  # "Coleman, E. G. (2012). Coding Freedom: The Ethics and Aesthetics of Hacking. Princeton: Princeton University Press.",
+  # "",
+  # "Governance",
   "Giddings, R. V. (1984). Accommodating Uncertainty in Software Design. Commun. ACM, 27(5), 428–434.",
     "https://doi.org/10.1145/358189.358066",
-    "Agile and Test Driven Development"
+    "Agile and Test Driven Development",
+  "Wikpedia on Continuous Integration",
+  "https://en.wikipedia.org/wiki/Test-driven_development",
+    "Agile and Test Driven Development",
+  "Vasilescu, B., Yu, Y., Wang, H., Devanbu, P., & Filkov, V. (2015). Quality and Productivity Outcomes Relating to Continuous Integration in GitHub. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (pp. 805–816). New York, NY, USA: ACM.",
+  "https://doi.org/10.1145/2786805.2786850",
+  "Agile and Test Driven Development"
   )
 
 skills_topics <- tribble(
