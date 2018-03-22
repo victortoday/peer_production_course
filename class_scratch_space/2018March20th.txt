@@ -1,3 +1,4 @@
-I think Leetcode is so cool. 
+
+I think Leetcode is so lame. 
 What do you think?
-Your answer here: 
+Your answer here: True 
