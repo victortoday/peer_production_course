@@ -1,0 +1,52 @@
+Concerning the vitality of many tempting maintenance projects on 
+Wikipedia, I plodded across several projects repeatedly and finally 
+moved to the Check Wikipedia WikiProject which seems fairly healthy. The 
+goal of the project is to eliminate syntax errors of the wikitext, 
+modify code that does not follow conventions, and improve accessibility 
+of wiki pages and articles with invalid ISBNs, as described on its 
+project page. As the important communication infrastructure of the 
+project, the task, operation of the project, some basic guidelines and 
+members of the community are elucidated on the project page. The page 
+also offers the community a shared space for public discussion. But the 
+working community is less organized via the project page but more by a set of 
+algorithm tools, as detailed below.
+According to my preliminary observation, a program Checkwiki is 
+primarily used to monthly scan the Wikipedia database dump for over 30 
+languages and daily scan the newly revised articles in Wikipedia in 
+several languages, then generate a list of errors for participants of 
+the project to manually correct them. Other widely used tools and 
+scripts like WPCleaner, AutoWikiBrowser, autoFormatter, etc., with 
+particular detailed aims to edit and improve the quality of wiki 
+articles. These tools are usually semi-automated, say, detect certain 
+problems with the existing pages, classify problems with their own 
+algorithm, submit to users, and help wrap up the edits made by users so 
+that the whole editing process is streamlined. A part of errors fixed 
+via these tools belongs to the scope of the Check Wikipedia project. 
+Furthermore, a few bots are being used to automatically fix certain 
+errors. The visible result is, the list of errors showed on the project 
+page contains problems that are detected by these maintenance tools and 
+cannot be resolved by bots, thus need the involvement of human.
+In this way, the community of Check Wikipedia project is not strictly 
+equal to the 31 participants listed on the project page, but also 
+include those who use the maintenance tools to help check errors without 
+putting their name on the participant list. The community members are 
+volunteers who proactively join the community or unintendedly enlisted 
+by using maintenance tools. They work independently at distance and 
+yield the improvement of article quality, which is shared by all the 
+users of Wikipedia. Thus I would like to argue they collaborate in the 
+manner of peer production, or say, open collaboration. But it differs 
+from the collaboration through open superposition in several significant 
+ways: the conceptualization, breakdown, and assignment of tasks are 
+completed by editing tools and bots; the layering of the less autonomous 
+tasks is not substantial enough to hold the visibility which facilitates 
+productivity. Generally, the project works like an organization-absent 
+Mechanical Turk, with only nonmonetary payoffs.
+Intriguingly, there is some mild drama discernible on the discussion 
+page of the project, which signals the sporadic issues with server, 
+database, tools and bots stall the normal operation of the project. The 
+multiplicity of technology being used means more dependencies between 
+sequences of work. Thus I am leery of having high expectancy. My 
+expectation about participation is maybe luckily I can work with a few 
+tools and make limited contributions in the given time, but I am not 
+sure about the smoothness and efficiency of the whole workflow.
+
