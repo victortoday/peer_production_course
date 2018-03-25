@@ -16,11 +16,11 @@ An open copyright license is the first key element of a peer production communit
 
 In addition, every community exists for a reason, more often than not, the reason is to produce something such as designing a software, writing a paper or simply generating some information. In other words, if the members of a certain community are only chatting random things, this community is absolutely not a peer production community.
 
-Last but not least, more than one person should have contributions. If a community consists of a single person throughout its whole lifecycle, then it’s not a peer production community. However, a peer production community could consist of only one person in a certain period. Case in point, if the community is founded by a single person and as time goes by, some others come, contribute something and leave, few months later, there is only one person in this community for now, it’s still a peer production community because many people had contributions.
+Last but not least, more than one person should have contributions. If a community consists of a single person throughout its whole lifecycle, then it’s not a peer production community. However, a peer production community could consist of only one person in a certain period. Case in point, if the community is founded by a single person and as time goes by, some others come, contribute something and leave, few months later, there is only one person in this community, it’s still a peer production community because many people had contributions.
 
 ####Applying the Standards
 First of all, this translation project is under Creative Commons
-Attribution-ShareAlike 4.0 International License which is an open copyright license. Second, people in this community are either trying to translating the book _Producing Open Source Software_ into various languages or modifying the English version. Moreover, lots of people have been contributing to this project. This community meets all the standards, hence, I think this community belongs to peer production.
+Attribution-ShareAlike 4.0 International License which is an open copyright license. Second, people in this community are either trying to translating the book _Producing Open Source Software_ into various languages or modifying the English version, in other words, we're producing. Moreover, we're not alone--lots of people have been contributing to this project. Hence, this community meets all the standards, and I think this community belongs to peer production.
 
 #####Notes
 The Github's preview doesn't function well in my PC, and I think this md file looks nicer in an MD reader.
