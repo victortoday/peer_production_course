@@ -1,7 +1,7 @@
 ChiaHui Liu (CL42895) <br>
 Instructor: James Howison<br>
 INF 385T: Peer Production<br>
-# Peer Production Project: Community Identification
+# Peer Production Participation Project: Community Identification
 ## 1. Community Introduction
 [Open Austin](https://www.open-austin.org/), a volunteer-based community affiliated with [Code for America](https://www.codeforamerica.org/) founded in 2009, aims at helping the government and the local residents exchange ideas by open data, technology, and design in order to achieve a better quality of life. To fulfill the organizational goal, Open Austin provides a web-based platform with organized GitHub projects, which welcomes anyone who is interested to join.<br>
 Moreover, Open Austin holds monthly meetups for members to discuss new topics and share thoughts and collaborate with each other in person. In Open Austin, all the projects are relevant to the open data released by the governmental agency. People are open to initiate a project concerning any topics and welcome to join any of the projects.
