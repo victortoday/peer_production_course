@@ -1,5 +1,4 @@
-oo feedback, Debug myself.
-n Participation Project: Community Identification
+###Peer Production Participation Project: Community Identification
 Instructor: Prof. Howison
 Student: Sifan Guo
 
