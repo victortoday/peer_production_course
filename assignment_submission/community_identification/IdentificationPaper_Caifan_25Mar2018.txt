@@ -10,6 +10,7 @@ members of the community are elucidated on the project page. The page
 also offers the community a shared space for public discussion. But the 
 working community is less organized via the project page but more by a 
 set of algorithm tools, as detailed below.
+
 According to my preliminary observation, a program Checkwiki is 
 primarily used to monthly scan the Wikipedia database dump for over 30 
 languages and daily scan the newly revised articles in Wikipedia in 
@@ -26,6 +27,7 @@ a few bots are being used to automatically fix certain errors. The
 visible result is, the list of errors showed on the project page 
 contains problems that are detected by these maintenance tools and 
 cannot be resolved by bots, thus need the involvement of human.
+
 In this way, the community of Check Wikipedia project is not strictly 
 equal to the 31 participants listed on the project page, but also 
 include those who use the maintenance tools to help check errors without 
@@ -42,6 +44,7 @@ bots; the layering of the less autonomous tasks is not substantial
 enough to hold the visibility which facilitates productivity. Generally, 
 the project works like an organization-absent Mechanical Turk, with only 
 nonmonetary payoffs.
+
 Intriguingly, there is some mild drama discernible on the discussion 
 page of the project , which signals the sporadic issues with server, 
 database, tools and bots stall the normal operation of the project. The 
