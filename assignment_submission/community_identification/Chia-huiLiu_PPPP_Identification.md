@@ -7,7 +7,7 @@ Peer Production<br>
 Moreover, Open Austin holds monthly meetups for members to discuss new topics and share thoughts and collaborate with each other in person. In Open Austin, all the projects are relevant to the open data released by the governmental agency. People are open to initiate a project concerning any topics and welcome to join any of the projects.
 
 ## 2. Peer Production
-Nowadays, the form of how produciton works tends to be more online-based, participates collaborate to build an artifect by various types of motivations. According to Benkler (2016),characteristics for denotating an organization as a form of peer production community are decentralized task conception, decentralized task execution, significant social motivation, separated governance or management from ownership, and task structure. I'll use these aforementioned characteristics to explain why Open Austin can be taken as a peer production community.
+Nowadays, the way of how production works tends to be more online-based, participates collaborate to build an artifact by various types of motivations. According to Benkler (2016), characteristics for denotating an organization as a form of peer production community are decentralized task conception, decentralized task execution, significant social motivation, separated governance or management from ownership, and task structure. I'll use these aforementioned characteristics to explain why Open Austin can be taken as a peer production community.
 Firstly, anyone can initiate task conception and also participate any of the projects in Open Austin, participates collaborate with each other 
 
 ## 3. Implication
