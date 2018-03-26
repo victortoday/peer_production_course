@@ -48,7 +48,7 @@ nonmonetary payoffs.
 Intriguingly, there is some mild drama discernible on the discussion 
 page of the project , which signals the sporadic issues with server, 
 database, tools and bots stall the normal operation of the project. The 
-multiplicity of technology being used means more dependencies between 
+multiplicity of technology being used creates more dependencies between 
 sequences of work. Thus I am leery of having high expectancy. My 
 expectation about participation is maybe luckily I can work with a few 
 tools and make limited contributions in the given time, but I am not 
