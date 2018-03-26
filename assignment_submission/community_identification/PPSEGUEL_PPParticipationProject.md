@@ -2,19 +2,29 @@ PP Participation Project: community identification
 Pedro Seguel
 
 Civic Tech movements express novel intersections between technologies and new forms of civic action (Boehner & DiSalvo, 2016). Similarly, Open Government Data (OGD) initiatives, mostly through OGD portals, have expanded since the mid-2000s in OECD countries with the expectation to increase public transparency, public awareness of government activities and to promote the generation of insights that can improve government performance (Ubaldi, 2013).
+
 Open Austin is a local community, that is identified as a “volunteer citizen brigade advocating for open government, open data, and civic application development…”(Open Austin, n.d.). They are an official brigade of Code for America, and they focus on the needs of the Austenian community using design, technology, and open data to improve their quality of life in the city.
+
 In their GitHub repository, they identify themselves as an “open source organization”:
 “We make our projects freely and openly available. GitHub is where we collaborate. […] This is where we can break projects into manageable problems for collaborators to solve together (project-ideas, 2015/2018).”
 Following Benkler’s (2016) definition of peer production, Open Austin meets with all of the characteristics of this type of decentralize production model: 
+
 a) tasks conception is decentralized: everyone is invited to give new ideas for projects or tasks within projects. Also, they provide a list of “experimental list of issues needing technical help” that serve as inspiration for ideation. However, all new project ideas have to follow a specific process and stages (“Open Austin Project Process - Open Austin,” n.d.).
+
 b) task execution is decentralized: despite most of the active projects have champions that lead project development, task execution is very flexible and decentralize. By using Github, Slack and face-to-face meetings, diverse people can contribute to the project in all stages.
+
 c) social motivation is significant: all projects are based on volunteer work. People are motivated for their civic engagement, for the enjoyment of developing something, to meet people, among other reasons.
+
 d) management is separated from ownership: in their FAQ website, they explicitly declare that “All Open Austin projects beyond the experiment stage should be open source. As far as choosing a license, choose whichever one fits your project best. Our projects have used the Unlicense (public domain), the MIT License and the GNU GPL.” (“Open Austin Project Process - Open Austin,” n.d.).
+
 Finally, the use of the GitHub platform allows the projects to work using superposition collaboration (Howison & Crowston, 2014).
+
 During this participation project, I’ll participate from at least one project in the GitHub repository. I chose the project named “Crowdsource Texas school board election info” because it has the label “Beginner friendly”. 	
+
 Additionally, I’ll participate in their monthly face-to-face events: 
-•	Open Gov & Civic Tech Meetup: Includes talks to panels.
-•	Civic Hack Night and Civic Hack Saturday: Provides an environment to socialize and/or get work done with fellow Austinites.
+- Open Gov & Civic Tech Meetup: Includes talks to panels.
+- Civic Hack Night and Civic Hack Saturday: Provides an environment to socialize and/or get work done with fellow Austinites.
+
 As a stretch goal, I want to help a friend that works in an advocacy organization to present an idea.
 
 References
