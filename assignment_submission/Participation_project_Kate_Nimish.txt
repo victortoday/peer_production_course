@@ -1,0 +1,50 @@
+Peer Production Participation Project
+Wiki Transcripts
+Often times, studios that produce movies and TV shows do not release the 
+official transcripts. These transcripts are documents that contain 
+scenes as they occur on the screen, with each scene having a 
+description, and a dialogue between characters. Transcripts.wikia.com is 
+a peer production community where people collaborate and contribute to 
+writing down transcripts for movies and TV shows which do not have their 
+official transcripts released. The website has an extensive list of 
+movies, TV shows and their subsequent sequels and/or seasons. The 
+community functions on individuals or groups of individuals writing 
+material down for every movie or show in a specific format. This can 
+most probably be accomplished by going through the movie, or by 
+translating subtitle files.
+The format for transcripts has been unanimously identified to be split 
+into multiple scenes as they occur on screen. These scenes will have a 
+description in either italics or in parenthesis, depending on the 
+author’s preference. They will have a dialogue between characters in the 
+scene, with name of the character followed by a colon or a dash, 
+followed by the line said by the character in question. The community, 
+as of now, has over 11000 transcripts. There is also a list of 
+incomplete transcripts, where the said author for some reason could not 
+complete a transcript. Anybody else can contribute to complete the 
+incomplete transcripts. Transcripts can be edited by people, and the 
+edits go through an evaluation before actually reflecting on the 
+transcript webpage.
+I had the opportunity to work on a project where I used this database to 
+generate metadata, to be used in a Q&A application. I primarily worked 
+with the transcripts for the Harry Potter movie franchise, building a 
+program to search through the transcripts to find out what character did 
+what. As my work progressed over the weeks, it came to my attention that 
+the transcripts have various flaws in their overall structure. There are 
+multiple missing entries, and many inaccurate dialogues between 
+characters. The transcripts for a particular movie franchise need to 
+follow the same format in order to make the data legible. These 
+transcripts have inconsistencies where at some places the characters 
+have been referenced with their first names, but with their last names 
+in other places. This makes it harder for an audience that is new to the 
+movie franchise, and especially when the franchise has so many 
+characters. Other inconsistencies include grammatical mistakes, swapped 
+lines between characters, and insufficient scene descriptions.
+I plan to attempt to rectify a few or all of these mistakes in the 
+transcripts for all eight movies. This will give me an opportunity to 
+engage in a literal peer production community, with one of my 
+motivations being increasing the accuracy of my software. I plan to 
+identify the said errors by building a python parser which will raise 
+exceptions when a certain format is not met. I will then try to fix 
+these errors manually by joining the community.
+
+
