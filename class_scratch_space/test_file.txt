@@ -1,4 +1,11 @@
+1.P1 created a file.
+2.P1 edits the file.
+3.P1 added and commited the file and then pushed the file to the master.
+4.The file was merged in Github by the master.
+5.P2&P3 pulled the file from upstream.
+6.P2&P3 edited the file.
+7.P2 added and commited the file and pushed the file to the master.
+8.P3 added and commited the file simultaneously with P2.
+9.P3 pushed the file to the master and got a merging conflict since the 
+file was changed by P2 and not yet merged.
 
-hello everyone,
-
-Lets see how this thing works.
