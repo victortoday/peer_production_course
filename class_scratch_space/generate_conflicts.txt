@@ -1,0 +1,26 @@
+Generate conflicts:
+1. Person 1 created a file called starbucks.txt
+   git commend: nano starbucks.txt
+2. Person 1 uploaded the file to her github repo and created a pull-request on James' repo.
+   git commend: git add starbucks.txt
+   git commit -m 'add starbucks.txt'
+   git push origin master
+   Create a pull request
+3. James' accepted the pull request.
+4. Person 2 and 3 pulled the file from James' repo
+   git commend: git pull upstream master
+5. Both of Person 2 and 3 edited the file: starbucks.txt
+   git commend: nano starbucks.txt
+6. Person 2 and 3 created pull requests separately
+   git add starbucks.txt
+   git commit -m 'edit by p2/p3'
+   git push origin master
+   (create a pull request)
+7. P3 merged conflicts by editing the conflicting message
+   and commit the file again
+   (edit merge conflicts)
+   git add starbucks.txt
+   git commit -m 'resolved the conflicts'
+   git push origin master
+   (create a pull request) 
+
