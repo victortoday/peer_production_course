@@ -1,0 +1,6 @@
+Tiger
+Monkey
+Rabbit
+Bird
+
+Instruction: Change the first line to your favorite animal.
