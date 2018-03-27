@@ -1,0 +1,77 @@
+WikiProject: Databases
+
+Scope/Goal
+
+The main scope of the Wikiproject database community is to bring together people from 
+different fields to share ideas that relate to the databases. The project aims to 
+“tag all database-related articles”i in the {{WPDATABASE}} banner database. This 
+community aims to use peer production techniques to curate articles that correspond to the 
+databases. Since these articles belong to different background (eg mathematicians, software 
+engineers etc), the community aims at getting help from people that excel in their respective 
+backgrounds who can better perform the tasks.
+WikiProject Versus Organizational forms
+Normally organizational firms follow a certain methodology/approach such as waterfall to 
+complete pending tasks. Wiki project follows the agile methodology to complete the pending 
+tasks. The community has certain pending tasks that need to be completed and are listed in 
+the form of sprints. Certain tasks that are completed need assessment. The articles and tasks 
+are then assessed by different people involved in the community and given feedback thus 
+extending the concept of improving someone else’s work. The assessment follows a pre-
+defined rubric that grades articles on the basis of their importance and quality. The difference 
+is that the projects don’t have certain SLA requirements or deadlines like in organizational 
+firms.
+
+Licenses/Terms
+
+The community follows the creative Commons license agreement, a very important aspect of 
+being a peer production community. The terms of this license state that people involved in the 
+community are free “to share”ii the work of others. People are also free “to adapt”ii the work 
+of others. Also all the rules can be compromised if one gets the permission from the 
+copyright holder. This is similar to a peer production community where people continuously 
+assess and try to improve upon the existing code/work.  The community follows strict 
+copyright protocols where the users can’t sell the work of the community under their name. 
+Peer production communities usually have strict copyright laws since many people are 
+involved in the project and the final outcome is the result of the dedicated efforts of the entire 
+community. The community follows a strict writing and citing rule as prescribed by the 
+WikiProject Computer science/Manual of style. Thus the community follows the technique of 
+peer production of adhering to certain norms so as to avoid the problem of version control 
+among different users. One has to register for an account only when one makes public 
+contributions. Thus the changes that account for public contributions will be titled, otherwise 
+there is no way to determine the author of the changes. This community works on the same 
+principle of peer production that it is difficult to find the identity of the person who evaluates 
+your code/work or who improves upon the same. 
+
+Motivations
+
+When I reflect on my reasons for choosing this, I think that my motivation comes from the 
+passion to learn more about databases. This is very important as people belonging to different 
+backgrounds come together to share their work and learn about databases. This is very useful 
+for beginners who wish to have an overview of the work involved in the field. Another 
+important motivation is the feedback which leads to improvement in skills. ”Students learned 
+more after providing elaborated feedback.”iii
+
+References
+
+En.wikipedia.org. Wikipedia:WikiProject Databases. https://en.wikipedia.org/wiki/ 
+     Wikipedia:WikiProject_Databases. 
+
+En.wikipedia.org. Wikipedia:Text of Creative Commons Attribution-ShareAlike 3.0 
+Unported License. 
+https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-
+ShareAlike_3.0_Unported_License
+ Patchan, Melissa M., and Christian D. Schunn. "Wikipedia:Text of Creative Commons 
+Attribution-ShareAlike 3.0 Unported License." Instructional Science 43, no. 5 (2015)
+__________________________________
+i En.wikipedia.org. Wikipedia:WikiProject Databases. 
+https://en.wikipedia.org/wiki/ Wikipedia:WikiProject_Databases
+ 
+
+ii En.wikipedia.org. Wikipedia:Text of Creative Commons Attribution-ShareAlike 3.0 
+Unported License. 
+https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-
+ShareAlike_3.0_Unported_License
+
+
+iii Patchan, Melissa M., and Christian D. Schunn. "Wikipedia:Text of Creative Commons 
+Attribution-ShareAlike 3.0 Unported License." Instructional Science 43, no. 5 (2015)
+
+

@@ -1,0 +1,20 @@
+---
+title: "Additional Git Exercises"
+author: "James Howison"
+date: "3/27/2018"
+output: html_document
+---
+
+Exercises done in groups of three.  Incidentally [George Simmel](http://socio.ch/sim/work.htm) in early 20th century says that everything changes when you go from 1 to 2 people (a dyad), and then again going from 2 to 3 (a triad). He said that because at 3 people it's the first time you can be outvoted :) Check it out.
+
+### Generate merge conflict
+
+### Allow on-going development in master and branch
+
+### Upstream owner contributes via pull request
+
+### Merge branch locally
+
+### Merge branch via Pull Request
+
+### Tag 
