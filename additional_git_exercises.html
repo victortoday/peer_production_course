@@ -131,9 +131,26 @@ $(document).ready(function () {
 </div>
 <div id="allow-on-going-development-in-master-and-branch" class="section level3">
 <h3>Allow on-going development in master and branch</h3>
+<p>Working in a repository owned by <em>p3</em>. Start with a file with four animals, one per line.</p>
+<pre><code>lion
+tiger
+leopard
+turtle</code></pre>
+<ol style="list-style-type: decimal">
+<li><em>p3</em> creates a new branch called <code>colors</code>, and edits the file adding a color next to animals (<code>lion red</code>). All three are going to contribute to that branch, as well as develop in the <code>master</code> branch.</li>
+<li><em>p1</em>, <em>p2</em>, <em>p3</em> all make contributions to master (adding more animals to the file, or changing a line.)</li>
+<li><em>p3</em> now wants to merge the <code>colors</code> branch. 3.1 <em>p3</em> does a <code>pull upstream</code> (getting changes to <code>master</code> since creation of <code>colors</code>) 3.2 <em>p3</em> switches to the master branch 3.3 <em>p3</em> merges the <code>colors</code> branch into <code>master</code>, resolving any conflicts that result. 3.4 <em>p3</em> <code>push</code> to <code>master</code> 3.5 <em>p3</em> deletes the <code>colors</code> branch (which should then be deleted on their <code>origin</code> because it was fully merged).</li>
+</ol>
 </div>
 <div id="upstream-owner-contributes-via-pull-request" class="section level3">
 <h3>Upstream owner contributes via pull request</h3>
+<p>When you own a repository (ie you clone something other than a fork), you sometimes want to make contributions via a pull request rather than directly pushing. You do this by working with a branch.</p>
+<ol style="list-style-type: decimal">
+<li><em>p2</em> creates a repository, clone it to laptop, create a file with animals in it, push it to repo.</li>
+<li><em>p1</em> and <em>p3</em> create forks.</li>
+<li><em>p1</em> and <em>p3</em> make edits (<code>add</code>, <code>commit</code>, <code>push</code>) and use pull requests to contribute changes to upstream</li>
+<li>To create a PR (rather than pushing directly) <em>p2</em> creates a branch (<code>for-pull-request</code>), edits, and pushes to that branch. Then, viewing that branch on github, <em>p2</em> can create a Pull Request from <code>for-pull-request</code> to <code>master</code>.</li>
+</ol>
 </div>
 <div id="merge-branch-locally" class="section level3">
 <h3>Merge branch locally</h3>
@@ -141,8 +158,17 @@ $(document).ready(function () {
 <div id="merge-branch-via-pull-request" class="section level3">
 <h3>Merge branch via Pull Request</h3>
 </div>
-<div id="tag" class="section level3">
-<h3>Tag</h3>
+<div id="tags" class="section level3">
+<h3>Tags</h3>
+<p>Your task is to create three tags, <code>tag-animals</code>, <code>tag-colors</code>, <code>tag-noises</code> which reflect the merge points of different branches.</p>
+<ol style="list-style-type: decimal">
+<li>Have <em>p3</em> create a repository, and start with the file having only animals.</li>
+<li><em>p3</em> tag repo with <code>tag-animals</code></li>
+<li><em>p2</em> create a branch <code>colors-for-tag</code>. <em>p1</em> and <em>p3</em> contribute to that branch (<code>lion yellow</code>)</li>
+<li><em>p2</em> merge branch to master, than tag master as <code>tag-colors</code>.</li>
+<li><em>p1</em> create branch <code>noises-for-tag</code>. <em>p2</em> and <em>p3</em> contribute to that branch as well. (<code>lion yellow roar</code>)</li>
+<li><em>p1</em> merges that branch to master, then tag masters as <code>tag-noises</code>.</li>
+</ol>
 </div>
 
 

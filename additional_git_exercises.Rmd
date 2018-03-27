@@ -11,10 +11,44 @@ Exercises done in groups of three.  Incidentally [George Simmel](http://socio.ch
 
 ### Allow on-going development in master and branch
 
+Working in a repository owned by *p3*. Start with a file with four animals, one per line.
+
+```
+lion
+tiger
+leopard
+turtle
+```
+
+1. *p3* creates a new branch called `colors`, and edits the file adding a color next to animals (`lion red`).  All three are going to contribute to that branch, as well as develop in the `master` branch.
+2. *p1*, *p2*, *p3* all make contributions to master (adding more animals to the file, or changing a line.)
+3. *p3* now wants to merge the `colors` branch.
+  3.1 *p3* does a `pull upstream` (getting changes to `master` since creation of `colors`)
+  3.2 *p3* switches to the master branch
+  3.3 *p3* merges the `colors` branch into `master`, resolving any conflicts that result.
+  3.4 *p3* `push` to `master`
+  3.5 *p3* deletes the `colors` branch (which should then be deleted on their `origin` because it was fully merged).
+
 ### Upstream owner contributes via pull request
+
+When you own a repository (ie you clone something other than a fork), you sometimes want to make contributions via a pull request rather than directly pushing. You do this by working with a branch.
+
+1. *p2* creates a repository, clone it to laptop, create a file with animals in it, push it to repo.
+2. *p1* and *p3* create forks.
+3. *p1* and *p3* make edits (`add`, `commit`, `push`) and use pull requests to contribute changes to upstream
+4. To create a PR (rather than pushing directly) *p2* creates a branch (`for-pull-request`), edits, and pushes to that branch.  Then, viewing that branch on github, *p2* can create a Pull Request from `for-pull-request` to `master`. 
 
 ### Merge branch locally
 
 ### Merge branch via Pull Request
 
-### Tag 
+### Tags
+
+Your task is to create three tags, `tag-animals`, `tag-colors`, `tag-noises` which reflect the merge points of different branches.
+
+1. Have *p3* create a repository, and start with the file having only animals.
+2. *p3* tag repo with `tag-animals`
+3. *p2* create a branch `colors-for-tag`. *p1* and *p3* contribute to that branch (`lion yellow`)
+4. *p2* merge branch to master, than tag master as `tag-colors`.
+5. *p1* create branch `noises-for-tag`. *p2* and *p3* contribute to that branch as well. (`lion yellow roar`)
+6. *p1* merges that branch to master, then tag masters as `tag-noises`.
