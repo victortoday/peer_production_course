@@ -2,7 +2,7 @@
 
 1. Create new file
 2. Go to the place where you have cloned
-3. git remote add (link of upstream repo)
+3. git remote add upstream (link of upstream repo)
 4. git fetch upstream
 5. git pull upstream master
 6. Change files
@@ -13,7 +13,7 @@
 ### File Changed and Pull Request
 
 1. Go to the place where you have cloned
-2. git remote add (link to upstream repo)
+2. git remote add upstream (link to upstream repo)
 3. git fetch upstream
 4. git pull upstream master
 5. Change files
@@ -24,7 +24,7 @@
 ### File Changed and Conflict Resolved
 
 1. Go to the place wher eyou have cloned
-2. git remote add (link to upstream repo)
+2. git remote add upstream (link to upstream repo)
 3. git fetch upstream
 4. git pull upstream master
 5. Change files
