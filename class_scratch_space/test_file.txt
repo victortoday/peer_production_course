@@ -2,3 +2,25 @@
 hello everyone,
 
 Lets see how this thing works.
+
+1. P1 creates file
+2. P1 adds and commits the file
+3. P1 pushes the file to the origin
+4. P1 creates a pull request
+5. P1's pull request is merged
+6. P2 pulls the file local branch
+7. P2 edits the file
+8. P3 pulls the file to the local branch
+9. P3 edits the file
+10. P2 adds and commits the file
+11. P2 pushes the file to the origin
+12. P2 creates a pull request
+13. P2's pull request is merged
+14. P3 adds and commits the file
+15. P3 attempts to push to origin
+16. P3 encounters the conflict on github
+17. P3 resolves conflict
+18. P3 adds and commits the file
+19. P3 pushes the file to the origin
+20. P3 creates a pull request
+21. P3's pull request is merged
