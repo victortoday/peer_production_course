@@ -2,3 +2,15 @@
 hello everyone,
 
 Lets see how this thing works.
+
+1. P1 creates a file and adds text and commits
+2. P1 pushes to origin and creates a PR
+3. PR is merged
+4. P2 and P3 pull upstream
+5. P2 edits the first line of the file and commits
+6. P2 pushes to origin and creates a PR
+7. P2's PR is merged
+8. P3 edits the first line of the file differently from P2 and commits
+9. P3 pulls from upstream. 
+10. A merge conflict is produced
+
