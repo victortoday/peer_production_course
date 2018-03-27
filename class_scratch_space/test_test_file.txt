@@ -1,4 +1,4 @@
-Tiger
+1) Tiger
 Monkey
 Rabbit
 Bird
