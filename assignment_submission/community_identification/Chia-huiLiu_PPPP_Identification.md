@@ -1,0 +1,18 @@
+ChiaHui Liu (CL42895) <br>
+Instructor: James Howison<br>
+INF 385T: Peer Production<br>
+# Peer Production Participation Project: Community Identification
+## 1. Community Introduction
+[Open Austin](https://www.open-austin.org/), a volunteer-based community affiliated with [Code for America](https://www.codeforamerica.org/) founded in 2009, aims at helping the government and the local residents exchange ideas by open data, technology, and design in order to achieve a better quality of life. To fulfill the organizational goal, Open Austin provides a web-based platform with organized GitHub projects, which welcomes anyone who is interested to join.<br>
+Moreover, Open Austin holds monthly meetups to gather participants and discuss new topics and share thoughts and collaborate with each other in person. In Open Austin, all the projects are relevant to the open data released by the governmental agency. People are open to initiate a project concerning any topics and welcome to join any of the projects.
+
+## 2. Peer Production
+Nowadays, the way of how peer production works tends to be more online-based, participants collaborate to build an artifact by various types of motivations. According to Benkler (2016), characteristics for denotating an organization as a form of peer production community are decentralized task conception, decentralized task execution, significant social motivation, separated governance or management from ownership, and task structure. I'll use these aforementioned characteristics to explain why Open Austin can be taken as a peer production community.<br>
+Firstly, anyone can initiate a task with their own ideas and participates any of the projects in Open Austin. Participants collaborate with each other in parallel and distributed without specifying their tasks or project goals. Similiar to the analogy of the cathedral and the bazaar, participants in Open Austin choose the task they can do and they will do (Raymond, 1999). That is, the task conception and the execution are distributed. Besides, Open Austin is run by a group of volunteers and there is a core team that coordinates things such as administration except for the projects themselves. In other words, both of the volunteers and participates are not motivated by finance and the responsibility of management or the governance of each project does not belong to Open Austin itself. Last, tasks of the projects in Open Austin are all scattered, participants just join and pick parts that are interesting to them the most and have contributions to the project, and there are no strict goal settings for projects. Taking Benkler's features of peer production, Open Austin seems to be a good fit as a peer production community. 
+
+## 3. Implications
+After contacting several volunteers in Open Austin on Slack and discussing some active projects that I'm interested in, I'll contribute to the project called [voter-visualization](https://github.com/Legitblock/voter-visualizations), try to help them visualize the open data getting from the government to get more data insights. Also, I plan to attend one of the meetups held by Open Austin to have solid ideas about how they work together. In addition, my expectations for this peer production project are gaining hands-on experience on peer production, and how the core team and the participants in Open Austin coordinate and collaborate with each other.
+
+## Reference
+Benkler, Y. (2016). Peer production and cooperation. Handbook on the Economics of the Internet, 91.
+Raymond, E. (1999). The cathedral and the bazaar. Knowledge, Technology & Policy, 12(3), 23-49.

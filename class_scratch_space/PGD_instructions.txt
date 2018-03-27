@@ -1,0 +1,15 @@
+Person 1 adds, commits, and pushes a txt file into the github repository
+
+Person 2 & 3 pull from the github repository.
+
+Both person 2 & 3 change the txt file
+
+Person 2 pushes changes to txt file to repository. Person 2 creates a pull request to the repository.
+
+After person 2 has executed a pull request and person 1 merges the pull request, person 3 pull changes from the upstream. 
+
+At this point, person 3 is notified that there is a merge conflict.
+
+Person 3 fixes the conflict by going into the text document and making the appropriate edits to the txt file.
+
+After the edits are made, person 3's file can be pushed to the repository and he can successfully execute a pull request to the upstream.
