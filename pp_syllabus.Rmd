@@ -1,14 +1,20 @@
 ---
 title: "Syllabus for Peer Production (Open Source Software, Wikipedia, & Beyond)"
-subtitle: "INF 385T - Special Topics in Information Science"
 author: "James Howison"
-output: 
+subtitle: INF 385T - Special Topics in Information Science
+output:
   html_document:
-    toc: true
+    toc: yes
     toc_depth: 2
     toc_float:
-      collapsed: false
-      smooth_scroll: false
+      collapsed: no
+      smooth_scroll: no
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
+  word_document:
+    toc: yes
+    toc_depth: '2'
 ---
 
 ```{r setup, include=FALSE}
@@ -165,6 +171,9 @@ readings <- tribble(
     "Documentation and Q&A",
   "Commonmark Markdown Tutorial",
     "http://commonmark.org/help/tutorial/",
+    "Documentation and Q&A",
+  "Citations and references in Markdown",
+    "https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html",
     "Documentation and Q&A",
   "Wikipedia Student Tutorial", 
     "https://en.wikipedia.org/wiki/Wikipedia:Training/For_students",
