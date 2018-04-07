@@ -1,3 +1,38 @@
+
 This is a test. No conflicts here. CHANGED
 Lets introduce a conflict.
 Changed
+1. Create new file
+2. Go to the place where you have cloned
+3. git remote add upstream (link of upstream repo)
+4. git fetch upstream
+5. git pull upstream master
+6. Change files
+7. git add .
+8. git commit -m ""
+9. git push origin master
+
+1. Go to the place where you have cloned
+2. git remote add upstream (link to upstream repo)
+3. git fetch upstream
+4. git pull upstream master
+5. Change files
+6. git add .
+7. git commit -m ""
+8. git push origin master
+
+### File Changed and Conflict Resolved
+
+1. Go to the place wher eyou have cloned
+2. git remote add upstream (link to upstream repo)
+3. git fetch upstream
+4. git pull upstream master
+5. Change files
+6. git add .
+7. git commit -m ""
+8. Conflict
+9. Resolve Conflict
+10. git add .
+11. git commit -m ""
+12. git push origin master
+>>>>>>> 56c5acaefa827f8155f6d183e5f132487a0a02fe
