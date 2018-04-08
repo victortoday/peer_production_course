@@ -1,10 +1,10 @@
-# Peer Production Case Study: The Adaptation of HUST Online Judge
+# Case Study: The Adaptation of HUST Online Judge
 #### Instructor: James Howison
 #### Student: Sifan Guo
 
 ## 1 Introduction
 ### 1.1 People Who Started This Project
-About 10 years ago in 2008, _Sempr_, a former member of Huazhong University of Science and Technology(  [HUST](https://en.wikipedia.org/wiki/Huazhong_University_of_Science_and_Technology)) [ACMICPC](https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest) team, had an idea of building an [online judge](1) both for their team's algorithm training and for his own graduation project. Although many successful projects are created by a single person, more people are needed in order to perfect them. According to one former participant Shang(my interviewee), before _Sempr_ began coding, he discussed this idea with his teammates and their team's advisors, undoubtedly, they all encouraged him to fulfill it and they promised to offer help when needed. Through the efforts of all these people, the HUST Online Judge first came out with the domain acm.hust.edu.cn which was no longer used after Jan 2018 due to many reasons.
+About 10 years ago in 2008, _Sempr_, a former member of Huazhong University of Science and Technology(  [HUST](https://en.wikipedia.org/wiki/Huazhong_University_of_Science_and_Technology)) [ACMICPC](https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest) team, had an idea of building an online judge[^1] both for their team's algorithm training and for his own graduation project. Although many successful projects are created by a single person, more people are needed in order to perfect them. According to one former participant Shang(my interviewee), before _Sempr_ began coding, he discussed this idea with his teammates and their team's advisors, undoubtedly, they all encouraged him to fulfill it and they promised to offer help when needed. Through the efforts of all these people, the HUST Online Judge first came out with the domain acm.hust.edu.cn which was no longer used after Jan 2018 due to many reasons.
 
 ### 1.2 Embracing the Wonderful GPL v2 License!
 It was no later than a week after HUSTOJ started its service when the team decided to share their codes on [Google Code](https://code.google.com/archive/p/hustoj/) under the GNU General Public License, version 2. Shang told me that their team made this decision for many reasons:
@@ -53,7 +53,7 @@ To begin with, .
 
 
 ## Citations
-[1]: Kurnia, A., Lim, A., & Cheang, B. (2001). Online judge. Computers & Education, 36(4), 299-315.
+[^1]: Kurnia, A., Lim, A., & Cheang, B. (2001). Online judge. Computers & Education, 36(4), 299-315.
 
 [2]: Anderson, C. (2009). Free: The future of a radical price. Random House.
 
