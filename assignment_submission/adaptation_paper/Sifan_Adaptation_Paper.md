@@ -20,10 +20,11 @@ It was no later than a week after HUSTOJ started its service when the team decid
 5. The staff of HUST considered it as a great way to expand the influence of the university, also, this can be counted as their working achievements.
 
 ### Becoming Popular
-As more and more universities began to have teams for ACMICPC, they attached great significance to building their own online judge system because they can customize the system and flexibly host their own competitions. Including many high schools, 126 organizations(most of them are universities: [check the whole list here](https://code.google.com/archive/p/hustoj/)) throughout the world had used the HUST Online Judge or designed their own system based on it. According to Shang, HUST Online Judge was well-known to domestic ACMICPC teams. All in all, it was a successful project.
+As more and more universities began to have teams for ACMICPC, they attached great significance to building their own online judge system because they can customize the system and flexibly host their own competitions. Including many high schools, 126 organizations (most of them are universities: [check the whole list here](https://code.google.com/archive/p/hustoj/)) throughout the world had used the HUST Online Judge or designed their own system based on it. According to Shang, HUST Online Judge was well-known to domestic ACMICPC teams then. In a word, it was definitely a successful project around 2010.
 
 
-### End
+### Without the Domain hust.edu.cn, What Would HUST Online Judge Be?
+After Jan 2018, the origin domain acm.hust.edu.cn was no longer used after nearly 10 years of service. I interviewed Shang about this and he indicated that it's the university's decision. In addition, he said we can't know the real reasons which made the university decide not to offer her domain anymore. I tried to contact the staff but no one responded, as a result, what I'm going to say are all based on my conjecture, **let me know by pulling request or adding issues, if anyone knows the truth. I'll be glad to make full use of github services and update this paper in no time.**
 
 , .
 
