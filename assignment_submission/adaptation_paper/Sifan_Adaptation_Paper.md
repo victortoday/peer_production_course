@@ -24,8 +24,13 @@ As more and more universities began to have teams for ACMICPC, they attached gre
 
 
 ### Without the Domain hust.edu.cn, What Would HUST Online Judge Be?
-After Jan 2018, the origin domain acm.hust.edu.cn was no longer used after nearly 10 years of service. I interviewed Shang about this and he indicated that it's the university's decision. In addition, he said we can't know the real reasons which made the university decide not to offer her domain anymore. I tried to contact the staff but no one responded, as a result, what I'm going to say are all based on my conjecture, **let me know by pulling request or adding issues, if anyone knows the truth. I'll be glad to make full use of github services and update this paper in no time.**
+After Jan 2018, the origin domain acm.hust.edu.cn was no longer used after nearly 10 years of service. There are two websites -- [hustoj.org](http://www.hustoj.org) and [hustoj.com](http://www.hustoj.com/), both of them claimed to be HUST Online Judge but neither provides the real judging service as acm.hust.edu.cn used to. The hustoj.org offers English version and works as a backup which retains the original data but submission hasn't been enabled yet. On the other hand, hustoj.com does provide demo submission and judge service, however, unlike non-profit service, it seems to be a commercial website which is [selling the customer service](1).
 
+I asked Shang why the domain was changed and he indicated that it's the university's decision. In addition, he said we can't know the real reasons which made the university decide not to offer her domain and servers anymore. I tried to contact the staff but no one responded, as a result, what I'm going to say are all based on my conjecture, **let me know by pulling request or adding issues, if anyone knows the truth. I'll be more than happy to make full use of github services and update this paper in no time.**
+
+
+
+###
 , .
 
 
@@ -45,3 +50,6 @@ After Jan 2018, the origin domain acm.hust.edu.cn was no longer used after nearl
 
 
 ## Citations
+[1]:
+[2]: Anderson, C. (2009). Free: The future of a radical price. Random House.
+[3]:
