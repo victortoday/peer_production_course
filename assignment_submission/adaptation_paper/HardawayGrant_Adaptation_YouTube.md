@@ -4,6 +4,7 @@ INF385T - Peer Production
 #Peer Production Adaptation Paper – YouTube
 
 ##Introduction
+
 One of the core tenets of peer production is depending on the contributions of volunteers to effectively create, modify, or improve a project [15]. The reliance on volunteers has been successfully adapted to various other platforms online that otherwise do not fit into the peer production mold. Websites like Yelp, SoundCloud, and Kickstarter thrive on volunteer-based, user-generated content to draw new users to their platform. One of the most popular platforms that integrates the volunteer mindset of peer production is YouTube. While not strictly fitting to the traditional definition of peer production, YouTube has adapted this foundational aspect of the peer production model by relying on volunteers to contribute the majority of content to the site.
 
 ##What is YouTube?
