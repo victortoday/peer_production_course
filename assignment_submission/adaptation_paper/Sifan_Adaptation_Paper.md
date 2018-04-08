@@ -51,7 +51,14 @@ If they only wanted to train algorithm, they could simply buy one or keep using 
 
 
 ### 2.3 Sense of Collective Honor
-"They were proud to be students of HUST", "They helped enhance the  "
+To quote Shang:
+> They were proud to be students of HUST
+> The HUST Online Judge helped expand the influence of HUST
+
+Many HUST students later joined the Online Judge project out of their sense of belonging and their sense of collective honor. It's slightly different from typical "inner source"[5] because students receive no salary but they have stronger sense of identity. Besides the programming team, those HUST students who were using this system could offer suggestions and report bugs.
+
+### 2.4 Utilizing the Influence
+Indisputably, open software is the typical collaboration through open superposition. So there are .[6]
 
 
 ## 3 Differences
@@ -84,3 +91,7 @@ Comparing this project to a baby, she was born inside a university and then movi
 [3]: Ryan, R. M., & Deci, E. L. (2000). Intrinsic and extrinsic motivations: Classic definitions and new directions. Contemporary educational psychology, 25(1), 54-67.
 
 [4]: Raymond, E. (1999). The cathedral and the bazaar. Knowledge, Technology & Policy, 12(3), 23-49.
+
+[5]: Dinkelacker, J., Garg, P. K., Miller, R., & Nelson, D. (2002, May). Progressive open source. In Proceedings of the 24th International Conference on Software Engineering (pp. 177-184). ACM.
+
+[6]: Howison, J., & Crowston, K. (2014). Collaboration through open superposition. Mis Quarterly, 38(1), 29-50.
