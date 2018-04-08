@@ -1,14 +1,20 @@
 ---
 title: "Syllabus for Peer Production (Open Source Software, Wikipedia, & Beyond)"
-subtitle: "INF 385T - Special Topics in Information Science"
 author: "James Howison"
-output: 
+subtitle: INF 385T - Special Topics in Information Science
+output:
   html_document:
-    toc: true
+    toc: yes
     toc_depth: 2
     toc_float:
-      collapsed: false
-      smooth_scroll: false
+      collapsed: no
+      smooth_scroll: no
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
+  word_document:
+    toc: yes
+    toc_depth: '2'
 ---
 
 ```{r setup, include=FALSE}
@@ -163,6 +169,12 @@ readings <- tribble(
   "Github Markdown", 
     "https://guides.github.com/features/mastering-markdown/", 
     "Documentation and Q&A",
+  "Commonmark Markdown Tutorial",
+    "http://commonmark.org/help/tutorial/",
+    "Documentation and Q&A",
+  "Citations and references in Markdown",
+    "https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html",
+    "Documentation and Q&A",
   "Wikipedia Student Tutorial", 
     "https://en.wikipedia.org/wiki/Wikipedia:Training/For_students",
     "Wikipedia Editing", 
@@ -303,7 +315,32 @@ insight_readings <- tribble(
     "Agile and Test Driven Development",
   "Vasilescu, B., Yu, Y., Wang, H., Devanbu, P., & Filkov, V. (2015). Quality and Productivity Outcomes Relating to Continuous Integration in GitHub. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (pp. 805–816). New York, NY, USA: ACM.",
   "https://doi.org/10.1145/2786805.2786850",
-  "Agile and Test Driven Development"
+  "Agile and Test Driven Development",
+  "Antin, J., Yee, R., Cheshire, C., & Nov, O. (2011). Gender Differences in Wikipedia Editing. In Proceedings of the 7th International Symposium on Wikis and Open Collaboration (pp. 11–14). New York, NY, USA: ACM.", 
+  "https://doi.org/10.1145/2038558.2038561",
+  "Bias and lack of diversity",
+  "Hecht, B., & Gergle, D. (2010). The Tower of Babel Meets Web 2.0: User-generated Content and Its Applications in a Multilingual Context. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 291–300). New York, NY, USA: ACM. https://doi.org/10.1145/1753326.1753370",
+  "http://dgergle.soc.northwestern.edu/resources/HechtAndGergle_TowerOfBabel-CHI2010.pdf",
+  "Bias and lack of diversity",
+  "Nearly All of Wikipedia Is Written By Just 1 Percent of Its Editors",
+    "https://motherboard.vice.com/en_us/article/7x47bb/wikipedia-editors-elite-diversity-foundation",
+    "Bias and lack of diversity",
+  "Inside Wikipedia’s Attempt to Use Artificial Intelligence to Combat Harassment",
+    "https://motherboard.vice.com/en_us/article/aeyvxz/wikipedia-jigsaw-google-artificial-intelligence",
+    "Bias and lack of diversity",
+  "A Code of Conduct for Open Source Projects (click through to markdown version)",
+    "https://www.contributor-covenant.org/",
+    "Bias and lack of diversity",
+  "Kittur, A., & Kraut, R. E. (2008). Harnessing the Wisdom of Crowds in Wikipedia: Quality Through Coordination. In Proceedings of the ACM Conference on Computer-Supported Cooperative Work (CSCW 2008) (pp. 37–46). San Diego, CA.",
+  "https://doi.org/10.1145/1460563.1460572",
+  "Peer production in Wikipedia",
+  "Butler, B., Joyce, E., & Pike, J. (2008). Don’t Look Now, but We’Ve Created a Bureaucracy: The Nature and Roles of Policies and Rules in Wikipedia. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 1101–1110). New York, NY, USA: ACM.",
+  "https://doi.org/10.1145/1357054.1357227",
+  "Peer production in Wikipedia",
+"Baker, M. J., Détienne, F., & Barcellini, F. (2017). Argumentation and Conflict Management in Online Epistemic Communities: A Narrative Approach to Wikipedia Debates. In Interpersonal Argumentation in Educational and Professional Contexts (pp. 141–157). Springer, Cham.",
+"https://doi.org/10.1007/978-3-319-59084-4_7",
+"Peer production in Wikipedia"
+  
   )
 
 skills_topics <- tribble(
@@ -316,7 +353,7 @@ skills_topics <- tribble(
   "Branching", "git checkout, manual merge",  
   "Sharing and conflicts", "github fork, git clone, push, pull request, pull upstream, merge, conflicts, mark resolved",
   "Testing and Continuous Integration", "Test suites, Travis CI integration, github bots", 
-  "Release management", "github releases, git tag",
+  "Release management", "[Git exercises](additional_git_exercises.html) and github releases, git tag",
   "Documentation and Q&A", "github flavored markdown", 
   "Wikipedia Editing", "wiki syntax, referencing", 
   "Executable Papers", "rmarkdown, knitr, rstudio", 
