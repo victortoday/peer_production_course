@@ -1,7 +1,7 @@
 # Peer production adaptation——WikiHouse
 
 ## Abstract
-WikiHouse is an open source project to reinvent the way people make homes. It is being developed by architects, designers, engineers, inventors, manufacturers and builders, collaborating to develop the best, simplest, most sustainable, high-performance building technologies, which anyone can use and improve (“about”, 2018)[1]. This paper explores the WikiHouse from the perspective of peer production, describes the collaboration infrastructure and also identifies the challenge faced by the adaptation of WikiHouse in an open source way. 
+WikiHouse is an open source project to reinvent the way people make homes. It is being developed by architects, designers, engineers, inventors, manufacturers and builders, collaborating to develop the best, simplest, most sustainable, high-performance building technologies, which anyone can use and improve [“about”, 2018][1]. This paper explores the WikiHouse from the perspective of peer production, describes the collaboration infrastructure and also identifies the challenge faced by the adaptation of WikiHouse in an open source way. 
 
 ## Key word
 WikiHouse, open source, peer production
@@ -27,12 +27,12 @@ First of all, WikiHouse has to challenge the traditional construction ideas and 
 
 Besides, although Wikihouse provides the architectural design drawings that designers have uploaded and guidelines for the construction, it is still difficult for people to using the open source because of the cost of machines, material and human resource, which means that WikiHouse open source project should be cheaper or more functional with respect to traditional building techniques. For instance, WikiHouse is looking at sheet materials using reprocessed plastics. 
 
-In addition, the capacity of the WikiHouse platform to support the big open sharing and collaborative challenge, for example, looking for new material and open off-grid energy products, is hugely limited at present. From the interview of a member of WikiHouse, they are currently trying to get some funding to build a much more open, accessible wiki, which can practically work to support 3D hardware. 
+In addition, the capacity of the WikiHouse platform to support the big open sharing and collaborative challenge, for example, looking for new material and open off-grid energy products, is hugely limited at present. From the interview of a member of WikiHouse, they are currently trying to get some funding to build a much more open, accessible wiki, which can practically work to support 3D hardware["interview-to-alastair-parvin-and-wikihouse-project", 2018][6]. 
 
 ## Conclusion
-Imagine a process where designs are co-created, reviewed and refined as part of a global digital commons (i.e. a universally available shared resource). Meanwhile, the actual manufacturing takes place locally, often through shared infrastructures and with local biophysical conditions in mind. The process of making something together as a community creates new ideas and innovations which can feed back into their originating design commons [“reimagine-dont-seize-the-means-of-production”, 2018][6]. This cycle describes the WikiHouse working way. The building construction system has always been designed and implemented by professionals. This is a closed system that is complex and uneconomical and has a strong sense of distance for users. In many cases, the design of buildings and even cities are controlled by capital, not by the actual needs of the users. Wikihouse, serves as open-source construction set, provides an opportunity for everyone to get involved in the construction in an energy self-sufficiency, environmental friendly, efficiently peer production way. Even if it is in its early stages, this open source building project has spread around the world. In Christchurch, New Zealand, a team used WikiHouse's resources to establish post-earthquake resettlement housing. WikiHouse has also collaborated with a team in the Rio de Janeiro slum to build community factories and micro-universities. There are also people using open-source drawings to set up an independent conference room in a room with huge space. It could be expected that a larger part of the open source community will join the WikiHouse dream by supporting the Open-Challenge they recently launched, sustaining the crowd-funded campaign and improving the construction systems. 
+Imagine a process where designs are co-created, reviewed and refined as part of a global digital commons (i.e. a universally available shared resource). Meanwhile, the actual manufacturing takes place locally, often through shared infrastructures and with local biophysical conditions in mind. The process of making something together as a community creates new ideas and innovations which can feed back into their originating design commons [“reimagine-dont-seize-the-means-of-production”, 2018][7]. This cycle describes the WikiHouse working way. The building construction system has always been designed and implemented by professionals. This is a closed system that is complex and uneconomical and has a strong sense of distance for users. In many cases, the design of buildings and even cities are controlled by capital, not by the actual needs of the users. Wikihouse, serves as open-source construction set, provides an opportunity for everyone to get involved in the construction in an energy self-sufficiency, environmental friendly, efficiently peer production way. Even if it is in its early stages, this open source building project has spread around the world. In Christchurch, New Zealand, a team used WikiHouse's resources to establish post-earthquake resettlement housing. WikiHouse has also collaborated with a team in the Rio de Janeiro slum to build community factories and micro-universities. There are also people using open-source drawings to set up an independent conference room in a room with huge space. It could be expected that a larger part of the open source community will join the WikiHouse dream by supporting the Open-Challenge they recently launched, sustaining the crowd-funded campaign and improving the construction systems. 
 
-
+## References
 
 [1]https://wikihouse.cc/about
 
@@ -44,5 +44,7 @@ Imagine a process where designs are co-created, reviewed and refined as part of 
 
 [5]http://complexitys.com/english/events/WikiHouse/#.WsrFadPOXOQ
 
-[6]http://www.resilience.org/stories/2018-01-22/reimagine-dont-seize-the-means-of-production/
+[6]https://www.open-electronics.org/interview-to-alastair-parvin-and-wikihouse-project/
+
+[7]http://www.resilience.org/stories/2018-01-22/reimagine-dont-seize-the-means-of-production/
 
