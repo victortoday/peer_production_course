@@ -1,4 +1,4 @@
-# Case Study: The Adaptation of HUST Online Judge
+# Adaptation Paper: The HUST Online Judge
 #### Instructor: James Howison
 #### Student: Sifan Guo
 
@@ -78,16 +78,6 @@ Although Shang and I considered that _zhblue_'s service is legitimate business p
 
 ## 6 Other Observations
 Indisputably, open software development project is the typical successful collaboration through open superposition[9]. So this project is by no means difficult to be distributed. Most high schools that used HUST Online Judge's codes are likely to contribute codes and report bugs, whereas some universities preferred to build their own online judges based on HUST's and later they only contribute codes to their repositories. Using the terminology of github, these universities had **forked** the HUST Online Judge project but they chose not to click the **pull request**. Indeed, some HUST students argued that it's unfair. However, as I've learned more about open source world, from Karl's[10] standpoint, this is not only beyond reproach, but also it makes open source prevalent. Because every new repository forked from HUST Online Judge can influence more people as long as they followed the GPL license. As for HUST initial contributors, I think the moment when they shared their codes, they deserved to be honored, and being honored is the best reward, isn't it?
-
-Comparing this project to a baby, she was born inside a university and then moving out of her parents' house when she could make a living. The
-
-
-
-
-
-
-
-
 
 
 
