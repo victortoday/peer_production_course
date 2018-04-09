@@ -1,6 +1,5 @@
 
 # Peer Production Adaptation Paper-Open Deliberation 
-<div style="text-align: right"> Gaurav Lalwani </div></right>
 
 ## Introduction
 
