@@ -4,7 +4,7 @@
 
 ## 1 Introduction
 ### 1.1 People Who Started This Project
-About 10 years ago in 2008, _Sempr_, a former member of Huazhong University of Science and Technology(  [HUST](https://en.wikipedia.org/wiki/Huazhong_University_of_Science_and_Technology)) [ACM/ICPC](https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest) team, had an idea of building an online judge[1] both for their team's algorithm training and for his own graduation project. Although many successful projects are created by a single person, more people are needed in order to perfect them. According to one former participant Shang(my interviewee), before _Sempr_ began coding, _Sempr_ discussed this idea with his teammates and the team's advisors, and undoubtedly, they all encouraged him to fulfill it and promised to offer help when needed. Through the efforts of all these people, the HUST Online Judge first came out with the domain acm.hust.edu.cn which was no longer used after Jan 2018 due to many reasons.
+About 10 years ago in 2008, _Sempr_, a former member of Huazhong University of Science and Technology([HUST](https://en.wikipedia.org/wiki/Huazhong_University_of_Science_and_Technology)) [ACM/ICPC](https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest) team, had an idea of building an online judge[1] both for their team's algorithm training and for his own graduation project. Although many successful projects are created by a single person, more people are needed in order to perfect them. According to one former participant Shang(my interviewee), before _Sempr_ began coding, _Sempr_ discussed this idea with his teammates and the team's advisors, and undoubtedly, they all encouraged him and promised to offer help when needed. Through the efforts of all these people, the HUST Online Judge first came out with the domain acm.hust.edu.cn which was no longer used after Jan 2018 due to many reasons.
 
 
 ### 1.2 Embracing the Wonderful GPL v2 License!
@@ -14,9 +14,9 @@ It was no later than a week after HUSTOJ started its service when the team decid
 
 2. The online judge was good enough for them, and they want more users to join and offer feedbacks because different people would have different viewpoints which could help them to improve the online judge in various ways.
 
-3. Most contributors of this project were senior students, and they were afraid of being too busy to contribute after the graduation.
+3. Most contributors of this project were senior students, and they were afraid of being too busy to continue contribution after the graduation.
 
-4. They are using Subversion([SVN](https://subversion.apache.org)) to track versions, and this can encourage more people to contribute codes in that everyone can see the contributors.[2]
+4. They are using Subversion([SVN](https://subversion.apache.org)) to track versions, and they thought that this can encourage more people to contribute codes in that if everyone can see the contribution history, people are more likely to share their skills.[2]
 
 5. As mentioned in the second reason, they thought highly of their online judge, so they wanted to share their codes with the world and "show off".
 
