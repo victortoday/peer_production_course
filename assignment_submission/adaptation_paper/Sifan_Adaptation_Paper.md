@@ -68,7 +68,9 @@ Besides the volunteers, there were some groups of contributors who sold their se
 
 
 ## 4 From SVN to GIT
-HUST Online Judge was using Subversion([SVN](https://subversion.apache.org)) between 2008 and 2014. Then they decided to start using [GIT](https://git-scm.com) till now. It's worth noting that they were using an automatic mirroring tool called [svn2github](http://svn2github.com) to clone SVN repos to GitHub. SVN is easier to learn while GIT is more efficient because we can commit, merge or practically anything offline. When it comes to version control, both tools are awesome to work.
+HUST Online Judge was using Subversion([SVN](https://subversion.apache.org)) between 2008 and 2014. Since Google Sites had been blocked in March, 2011(data from [here](https://en.wikipedia.org/wiki/Websites_blocked_in_mainland_China)), more and more users were complaining about the inconvenience. Eventually they decided to start using [GIT](https://git-scm.com) till now. It's worth noting that they were using an automatic mirroring tool called [svn2github](http://svn2github.com) to clone SVN repos to GitHub. When it comes to version control, both tools are awesome. Yet there are differences between them, GIT is more efficient because we can commit, merge or practically do anything offline, while SVN is easier to learn.
+
+
 
 
 
