@@ -47,6 +47,7 @@ On the one hand, if they need their own online judge in that they can have more 
 ### 2.3 Sense of Collective Honor
 To quote Shang:
 > They were proud to be students of HUST
+> 
 > The HUST Online Judge expanded the influence of HUST
 
 Many HUST students later joined the Online Judge project out of their sense of belonging and collective honor. It's slightly different from typical "inner source"[5] because students receive no salary as reward but they have stronger sense of identity. Besides the programming team, those HUST students who were using this system could offer suggestions and report bugs.
