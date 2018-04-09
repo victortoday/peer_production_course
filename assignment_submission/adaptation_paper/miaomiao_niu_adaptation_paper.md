@@ -1,7 +1,7 @@
 # Peer production adaptation——WikiHouse
 
 ## Abstract
-WikiHouse is an open source project to reinvent the way people make homes. It is being developed by architects, designers, engineers, inventors, manufacturers and builders, collaborating to develop the best, simplest, most sustainable, high-performance building technologies, which anyone can use and improve [“about”, 2018][1]. This paper explores the WikiHouse from the perspective of peer production, describes the collaboration infrastructure and also identifies the challenge faced by the adaptation of WikiHouse in an open source way. 
+WikiHouse is an open source project to reinvent the way people make homes. It is being developed by architects, designers, engineers, inventors, manufacturers and builders, collaborating to develop the best, simplest, most sustainable, high-performance building technologies, which anyone can use and improve (“about”, 2018)[1]. This paper explores the WikiHouse from the perspective of peer production, describes the collaboration infrastructure and also identifies the challenge faced by the adaptation of WikiHouse in an open source way. 
 
 ## Key word
 WikiHouse, open source, peer production
@@ -35,8 +35,14 @@ Imagine a process where designs are co-created, reviewed and refined as part of 
 
 
 [1]https://wikihouse.cc/about
+
 [2]https://primer.commonstransition.org/4-more/5-elements/case-studies/case-study-wikihouse
+
 [3]https://blog.p2pfoundation.net/peer-to-peer-production-and-the-partner-state/2017/08/30
+
 [4]http://james.howison.name/pubs/howison-2014-superposition.pdf
+
 [5]http://complexitys.com/english/events/WikiHouse/#.WsrFadPOXOQ
+
 [6]http://www.resilience.org/stories/2018-01-22/reimagine-dont-seize-the-means-of-production/
+
