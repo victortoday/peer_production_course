@@ -58,7 +58,9 @@ To quote Shang:
 Many HUST students later joined the Online Judge project out of their sense of belonging and their sense of collective honor. It's slightly different from typical "inner source"[5] because students receive no salary but they have stronger sense of identity. Besides the programming team, those HUST students who were using this system could offer suggestions and report bugs.
 
 ### 2.4 Utilizing the Influence
-Indisputably, open software is the typical collaboration through open superposition. So there are .[6]
+Indisputably, open software is the typical successful collaboration through open superposition[6]. So this project is by no means difficult to distribute. Most high schools that used HUST Online Judge's codes are likely to contribute codes and report bugs, whereas some universities preferred to build their own online judges based on HUST's and later they only contribute codes to theirs. Using the terminology of github, these universities had **forked** the HUST Online Judge project but they chose not to **pull request**. Not only it is beyond reproach, but also it makes open source prevalent[7].
+
+According to the [GNU General Public License, version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), they are     
 
 
 ## 3 Differences
@@ -95,3 +97,5 @@ Comparing this project to a baby, she was born inside a university and then movi
 [5]: Dinkelacker, J., Garg, P. K., Miller, R., & Nelson, D. (2002, May). Progressive open source. In Proceedings of the 24th International Conference on Software Engineering (pp. 177-184). ACM.
 
 [6]: Howison, J., & Crowston, K. (2014). Collaboration through open superposition. Mis Quarterly, 38(1), 29-50.
+
+[7]: Fogel, K. (2017). Producing open source software: How to run a successful free software project. Retrieved from [producingoss.com](https://producingoss.com).
