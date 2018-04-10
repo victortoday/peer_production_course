@@ -1,0 +1,13 @@
+---
+title: "Google Doc Links for article summary"
+author: "James Howison"
+date: "4/10/2018"
+output: html_document
+---
+
+# Links for summary
+
+- [Butler](https://docs.google.com/document/d/1Q1hsVyzeI8Qi_e0A7t5CA6IxEU0o0IZtWB7q2n4xuaw/edit?usp=sharing)
+- [Kittur ...](https://docs.google.com/document/d/1LnTAp6Ze-iM0sflA7JL7nOuLmVjzqZQtXPXS4XBNY14/edit?usp=sharing)
+- [Baker ...](https://docs.google.com/document/d/1nNBpQ9OVSn5Y8OUqeVvcz4Sfmwci_R7Et_lvo6SVS8s/edit)
+- [Nov ...](https://docs.google.com/document/d/1VZo37A9YKGMZjYDuth4S-8l8zGWby6SrT151U_PATbQ/edit?usp=sharing)
