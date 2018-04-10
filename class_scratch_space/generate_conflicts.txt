@@ -11,12 +11,19 @@ Generate conflicts:
    git command: git pull upstream master
 5. Both of Person 2 and 3 edited the file: starbucks.txt
    git command: nano starbucks.txt
-6. Person 2 and 3 created pull requests separately
+6. Person 2 created pull request
    git add starbucks.txt
    git commit -m 'edit by p2/p3'
    git push origin master
    (create a pull request)
-7. P3 merged conflicts by editing the conflicting message
+7. Person 2's  PR gets merged
+8. Person 3 tries to create a PR
+   git add starbucks.txt
+   git commit -m 'edit by p3'
+   git push origin master
+   (create a pull request)
+9. Person 3 finds that they have a merge conflict when they look at Github to make PR
+10.  P3 merged conflicts by editing the conflicting message
    and commit the file again
    (edit merge conflicts)
    git add starbucks.txt
