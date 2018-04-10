@@ -372,7 +372,8 @@ skills_topics <- tribble(
   "Documentation and Q&A", "github flavored markdown", 
   "Wikipedia Editing", "wiki syntax, referencing", 
   "Executable Papers", "rmarkdown, knitr, rstudio", 
-  "Machine Readable Creative Commons Licenses", "CC web tools and xml"
+  "Rewinding Git", "git revert, rebase, cherry-pick"
+  # "Machine Readable Creative Commons Licenses", "CC web tools and xml"
 ) %>% rownames_to_column()
 
 insight_topics <- tribble(
@@ -389,7 +390,8 @@ insight_topics <- tribble(
   "Bias and lack of diversity",
   "Peer production in Wikipedia",
   "Peer production in Science",
-  "Peer production in Art and Culture"
+  ""
+  # "Peer production in Art and Culture"
 ) %>% rownames_to_column()
 
 content_classes <- full_join(insight_topics, skills_topics, by="rowname") %>% 
