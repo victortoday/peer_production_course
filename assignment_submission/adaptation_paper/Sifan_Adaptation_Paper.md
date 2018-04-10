@@ -47,7 +47,7 @@ On the one hand, if they need their own online judge in that they can have more 
 ### 2.3 Sense of Collective Honor
 To quote Shang:
 > They were proud to be students of HUST
-> 
+>
 > The HUST Online Judge expanded the influence of HUST
 
 Many HUST students later joined the Online Judge project out of their sense of belonging and collective honor. It's slightly different from typical "inner source"[5] because students receive no salary as reward but they have stronger sense of identity. Besides the programming team, those HUST students who were using this system could offer suggestions and report bugs.
@@ -55,9 +55,9 @@ Many HUST students later joined the Online Judge project out of their sense of b
 ## 3 Motivations of Participants From Other Organizations
 According to the [GNU General Public License, version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), users of HUST Online Judge codes are not required to participate the project. However there were still many participants who came from other organizations, most of them are not as famous as HUST in China. Moreover, they didn't need to customize the online judge themselves, instead, they totally relied on HUST Online Judge to update theirs. Also, lacking software engineers is another possible reason why they didn't start their own online judge repository.
 
-In my opinion, they need to use HUST Online Judge and it's the most convenient way, hence, they directly benefited from this project just like the HUST students, except that they came from other organizations. Furthermore, HUST students might thought they deserve using this system, whereas participants from other organizations might feel grateful. So their motivations are likely to be a) they were using it so they wanted to improve it and b) the desire to give back to the community, otherwise known as reciprocity[6].
+In my opinion, they need to use HUST Online Judge and it's the most convenient way, hence, they directly benefited from this project just like the HUST students. Furthermore, HUST students might think that they deserve using this system, whereas participants from other organizations might feel grateful. So their motivations are likely to be a) they were using it so they wanted to improve it and b) the desire to give back to the community, otherwise known as reciprocity[6].
 
-Besides the volunteers, there were some groups of contributors who sold their services to HUST Online Judge users. Even though I can't claim that they're participating this project with the idea of making money, I insist that a business opportunity could make _One Time Code Contributors_[6] become _sustained contributors_[7]. And this is beneficial for the project in the long run.
+Besides the volunteers, there were some groups of contributors who sold their services to HUST Online Judge users. Even though I can't claim that they're participating this project with the idea of making money, I insist that a business opportunity could make _One Time Code Contributors_[6] become _sustained contributors_[7]. And this is beneficial for the project in the long run. So seeking for financial rewards could be a possible motivation.
 
 
 ## 4 From SVN to GIT
@@ -75,6 +75,8 @@ I asked Shang why the domain was changed and he indicated that it's the universi
 After in-depth discussion with Shang, we both agreed the commercialization of HUST Online Judge would be direct cause. Most Chinese universities would only offer online services or other alike resources to their students for academic use, otherwise things would become much more complicated because applying for commercial projects requires approval of many departments of the university. In other words, if we're making money by using resources of the organization without supervision, it's like cheating. Case in point, an active contributor of HUST Online Judge and also the administrator of [hustoj.com](http://www.hustoj.com/) _zhblue_ is selling his service. Although _zhblue_ is not from HUST, he did play an irreplaceable role in promoting HUST Online Judge by offering paid service. Because even though the HUST ACM/ICPC team shared their codes online, many organizations still have problems configuring their own machines, under those circumstances, this kind of services came in handy.
 
 Although Shang and I considered that _zhblue_'s service is legitimate business practices and it's beyond reproach, the fact that _zhblue_ doesn't belong to HUST and he's taking advantages of HUST's brand effect might make the HUST staff feel bad. I guess those who were feeling bad made the decision of removing acm.hust.edu.cn off their official hust.edu.cn domain. Frankly speaking, I have no idea of what would HUST Online Judge be without the domain hust.edu.cn, because the hust.edu.cn domain is like HUST's trademark and so does almost every university(See more: [ACM OJ Collection](http://www.cnblogs.com/Xredman/archive/2009/03/23/1420015.html)).
+
+After all, those who are funding a project would think about tradeoff, given that they are not altruistic. In the Part 4 of this paper, I claimed the governance mode is no different from the typical "open source way", however, like _inner source_, the organization's influence can't be ignored. But luckily, this sort of influence wouldn't affect the collaboration mechanism, because HUST staff didn't participate in writing codes, which means their decisions could only have effect on the external attributes of the project other than the codes. For instance, even though HUST Online Judge was no longer serving within hust.edu.cn domain, the project itself both the codes and the contribution history remain in the github unmodified.
 
 
 ## 6 Other Observations
