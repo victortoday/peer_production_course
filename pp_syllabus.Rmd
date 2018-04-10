@@ -338,9 +338,24 @@ insight_readings <- tribble(
   "https://doi.org/10.1145/1357054.1357227",
   "Peer production in Wikipedia",
 "Baker, M. J., Détienne, F., & Barcellini, F. (2017). Argumentation and Conflict Management in Online Epistemic Communities: A Narrative Approach to Wikipedia Debates. In Interpersonal Argumentation in Educational and Professional Contexts (pp. 141–157). Springer, Cham.",
-"https://doi.org/10.1007/978-3-319-59084-4_7",
-"Peer production in Wikipedia"
-  
+   "https://doi.org/10.1007/978-3-319-59084-4_7",
+   "Peer production in Wikipedia",
+#-----------------
+"Stodden, V. (2010). The Scientific Method in Practice: Reproducibility in the Computational Sciences (SSRN Scholarly Paper No. ID 1550193). Rochester, NY: Social Science Research Network.",
+  "http://papers.ssrn.com/abstract=1550193",
+  "Peer production in Science",
+"Ince, D. C., Hatton, L., & Graham-Cumming, J. (2012). The case for open computer programs. Nature, 482(7386), 485–488.",
+   "https://doi.org/10.1038/nature10836",
+  "Peer production in Science",
+"Prlić, A., & Procter, J. B. (2012). Ten Simple Rules for the Open Development of Scientific Software. PLOS Comput Biol, 8(12), e1002802.",
+  "https://doi.org/10.1371/journal.pcbi.1002802",
+  "Peer production in Science",
+"Gil Yolanda, David Cédric H., Demir Ibrahim, Essawy Bakinam T., Fulweiler Robinson W., Goodall Jonathan L., … Yu Xuan. (2016). Toward the Geoscience Paper of the Future: Best practices for documenting and sharing research from data to software to provenance. Earth and Space Science, 3(10), 388–415.",
+"https://doi.org/10.1002/2015EA000136",
+   "Peer production in Science",
+"Howison, J., & Herbsleb, J. D. (2013). Incentives and integration in scientific software production. In Proceedings of the ACM Conference on Computer Supported Cooperative Work (pp. 459–470). San Antonio, TX.",
+   "https://doi.org/10.1145/2441776.2441828",
+   "Peer production in Science"
   )
 
 skills_topics <- tribble(
