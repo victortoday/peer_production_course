@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+1) Tiger
+=======
 Elephant
+>>>>>>> 56c5acaefa827f8155f6d183e5f132487a0a02fe
 Monkey
 Rabbit
 Bird
