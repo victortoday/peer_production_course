@@ -225,6 +225,25 @@ dhcp-10-157-4-224:practice_split howison$
 So now we can see `(HEAD -> first_set_branch)` at `f945961` as the branching point for first_set_branch. However the commits we need on that branch are not on it, we need to bring them over from `master`.  We can do that using `git cherry-pick` pointing to each of the two commits we want to bring over.
 
 ```
+dhcp-10-157-4-224:practice_split howison$ git cherry-pick 51f2622
+[first_set_branch ef2a3ee] first set edit
+ Date: Tue Apr 10 17:42:47 2018 -0500
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first_set_file
+dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
+* ef2a3ee (HEAD -> first_set_branch) first set edit
+| * b5d4aff (master) added to second set
+| * dfa98b0 first edit in second set
+| * 43bc368 added second file to first set
+| * 51f2622 first set edit
+|/  
+* f945961 editing readme
+* 367e25a Adding readme
+dhcp-10-157-4-224:practice_split howison$ git cherry-pick 43bc368
+[first_set_branch 9f2b69a] added second file to first set
+ Date: Tue Apr 10 17:43:07 2018 -0500
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first_set_file2
 dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
 * 9f2b69a (HEAD -> first_set_branch) added second file to first set
 * ef2a3ee first set edit
@@ -235,12 +254,11 @@ dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --al
 |/  
 * f945961 editing readme
 * 367e25a Adding readme
-dhcp-10-157-4-224:practice_split howison$ 
 ```
 
 Now we can see (moving up the left) that we have a `first_set_branch` which has both of our needed commits. Note that this didn't "move" them from the `master` branch, but created new commits with the same content.  We can do the same thing to create our separate `second_set_branch`, starting by pointing back at the same branching point:
 
-```{console, eval=F}
+```
 dhcp-10-157-4-224:practice_split howison$ git checkout -b second_set_branch f945961
 Switched to a new branch 'second_set_branch'
 dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
@@ -280,7 +298,7 @@ dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --al
 
 So now we show three branches coming off at `f945961`: `master`, `first_set_branch`, and `second_set_branch`. Each of first_set_branch and second_set_branch have just the commits and files that they should:
 
-```{bash eval=F}
+```
 dhcp-10-157-4-224:practice_split howison$ git branch
   first_set_branch
   master
