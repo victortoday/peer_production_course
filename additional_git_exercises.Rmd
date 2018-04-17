@@ -428,3 +428,27 @@ dhcp-10-157-4-224:practice_split_reset_master howison$ git log --oneline --abbre
 ```
 
 That seems neater, but keep in mind that if you'd pushed `master` to github while those commits were there, anyone else who had built on your repo would have lots of trouble.  The `revert` approach goes for messier history, but has the advantage that it doesn't disconnect anyone else.
+
+## Rebase examples
+
+When one is working on a problem, others may be working in parallel. And their parallel work may be finished before one's own work is. Thus the starting point for one person's work (branching point) can "go stale" making it harder to integrate. While `git merge` and resolving syntax level conflicts can resolve some of this, it is often easier to understand and review work if it is presented as changes against an updated starting point. 
+
+As a concrete example imagine a project to build a dashboard. Imagine that you fork the repo in January to implement a new type of visualization (let's say a pie chart). You work on this during January and February, finally nailing it down at the start of March.  Meanwhile, though, others in the project have spent February replacing the database infrastructure, introducing a new way of accessing databases. By the time you make a pull request at the start of March things have changed a lot since you branched in January. The developers ask you to update your branch to make it work with the new database system.
+
+```
+--January-|------February--------------|--March
+
+          __pie_chart_branch___________
+         /                             \
+master--|--|-----------------------|----|-------
+            \                     /
+             \__new_database_____/
+
+```
+
+Two options: 
+
+1. either merge master into pie_chart_branch your self
+2. rebase pie_chart_branch on master (as though pie_chart_branch was created in late February)
+
+Q: is rebase just about avoiding merge commits in the log?
