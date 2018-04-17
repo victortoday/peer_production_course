@@ -178,7 +178,7 @@ readings <- tribble(
   "Wikipedia Student Tutorial", 
     "https://en.wikipedia.org/wiki/Wikipedia:Training/For_students",
     "Wikipedia Editing", 
-  "Datacamp Rmarkdown - Chapter 1",
+  "Datacamp Rmarkdown - All 4 chapters",
     "https://campus.datacamp.com/courses/reporting-with-r-markdown/chapter-one-authoring-r-markdown-reports",
     "Executable Papers",
   "Marking your work with a CC license",
