@@ -9,7 +9,7 @@ The peer prodcution work I am going to discuss in this paper is Google Play Stor
 
 Google Play Store( or  Google Play) is a digital distribution service operated and developed by Google. It serves as the official app store for the Android operating system, allowing users to browse and download applications developed with the Android software development kit (SDK) and published through Google. Google Play also serves as a digital media store, offering music, magazines, books, movies, and television programs.
 
-![](https://pctechmag.com/2018/01/google-reveals-the-best-android-experience-apps-of-q1-2018/ 'Figure 1-1')
+![Figure 1-1](https://pctechmag.com/2018/01/google-reveals-the-best-android-experience-apps-of-q1-2018/)
 
 Google states in its Developer Policy Center that "Google Play supports a variety of monetization strategies to benefit developers and users, including paid distribution, in-app products, subscriptions, and ad-based models", and requires developers to comply with the policies in order to "ensure the best user experience". It requires that developers charging with apps and downloads through Google Play must use Google Play's payment system. 
 
