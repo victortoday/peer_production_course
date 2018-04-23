@@ -474,10 +474,86 @@ master--|--|-----------------------|----|-------
 </code></pre>
 <p>Two options:</p>
 <ol style="list-style-type: decimal">
-<li>either merge master into pie_chart_branch your self</li>
-<li>rebase pie_chart_branch on master (as though pie_chart_branch was created in late February)</li>
+<li>Either merge master into pie_chart_branch yourself</li>
+<li>Rebase pie_chart_branch on master (as though pie_chart_branch was created in late February)</li>
 </ol>
-<p>Q: is rebase just about avoiding merge commits in the log?</p>
+<p>Option 1 is possible, but often merging your work involves touching parts of the system you don’t know what much about and is better left to the core developers. In addition, merging in this way leaves merge commit messages and some projects really don’t like those because they make the history harder to read.</p>
+<p>Option 2 is called <code>rebase</code> and is explained usefully at <a href="https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request">this page from the EdX project</a>. As you rebase, you can also <code>squash</code> some of your commits (treat many commits as one) to make them easier to follow for those reviewing your pull request.</p>
+</div>
+<div id="removing-something-from-history-entirely." class="section level2">
+<h2>Removing something from history entirely.</h2>
+<p>The purpose of <code>git</code> is to retain all of your history, so that you can go back to any point in development and recover (as well as experiment while not breaking the mainline of development). Simultaneously when we are working in the open that means that anyone can view any file that was ever in a repository. With that in mind it is not too surprising that if you accidentally add something to git and then push it to github you can have trouble putting “the genie back in the bottle.”</p>
+<p>Let’s say that we create a repo and add a README, then add a SPECIAL_SECRET file with the password “swordfish” in it. Note that I use <code>git add *</code> below which is a very common way to accidentally add a problematic file, try to get into the habit of adding files one by one.</p>
+<pre><code>SOI-A14570-Howison:PeerProduction howison$ cd practice_history_edit/
+SOI-A14570-Howison:practice_history_edit howison$ git init
+Initialized empty Git repository in /Users/howison/Documents/UTexas/Courses/PeerProduction/practice_history_edit/.git/
+SOI-A14570-Howison:practice_history_edit howison$ vi README
+SOI-A14570-Howison:practice_history_edit howison$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+        README
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+SOI-A14570-Howison:practice_history_edit howison$ git add README
+SOI-A14570-Howison:practice_history_edit howison$ git commit -m &quot;now we have a README&quot;
+[master (root-commit) f4878b0] now we have a README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README
+SOI-A14570-Howison:practice_history_edit howison$ vi SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ git add *
+SOI-A14570-Howison:practice_history_edit howison$ git commit -m &quot;whoops added secret&quot;
+[master 018f6b5] whoops added secret
+ 1 file changed, 1 insertion(+)
+ create mode 100644 SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
+* 018f6b5 (HEAD -&gt; master) whoops added secret
+* f4878b0 now we have a README</code></pre>
+<p>Now I’ll go ahead and make one more edit to README</p>
+<pre><code>SOI-A14570-Howison:practice_history_edit howison$ vi README
+SOI-A14570-Howison:practice_history_edit howison$ git add READMESOI-A14570-Howison:practice_history_edit howison$ git commit -m &quot;README edit 2&quot;[master 4d51f91] README edit 2
+ 1 file changed, 1 insertion(+)
+SOI-A14570-Howison:practice_history_edit howison$ git log --oneline --abbrev-commit --all --graph --decorate --color* 4d51f91 (HEAD -&gt; master) README edit 2
+* 018f6b5 whoops added secret
+* f4878b0 now we have a README
+SOI-A14570-Howison:practice_history_edit howison$ ls
+README         SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ cat SPECIAL_SECRET
+swordfish</code></pre>
+<p>Ok, so we realize that the password file got into git and we swing into action and delete it from git.</p>
+<pre><code>SOI-A14570-Howison:practice_history_edit howison$ git rm SPECIAL_SECRET
+rm 'SPECIAL_SECRET'
+SOI-A14570-Howison:practice_history_edit howison$ git commit -m &quot;phew removed it, or did we&quot;
+[master ff229ba] phew removed it, or did we
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ ls
+README</code></pre>
+<p>So now the file is not there. Or rather it is not in our working directory. The problem is that it is still inside out <code>.git</code> folder and we can get it out easily.</p>
+<pre><code>SOI-A14570-Howison:practice_history_edit howison$ git checkout HEAD~1
+Note: checking out 'HEAD~1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b &lt;new-branch-name&gt;
+
+HEAD is now at 4d51f91... README edit 2
+SOI-A14570-Howison:practice_history_edit howison$ lsREADME         SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ cat SPECIAL_SECRET
+swordfish</code></pre>
+<p>Here I just used <code>git checkout HEAD~1</code> which goes one commit back in time, to before we deleted the SPECIAL_SECRET file. Even if we were far ahead, or over on other branches etc, I could always get back by asking to see the code just after the commit that added the file <code>git checkout 018f6b5</code> (btw, to get out of <code>DETACHED HEAD</code> state just checkout the branch again, we’re working on master so it would be <code>git checkout master</code>).</p>
+<p>So using <code>git rm</code> removes a file from the working directories but it doesn’t remove it from the git history. And that’s a sensible thing, usually you want to be able to go back in time. But sometimes you want to remove something from the history entirely. You can do that using the approaches outlined by Github here: <a href="https://help.github.com/articles/removing-sensitive-data-from-a-repository/">Removing sensitive data from a repository</a></p>
+<p>The process is a bit complex (as it should be) but simplified with the <code>bfg</code> tool, as described at the link above. First you have to download the tool (which requires Java to run) then follow the instructions step by step.</p>
+<p>Keep in mind that if you had pushed this sensitive info to github and others had forked or cloned it then that info is not going to be deleted from the clones, so passwords should definitely be changed and you should ask everyone to delete forks/clones and start again.</p>
 </div>
 
 
