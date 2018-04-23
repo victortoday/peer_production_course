@@ -1,9 +1,7 @@
-
 hello everyone,
 
 Lets see how this thing works.
 
-<<<<<<< HEAD
 1. P1 creates file
 2. P1 adds and commits the file
 3. P1 pushes the file to the origin
