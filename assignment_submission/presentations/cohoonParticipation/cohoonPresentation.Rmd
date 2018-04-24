@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Map Anything {.largeFont .centered .accentColor}
+## Map Anything {.largeFont .centered}
 > Any building or feature from the real world can be mapped in Open Street Map
 
 ## Map Anything
