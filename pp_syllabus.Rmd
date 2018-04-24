@@ -113,9 +113,9 @@ There are three graded components, each to be submitted via a pull request.
 
 1. Identifying and describing a peer production community. ~500 words. Authored in plain text or markdown. This paper should clearly identify the community and argue for it being a peer production community. The paper should describe how the student thinks the peer production community works and their expectations about participation.
 
-2. Participating and describing that participation in an experience report of ~500 words, authored in Markdown. Students should describe their experience in the project. At a minimum the paper should desribe the work done, how it was contributed, as well as whether and how the work was reviewed. Students should compare their experience with their expectations described in the first paper.
+2. Participating and describing that participation in an experience report of ~500 words, authored in Markdown. Students should describe their experience in the project. At a minimum the paper should desribe the work done, how it was contributed, as well as whether and how the work was reviewed. Students should compare their experience with their expectations described in the first paper. Submit via a pull request from a branch created just for this submission (ie not master). Due Sunday night.
 
-3. Creating and giving a presentation on their participation. This should be 4-6 slides long and be authored using Markdown that produces slides. Presentations will occur in our final two class meetings.
+3. Creating and giving a presentation on their participation. Presentations are limited to 5 minutes, this should be approx 4-6 slides long and be authored using Markdown that produces slides. Presentations will occur in our final class meeting. Submit via a pull request from a branch created just for this submission (ie not master). Due at 6pm Monday.
 
 ## Materials
 
