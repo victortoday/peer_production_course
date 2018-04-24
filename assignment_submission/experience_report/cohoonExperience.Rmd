@@ -1,0 +1,29 @@
+---
+title: "Open Street Map Experience Report"
+author: "Hannah Cohoon"
+date: "4/24/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Open Street Map
+
+Open Street Map is an online map that accumulates data through user contributions. To make an edit to the map, a user makes an account and chooses the node that they wish to revise or add. The online GUI makes these edits simple—no advanced technical skill is necessary.
+
+## Finding Work
+
+After making several edits to buildings in my own neighborhood, I began looking for ongoing projects in the Open Street Map (OSM) community. From my initial investigation into the platform, I knew that there was extensive documentation and a number of ways to get in touch with other contributors. While navigating the OSM website I saw that there is a subreddit devoted to Open Street Map. 
+
+I subscribed to /r/OpenStreetMap because as a new contributor, other forms of communication felt too intimidating. For example, OSM has a Slack channel but I preferred the asynchronous, lurker-friendly format of the Reddit forum to the real-time conversation that Slack enables.
+
+My discovery of /r/OpenStreetMap led me on a circuitous path to my ultimate contributions. A post to the subreddit led me to a blog post with a community update on OSM activities and issues. Within this blog post (http://www.weeklyosm.eu/archives/10274) I saw that there are ongoing efforts to map underrepresented features by the subscribers to OSM's Diversity-Talk mailing list. I
+
+
+## Making a Contribution
+
+## Issues Along the Way
+
+## Reflections 
