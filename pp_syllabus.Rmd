@@ -178,7 +178,7 @@ readings <- tribble(
   "Wikipedia Student Tutorial", 
     "https://en.wikipedia.org/wiki/Wikipedia:Training/For_students",
     "Wikipedia Editing", 
-  "Datacamp Rmarkdown - Chapter 1",
+  "Datacamp Rmarkdown - All 4 chapters",
     "https://campus.datacamp.com/courses/reporting-with-r-markdown/chapter-one-authoring-r-markdown-reports",
     "Executable Papers",
   "Marking your work with a CC license",
@@ -355,7 +355,10 @@ insight_readings <- tribble(
    "Peer production in Science",
 "Howison, J., & Herbsleb, J. D. (2013). Incentives and integration in scientific software production. In Proceedings of the ACM Conference on Computer Supported Cooperative Work (pp. 459–470). San Antonio, TX.",
    "https://doi.org/10.1145/2441776.2441828",
-   "Peer production in Science"
+   "Peer production in Science",
+"Optional: Jupyter, Mathematica, and the Future of the Research Paper (Paul Romer, famous economist)",
+"https://paulromer.net/jupyter-mathematica-and-the-future-of-the-research-paper/",
+"Peer production in Science"
   )
 
 skills_topics <- tribble(

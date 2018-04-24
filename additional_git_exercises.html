@@ -155,14 +155,15 @@ turtle</code></pre>
 </div>
 <div id="split-a-pull-request" class="section level3">
 <h3>Split a pull request</h3>
-<p>Here the scenario is that you’ve created a pull request but it hasn’t yet been accepted. If you add additional commits to that branch then they will get added to the pull request. Remember, a pull request says, “please come to this repo and get everything on this branch”. So it’s not the same as puttings some commits in a zip file and mailing them, it’s more like puttings things into a pigeonhole mail box and telling people to pick them up from there. So you can always add additional things before the person comes to pick them up. This is useful because if there is a conversation around the pull request “please fix a typo or pull from upstream before we consider your pull request” then you can easily update things.</p>
-<p>However it is an issue if you accidentally add new commits to a branch before a pull request is accepted. Now your pull request has two sets of commits: the first set and the second set. This is particularly easy to do if you are developing on the <code>master</code> branch in your fork. And it’s the same scenario if you’ve accidentally added too many files to your pull request, something that is easy to do if you use <code>git add *</code> or some variant.</p>
+<p>Here the scenario is that you’ve created a pull request but it hasn’t yet been accepted. If you add additional commits to that branch then they will get added to the pull request. Remember, a pull request says, “Please come to this repo and get everything on this branch.” So it’s not the same as puttings some commits in a zip file and mailing them, it’s more like puttings things into a pigeonhole mail box and telling people to pick them up from there. So you can always add additional things before the person comes to pick them up. This is useful because if there is a conversation around the pull request then you can easily update things. For example, if someone said “Please fix a typo or pull from upstream before we consider your pull request,” you’d be able to do so without opening another PR.</p>
+<p>However, it is an issue if you <em>accidentally</em> add new commits to a branch before a pull request is accepted. Now your pull request has two sets of commits: the first set you meant to include and the second set you didn’t. This mistake is particularly easy to make if you are developing on the <code>master</code> branch in your fork. If you’ve accidentally added too many files to your pull request—something that is easy to do if you use <code>git add *</code> or some variant—you’ll also find yourself needing to remove content from your PR.</p>
 <p>Things would be better if you had created a new branch for the first set of commits, then a second branch for your second set of commits, never adding either set to your master branch. Then each set of commits would be “sent” through a different pull request.</p>
 <pre><code>        / Branch for first set.
        /
 master -
-        \ 
+        \
          \ Branch for second set</code></pre>
+<p>Below, I make a new repo, create a README file and make a commit, and edit it once making another commit:</p>
 <pre><code>dhcp-10-157-4-224:practice howison$ git init
 Initialized empty Git repository in /Users/howison/Documents/UTexas/Courses/PeerProduction/practice/.git/
 dhcp-10-157-4-224:practice howison$ vi README
@@ -173,12 +174,7 @@ dhcp-10-157-4-224:practice howison$ git commit -m &quot;Adding readme&quot;
  create mode 100644 README
 dhcp-10-157-4-224:practice howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
 * d5eb1e8 (HEAD -&gt; master) Adding readme
-dhcp-10-157-4-224:practice howison$ touch readme
-dhcp-10-157-4-224:practice howison$ git add README
-dhcp-10-157-4-224:practice howison$ git commit -m &quot;editing readme&quot;
-On branch master
-nothing to commit, working tree clean
-dhcp-10-157-4-224:practice howison$ vi README 
+dhcp-10-157-4-224:practice howison$ vi README
 dhcp-10-157-4-224:practice howison$ git add README
 dhcp-10-157-4-224:practice howison$ git commit -m &quot;editing readme&quot;
 [master 749454e] editing readme
@@ -186,8 +182,8 @@ dhcp-10-157-4-224:practice howison$ git commit -m &quot;editing readme&quot;
 dhcp-10-157-4-224:practice howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
 * 749454e (HEAD -&gt; master) editing readme
 * d5eb1e8 Adding readme
-dhcp-10-157-4-224:practice howison$ </code></pre>
-<p>Now we can create the feature branch for the first set:</p>
+dhcp-10-157-4-224:practice howison$</code></pre>
+<p>Now we can create the feature branch (first_set_branch) for the first set and look at the commits we’ve made. Using <code>git checkout</code> with <code>-b</code> creates a new branch:</p>
 <pre><code>dhcp-10-157-4-224:practice howison$ git checkout -b first_set_branch
 Switched to a new branch 'first_set_branch'
 dhcp-10-157-4-224:practice howison$ vi first_set_file
@@ -206,7 +202,7 @@ dhcp-10-157-4-224:practice howison$ git log --oneline --abbrev-commit --all --gr
 * d71ade9 (first_set_branch) first set edit
 * 749454e (HEAD -&gt; master) editing readme
 * d5eb1e8 Adding readme
-dhcp-10-157-4-224:practice howison$ </code></pre>
+dhcp-10-157-4-224:practice howison$</code></pre>
 <p>Notice that in the git log stuff, when we are on the first branch it shows <code>HEAD -&gt; first_set_branch</code> but when we swap back to <code>master</code> we see <code>(HEAD -&gt; master)</code> on the second line. So there is a commit (<code>d71ade9</code>) that isn’t in <code>master</code>. Now we can create the second branch:</p>
 <pre><code>dhcp-10-157-4-224:practice howison$ git checkout -b second_set_branch
 Switched to a new branch 'second_set_branch'
@@ -222,8 +218,8 @@ dhcp-10-157-4-224:practice howison$ git log --oneline --abbrev-commit --all --gr
 |/  
 * 749454e (master) editing readme
 * d5eb1e8 Adding readme
-dhcp-10-157-4-224:practice howison$ </code></pre>
-<p>Now we can see that there are two branches that “come off” head after <code>749454e</code>. We can work independently, and could create pull requests for each branch separatly. Let’s add a second file to the second set:</p>
+dhcp-10-157-4-224:practice howison$</code></pre>
+<p>Now we can see that there are two branches that “come off” head after <code>749454e</code>. We can work independently, and could create pull requests for each branch separately. We are still on the second set’s branch, let’s add a second file to it:</p>
 <pre><code>dhcp-10-157-4-224:practice howison$ vi second_set_file2
 dhcp-10-157-4-224:practice howison$ git add second_set_file2
 dhcp-10-157-4-224:practice howison$ git commit -m &quot;added to second set&quot;
@@ -238,7 +234,7 @@ dhcp-10-157-4-224:practice howison$ git log --oneline --abbrev-commit --all --gr
 * 749454e (master) editing readme
 * d5eb1e8 Adding readme</code></pre>
 <p>And just for fun swap back to the first branch and add a second file there:</p>
-<pre><code>dhcp-10-157-4-224:practice howison$ git checkout first_set_branch 
+<pre><code>dhcp-10-157-4-224:practice howison$ git checkout first_set_branch
 Switched to branch 'first_set_branch'
 dhcp-10-157-4-224:practice howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
 * 04d6967 (second_set_branch) added to second set
@@ -262,9 +258,9 @@ dhcp-10-157-4-224:practice howison$ git log --oneline --abbrev-commit --all --gr
 |/  
 * 749454e (master) editing readme
 * d5eb1e8 Adding readme
-dhcp-10-157-4-224:practice howison$ </code></pre>
+dhcp-10-157-4-224:practice howison$</code></pre>
 <p>Now the branching in this in-terminal visualization is a bit clearer.</p>
-<p>But how do I get there from here? Ok, here’s a situation where all these commits have been added on the master branch, in another repository <code>practice_split</code>. Here the commits are all piled on top of each other. If we had made a pull request after the first set of files <code>51f2622</code> but it hadn’t been accepted yet then the second set of files would be added to it.</p>
+<p>Pretend we had never made the two additional branches but made those commits all on the master branch. Then if a pull request opened after the first set of files <code>51f2622</code> was never accepted, our second set would have just piled on top and been added to the pull request.</p>
 <pre><code>dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
 * b5d4aff (HEAD -&gt; master) added to second set
 * dfa98b0 first edit in second set
@@ -272,7 +268,7 @@ dhcp-10-157-4-224:practice howison$ </code></pre>
 * 51f2622 first set edit
 * f945961 editing readme
 * 367e25a Adding readme</code></pre>
-<p>So our challenge is to make this linear setup look like our branched setup above. There are a few routes we can take. First we’re going to use the ability to create a new branch from an earlier point in history. By default, of course, <code>git checkout -b newbranch</code> will branch from the current HEAD, but we can tell it to branch earlier. So first we’re going to create our two branches as though we’d done it before we started working, which is when HEAD was at <code>f945961</code>.</p>
+<p>So our challenge is to make this linear setup look like our branched setup above. There are a few routes we can take. First we’re going to use the ability to create a new branch from an earlier point in history. By default <code>git checkout -b newbranch</code> will branch from the current HEAD, but we can tell it to branch earlier. So first we’re going to create our two branches as though we’d done it before we started working, which is when HEAD was at <code>f945961</code>.</p>
 <pre><code>dhcp-10-157-4-224:practice_split howison$ git checkout -b first_set_branch f945961
 Switched to a new branch 'first_set_branch'
 dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
@@ -282,8 +278,8 @@ dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --al
 * 51f2622 first set edit
 * f945961 (HEAD -&gt; first_set_branch) editing readme
 * 367e25a Adding readme
-dhcp-10-157-4-224:practice_split howison$ </code></pre>
-<p>So now we can see <code>(HEAD -&gt; first_set_branch)</code> at <code>f945961</code> as the branching point for first_set_branch. However the commits we need on that branch are not on it, we need to bring them over from <code>master</code>. We can do that using <code>git cherry-pick</code> pointing to each of the two commits we want to bring over.</p>
+dhcp-10-157-4-224:practice_split howison$</code></pre>
+<p>So now we can see <code>(HEAD -&gt; first_set_branch)</code> at <code>f945961</code> as the branching point for first_set_branch. However the commits we need on that branch are not on it, we need to bring them over from <code>master</code>. We can do that using <code>git cherry-pick</code> pointing to each of the two commits we want to bring over. Below we can see (moving up the left) that we have a <code>first_set_branch</code> which has both of our needed commits. Note that this doesn’t “move” them from the <code>master</code> branch, but creates new commits with the same content.</p>
 <pre><code>dhcp-10-157-4-224:practice_split howison$ git cherry-pick 51f2622
 [first_set_branch ef2a3ee] first set edit
  Date: Tue Apr 10 17:42:47 2018 -0500
@@ -313,7 +309,7 @@ dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --al
 |/  
 * f945961 editing readme
 * 367e25a Adding readme</code></pre>
-<p>Now we can see (moving up the left) that we have a <code>first_set_branch</code> which has both of our needed commits. Note that this didn’t “move” them from the <code>master</code> branch, but created new commits with the same content. We can do the same thing to create our separate <code>second_set_branch</code>, starting by pointing back at the same branching point:</p>
+<p>We can do the same thing to create our separate <code>second_set_branch</code>, starting by pointing back at the same branching point:</p>
 <pre><code>dhcp-10-157-4-224:practice_split howison$ git checkout -b second_set_branch f945961
 Switched to a new branch 'second_set_branch'
 dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
@@ -356,20 +352,20 @@ dhcp-10-157-4-224:practice_split howison$ git log --oneline --abbrev-commit --al
 * second_set_branch
 dhcp-10-157-4-224:practice_split howison$ ls
 README           second_set_file  second_set_file2
-dhcp-10-157-4-224:practice_split howison$ git checkout first_set_branch 
+dhcp-10-157-4-224:practice_split howison$ git checkout first_set_branch
 Switched to branch 'first_set_branch'
 dhcp-10-157-4-224:practice_split howison$ ls
 README          first_set_file  first_set_file2</code></pre>
 <p>So now if we create pull requests from each of those branches, they’ll contain just the content we wanted in each of them. Hurray.</p>
 <p>Now we just have to consider what to do about the additional commits on <code>master</code>. This is going to depend on a few things. Do you have additional commits on <code>master</code> that you haven’t distributed among new branches? Do you want <code>master</code> to exactly reflect the history of <code>master</code> on <code>upstream</code>? How tolerant are you of “messy history”? It’s also going to depend on whether <code>master</code> had been pushed up and whether others might have built on top of it.</p>
-<p>Here are many options, here are two:</p>
+<p>There are many options, here are two:</p>
 <ol style="list-style-type: decimal">
 <li>Revert the commits that you “moved” to the branches. <code>git revert</code> creates “opposite” commits, that undo any changes. So if you lay a revert commit on top of a commit then the content is as though the commit was never made.</li>
-<li>Create a new branch from your branching point, then rename it to <code>master</code>, orphaning your current master.</li>
+<li>Using <code>git reset -hard</code>, create a new branch from your branching point, then rename it to <code>master</code>, orphaning your current master.</li>
 </ol>
 <div id="using-revert" class="section level4">
 <h4>Using revert</h4>
-<p>First I created a copy of the repo, so I could show both options.</p>
+<p>First I created a copy of the repo, <code>practice_split_revert/</code>, so I could show both options. Then I switched to the <code>master</code> branch in that copy.</p>
 <pre><code>dhcp-10-157-4-224:practice_split howison$ cd ..
 dhcp-10-157-4-224:PeerProduction howison$ cp -r practice_split practice_split_revert
 dhcp-10-157-4-224:PeerProduction howison$ cd practice_split_revert/
@@ -396,7 +392,7 @@ dhcp-10-157-4-224:practice_split_revert howison$ git log --oneline --abbrev-comm
 |/  
 * f945961 editing readme
 * 367e25a Adding readme</code></pre>
-<p>Then I used a range expression (the <code>..</code>) with revert to revert the set of four commits on <code>master</code>. Note that the double dot range syntax used like this is left exclusive (ie you have to go back one further than the first you want.) I also had to provide four commit messages, one for each of the reverting commits.</p>
+<p>Then I used a range expression (the <code>..</code>) with revert to revert the set of four commits on <code>master</code>. Note that the double dot range syntax used like this is left exclusive (i.e. you have to go back one further than the first you want). I also had to provide four commit messages, one for each of the reverting commits.</p>
 <pre><code>dhcp-10-157-4-224:practice_split_revert howison$ git revert f945961..b5d4aff
 [master afcee46] Revert &quot;added to second set&quot;
  1 file changed, 1 deletion(-)
@@ -432,6 +428,7 @@ README</code></pre>
 </div>
 <div id="git-reset-hard" class="section level4">
 <h4>git reset –hard</h4>
+<p>Again, I create a copy of the repo, practice_split_reset_master:</p>
 <pre><code>dhcp-10-157-4-224:PeerProduction howison$ cp -r practice_split practice_split_reset_master
 dhcp-10-157-4-224:PeerProduction howison$ cd practice_split_reset_master/
 dhcp-10-157-4-224:practice_split_reset_master howison$ git checkout master
@@ -462,6 +459,101 @@ dhcp-10-157-4-224:practice_split_reset_master howison$ git log --oneline --abbre
 * 367e25a Adding readme</code></pre>
 <p>That seems neater, but keep in mind that if you’d pushed <code>master</code> to github while those commits were there, anyone else who had built on your repo would have lots of trouble. The <code>revert</code> approach goes for messier history, but has the advantage that it doesn’t disconnect anyone else.</p>
 </div>
+</div>
+<div id="rebase-examples" class="section level2">
+<h2>Rebase examples</h2>
+<p>When one is working on a problem, others may be working in parallel. And their parallel work may be finished before one’s own work is. Thus the starting point for one person’s work (branching point) can “go stale” making it harder to integrate. While <code>git merge</code> and resolving syntax level conflicts can resolve some of this, it is often easier to understand and review work if it is presented as changes against an updated starting point.</p>
+<p>As a concrete example imagine a project to build a dashboard. Imagine that you fork the repo in January to implement a new type of visualization (let’s say a pie chart). You work on this during January and February, finally nailing it down at the start of March. Meanwhile, though, others in the project have spent February replacing the database infrastructure, introducing a new way of accessing databases. By the time you make a pull request at the start of March things have changed a lot since you branched in January. The developers ask you to update your branch to make it work with the new database system.</p>
+<pre><code>--January-|------February--------------|--March
+
+          __pie_chart_branch___________
+         /                             \
+master--|--|-----------------------|----|-------
+            \                     /
+             \__new_database_____/
+</code></pre>
+<p>Two options:</p>
+<ol style="list-style-type: decimal">
+<li>Either merge master into pie_chart_branch yourself</li>
+<li>Rebase pie_chart_branch on master (as though pie_chart_branch was created in late February)</li>
+</ol>
+<p>Option 1 is possible, but often merging your work involves touching parts of the system you don’t know what much about and is better left to the core developers. In addition, merging in this way leaves merge commit messages and some projects really don’t like those because they make the history harder to read.</p>
+<p>Option 2 is called <code>rebase</code> and is explained usefully at <a href="https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request">this page from the EdX project</a>. As you rebase, you can also <code>squash</code> some of your commits (treat many commits as one) to make them easier to follow for those reviewing your pull request.</p>
+</div>
+<div id="removing-something-from-history-entirely." class="section level2">
+<h2>Removing something from history entirely.</h2>
+<p>The purpose of <code>git</code> is to retain all of your history, so that you can go back to any point in development and recover (as well as experiment while not breaking the mainline of development). Simultaneously when we are working in the open that means that anyone can view any file that was ever in a repository. With that in mind it is not too surprising that if you accidentally add something to git and then push it to github you can have trouble putting “the genie back in the bottle.”</p>
+<p>Let’s say that we create a repo and add a README, then add a SPECIAL_SECRET file with the password “swordfish” in it. Note that I use <code>git add *</code> below which is a very common way to accidentally add a problematic file, try to get into the habit of adding files one by one.</p>
+<pre><code>SOI-A14570-Howison:PeerProduction howison$ cd practice_history_edit/
+SOI-A14570-Howison:practice_history_edit howison$ git init
+Initialized empty Git repository in /Users/howison/Documents/UTexas/Courses/PeerProduction/practice_history_edit/.git/
+SOI-A14570-Howison:practice_history_edit howison$ vi README
+SOI-A14570-Howison:practice_history_edit howison$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+        README
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+SOI-A14570-Howison:practice_history_edit howison$ git add README
+SOI-A14570-Howison:practice_history_edit howison$ git commit -m &quot;now we have a README&quot;
+[master (root-commit) f4878b0] now we have a README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README
+SOI-A14570-Howison:practice_history_edit howison$ vi SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ git add *
+SOI-A14570-Howison:practice_history_edit howison$ git commit -m &quot;whoops added secret&quot;
+[master 018f6b5] whoops added secret
+ 1 file changed, 1 insertion(+)
+ create mode 100644 SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
+* 018f6b5 (HEAD -&gt; master) whoops added secret
+* f4878b0 now we have a README</code></pre>
+<p>Now I’ll go ahead and make one more edit to README</p>
+<pre><code>SOI-A14570-Howison:practice_history_edit howison$ vi README
+SOI-A14570-Howison:practice_history_edit howison$ git add READMESOI-A14570-Howison:practice_history_edit howison$ git commit -m &quot;README edit 2&quot;[master 4d51f91] README edit 2
+ 1 file changed, 1 insertion(+)
+SOI-A14570-Howison:practice_history_edit howison$ git log --oneline --abbrev-commit --all --graph --decorate --color* 4d51f91 (HEAD -&gt; master) README edit 2
+* 018f6b5 whoops added secret
+* f4878b0 now we have a README
+SOI-A14570-Howison:practice_history_edit howison$ ls
+README         SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ cat SPECIAL_SECRET
+swordfish</code></pre>
+<p>Ok, so we realize that the password file got into git and we swing into action and delete it from git.</p>
+<pre><code>SOI-A14570-Howison:practice_history_edit howison$ git rm SPECIAL_SECRET
+rm 'SPECIAL_SECRET'
+SOI-A14570-Howison:practice_history_edit howison$ git commit -m &quot;phew removed it, or did we&quot;
+[master ff229ba] phew removed it, or did we
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ ls
+README</code></pre>
+<p>So now the file is not there. Or rather it is not in our working directory. The problem is that it is still inside out <code>.git</code> folder and we can get it out easily.</p>
+<pre><code>SOI-A14570-Howison:practice_history_edit howison$ git checkout HEAD~1
+Note: checking out 'HEAD~1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b &lt;new-branch-name&gt;
+
+HEAD is now at 4d51f91... README edit 2
+SOI-A14570-Howison:practice_history_edit howison$ lsREADME         SPECIAL_SECRET
+SOI-A14570-Howison:practice_history_edit howison$ cat SPECIAL_SECRET
+swordfish</code></pre>
+<p>Here I just used <code>git checkout HEAD~1</code> which goes one commit back in time, to before we deleted the SPECIAL_SECRET file. Even if we were far ahead, or over on other branches etc, I could always get back by asking to see the code just after the commit that added the file <code>git checkout 018f6b5</code> (btw, to get out of <code>DETACHED HEAD</code> state just checkout the branch again, we’re working on master so it would be <code>git checkout master</code>).</p>
+<p>So using <code>git rm</code> removes a file from the working directories but it doesn’t remove it from the git history. And that’s a sensible thing, usually you want to be able to go back in time. But sometimes you want to remove something from the history entirely. You can do that using the approaches outlined by Github here: <a href="https://help.github.com/articles/removing-sensitive-data-from-a-repository/">Removing sensitive data from a repository</a></p>
+<p>The process is a bit complex (as it should be) but simplified with the <code>bfg</code> tool, as described at the link above. First you have to download the tool (which requires Java to run) then follow the instructions step by step.</p>
+<p>Keep in mind that if you had pushed this sensitive info to github and others had forked or cloned it then that info is not going to be deleted from the clones, so passwords should definitely be changed and you should ask everyone to delete forks/clones and start again.</p>
 </div>
 
 
