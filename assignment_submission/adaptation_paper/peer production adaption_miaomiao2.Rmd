@@ -4,10 +4,7 @@ author: "Miaomiao Niu"
 date: "4/27/2018"
 output: html_document
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Peer production adaptation——WikiHouse
 
 ## Introduction
 Peer production is on the rise used to develop open source software. At the same time, this kind of new pathway of value creation has been  been applied to various areas. The construction field has long been presided over by professionals and is also considered to have a high professional threshold. However, peer production provides a productive way for engineers, builders and architects to change the situation and provides an opportunity for everyone to get involved in the construction. The WikiHouse is born under this background. WikiHouse is an ‘open-source construction set’ that aims at making it possible for people to get free open-source designs and build low-cost and hign-performance house by their own. This paper explores the WikiHouse from the perspective of peer production, describes the adaption efforts and also identifies the challenge faced by the adaptation of WikiHouse in an open source way.
