@@ -1,0 +1,84 @@
+---
+title: "Peer production adaptation——WikiHouse"
+author: "Miaomiao Niu"
+date: "4/27/2018"
+output: html_document
+---
+# Peer production adaptation——WikiHouse
+
+## Introduction
+Peer production is on the rise used to develop open source software. At the same time, this kind of new pathway of value creation has been  been applied to various areas. The construction field has long been presided over by professionals and is also considered to have a high professional threshold. However, peer production provides a productive way for engineers, builders and architects to change the situation and provides an opportunity for everyone to get involved in the construction. The WikiHouse is born under this background. WikiHouse is an ‘open-source construction set’ that aims at making it possible for people to get free open-source designs and build low-cost and hign-performance house by their own. This paper explores the WikiHouse from the perspective of peer production, describes the adaption efforts and also identifies the challenge faced by the adaptation of WikiHouse in an open source way.
+
+
+## WiKiHouse
+> “Wikihouse is an open-source construction set which allows anyone to design, share, fabricate and assemble their own house. The blueprints shared on the platform allow communities or enterprises worldwide to build affordable, sustainable, needs-based housing.” (P2P Foundation, 2018)[1]
+
+## Adaption Efforts
+### License
+In WiKiHouse, “All the designs, the software and knowledge, are shared under a Creative Commons licence – by, and for, everyone” (Parvin, 2013)[2]. Creative Commons license (CC-BY-SA) could be accessed at https://creativecommons.org/licenses/by-sa/4.0/.  The specific terms of service and privacy policy could be accessed at https://wikihouse.cc/terms. WiKiHouse provides building plans on the online repository to make all the work published under an open source sharealike licence, documented and codified. As a non-profit foundation, WikiHouse’ aim is helping people worldwide to build houses in an affordable and sustainable way. So, they use Creative Commons (CC) license to make the blueprints as easy as possible for others to modify, improve, distribute and use, including commercially. The “generative entrepreneurs may create added value around the non-commodified design commons by providing building services, consulting, workshops, etc” (P2P Foundation, 2018)[1].  
+
+### Motivation 
+The There is no formal membership in WikiHouse community. Anyone who uses the WikiHouse products, anyone who publishes design work on WikiHouse or anyone who supports the project is a participant of the WiKiHouse. Now, the project is maintained and developed by about 1,000 builders, coders, architects, engineers and social entrepreneurs who are from all around the world and brought together through the WikiHouse online community. 
+
+Like the FLOSS contributors, participators of WiKiHouse also have different motivations and could be divided into “need-based” vs. “hobbyists” (Lee, Carver & Bosu, 2017)[3]. Need-based contributors need to use the free resources provided by WiKiHouse. For example, in Christchurch, New Zealand, a team used WikiHouse's resources to establish post-earthquake resettlement housing. Those who are hobbyists have the desire to give back to the community and enjoy participating in such projects. For example, Alastair Parvin, an architect from UK, is a promoter of WiKiHouse. He participates in this project because he thinks that designers and architects have the responsibility to contribute their professional knowledge and designs to more people instead of only rich people. The common motivation of the contributors is to “lead the development of WikiHouse and its design principles, in their own communities by learning from each other” (Wikihouse Foundation, 2018)[4]. 
+
+
+### Collaboration
+The WikiHouse ecosystem is divided into two processes: “design global, manufacture local” (Kostakis, Niaros, Dafermos & Bauwens, 2015)[5]. The designs and guidances are shared globally, while the building process (cutting the wood, assembling the house) takes place locally, with improvements on the design then feeding back into the common-resource global pool. 
+
+WikiHouse’s online cooperation is based on Slack. According to WiKiHouse, “WikiHouse Contributors currently meet in Slack” (Wikihouse Project, 2018)[6]. “Slack is a cloud-based set of proprietary team collaboration tools and services” (Kumparak, 2015)[7]. As we all know, github and git provide the open source software development team a great platform to communicate and collaborate with each other. For a software development project, such kind of collaboration tool plays an important role in the success of it. Github “unleashed the power of collaborative development workflow” (Achilleas, 2015)[8]. On github, contributors could discuss the problems by writing issues or pulling request. However, Slack could unify the entire team’s communication. On Slack, discussions are organized into channels, which could support voice or video call. This is a great strength of using Slack because the contributors could talk directly which would improve the communication effiency. Besides, Slack also provides convenient information management by powerful search function. All the messages in public channels, files and uploads could be indexed and searched, giving WiKiHouse team access to the collective knowledge of the community. 
+
+Meanwhile, the other part of collaboration of WikiHouse is locally carried out.This direct collaboration infrastructures allow people to communicate, self-organise and co-create. People work together by face-to-face way instead of online, which means that the response time is greatly shortened and the communication is more efficient. 
+
+## Challenges
+Although WiKiHouse performs as the pioneer in the open-source architecture field and has spread around the world, WikiHouse is at the early stage and has to face many practical problems when it comes to the peer production way.
+
+First of all, WiKiHouse has to challenge the traditional construction ideas and attract more people to get involved in the open source project. Although open-source architecture is an emerging field, it’s influence and attraction cannot be compared with the software development. It is obvious that huge amount of people are interested in computer science and software development in this information age and huge amount of contributors are participating the open source projects on github. However, restricted by profession, time and traditional ideas, much more less people contribute to WiKiHouse this kind of construction project. 
+
+As Indy Johar said:
+
+>“The challenges of the WikiHouse project are really enormous since they are prototyping the reality of socializing design while simultaneously democratizing production, and in the process provoking a serious challenge to the industrial and intellectual dogmas of a professional elite” (Alessandro, 2013)[9]. 
+
+Besides, WikiHouse works on a house scale that means higher time cost and economic cost if contributors make mistakes. For programmers, the mistakes could be solved easily by debugging and updating the code version. However, when it comes to a house design and construction, the cost not only includes the time consumed on the project, but also could be great money loss. To avoid the mistakes, the designs should be created using professional knowledge, then the local manufacturing must follow the guidance strictly. Low fault tolerance causes the process of bringing peer production to the physical world difficult.
+
+In addition, the coordination between the global design and the local manufacturing is struggling with the limitations. Although WikiHouse provides the architectural design drawings that designers have uploaded and guidelines for the construction, it is still difficult for people to use the open source because most of them have no experience on construction and have no other local support. The global designers could not provide help timely. At the same time, the required machines and material may not be access at local construction. Although WiKiHouse is trying to provide affordable house designs, the cost of construction may be still higher than expectation. The local manufacturing may suffer from the coordination with the online design.
+
+## Interview with participant
+I conducted an interview with participant of WiKiHouse, Haitian Liu. He is a student from Construction Engineer School of UT. I asked him some questions about his participation experience. The following is a part of the interview:
+
+>Miaomiao: How did you know WiKiHouse? Why did you participate in WiKiHouse?<br>
+Haitian: I heard it from one professor. He told us about this open source community and encouraged us to get involved in it. I think it is a great platform for student who major in architecture to use professional knowledge and share the thoughts with each other.
+
+>Miaomiao: How do you feel about publishing your work and allow other people to use it freely even commercially?<br>
+Haitian: Well, I am very excited if other people use my idea and give me feedbacks. If they are not selling my intellectual property, I am ok with using commercially.
+
+>Miaomiao: What was the biggest problem do you think in the open source project?<br>
+Haitian: It is slow. Because WiKiHouse is open source, the project is very much dependent on our own personal investment and whatever opportunities come along. In fact, it's quite liberating to join such project. 
+
+>Miaomiao: What are the most innovative aspects of the WikiHouse?<br>
+Haitian: I think it makes the threshold lower and makes a given process easier and less demanding of time, skill, and money. 
+
+>Miaomiao: How do you feel about the future of WiKiHouse?<br>
+Haitian: I think many people may be able to live in a house constructed in this way and more and more people will get involved in this kind of project. I am looking forward to see that WiKiHouse perform an important role in the future.
+
+## Conclusion
+The building construction system has always been designed and implemented by professionals. “Over the last two decades there have been multiple different conceptions of what ‘open source’ might mean for architecture” (Parvin, 2013)[2].Wikihouse is a successful exploration in open-source construction. It breaks the rules of conventional construction system and provides an opportunity for everyone to get involved in the construction in an efficiently peer production way. Although there are many challenges faced by WiKiHouse, it is also on the brink of huge opportunity. It could be expected that more and more people will join the WikiHouse and contribute to the whole construction system.
+
+## References
+[1]: P2P Foundation. (2018). case-study-wikihouse. The Commons Transition Primer. Retrieved April 4, 2018, from https://primer.commonstransition.org/4-more/5-elements/case-studies/case-study-wikihouse
+
+[2]: Parvin, A. (2013). Architecture (and the other 99%): Open‐Source Architecture and Design Commons. Architectural Design, 83(6), 90-95.
+
+[3]: Lee, A., & Carver, J. C., & Bosu, A. (2017). Understanding the Impressions, Motivations, and Barriers of One Time Code Contributors to FLOSS Projects: A Survey. In Proceedings of the 39th International Conference on Software Engineering (pp. 187–197). Piscataway, NJ, USA: IEEE Press.
+
+[4]: Wikihouse Foundation. (2018). Retrieved April 4, 2018 from: https://wikihouse.cc/community
+
+[5]: Kostakis, V., Niaros, V., Dafermos, G., & Bauwens, M. (2015). Design global, manufacture local: exploring the contours of an emerging productive model. Futures, 73, 126-135.
+
+[6]: Wikihouse Project. (2018). Retrieved April 5, 2018 from: https://github.com/wikihouseproject/Wren/wiki/Project-&-Community
+
+[7]: Kumparak, Greg. (2015). Slack's Co-Founders Take Home The Crunchie For Founder Of The Year. Techcrunch. Retrieved April 4, 2018, from https://techcrunch.com/2015/02/05/slacks-co-founders-take-home-the-crunchie-for-founder-of-the-year/
+
+[8]: Achilleas Pipinellis. (2015). GitHub Essentials. Birmingham: Packt Publishing Ltd.
+
+[9]: Alessandro. (2013). WIKIHOUSE: Join the World’s Biggest Design Team. Complexitys. Retrieved April 5, 2018, from http://complexitys.com/english/events/wikihouse/comment-page-1/#.WuKVFtPOWqA
