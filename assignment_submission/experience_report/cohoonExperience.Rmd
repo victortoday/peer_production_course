@@ -1,0 +1,31 @@
+---
+title: "Open Street Map Experience Report"
+author: "Hannah Cohoon"
+date: "4/24/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Open Street Map
+
+Open Street Map is an online map that accumulates data through user contributions. To make an edit, a user makes an account and revises the map through a simple GUI.
+
+## Finding Work
+
+After making several edits to buildings in my own neighborhood, I began looking for ongoing projects in the Open Street Map (OSM) community. To become familiar with current efforts, I subscribed to a Reddit forum, /r/OpenStreetMap. This option appealed to me because other forms of communication felt intimidating as a new contributor. OSM has a Slack channel but I preferred the asynchronous, lurker-friendly format of the Reddit forum over the real-time conversation that Slack supports.
+
+My discovery of /r/OpenStreetMap led me on a circuitous path to making my ultimate contributions. A thread on the subreddit brought me to a blog post with a community update on OSM activities and issues. Within this [blog post](http://www.weeklyosm.eu/archives/10274) I was linked to a discussion on OSM’s Diversity-Talk mailing list. There I saw that members of the mailing list had proposed several projects for mapping what they referred to as under-represented features. The discussion ended without the participants finalizing the projects they hope to pursue, but I selected one from their list: mapping gender-inclusive restrooms. 
+
+## Making a Contribution
+To help map the restrooms I found a list of gender-inclusive bathrooms at UT and confirmed that they had not already been marked on OSM. OSM uses tags and features to describe nodes (e.g. buildings). I initially began by using a "unisex-toilet" tag and setting the value to "yes." However, I noticed that the system suggested tags and my "unisex-toilet" tag was not appearing in the dropdown prompts. I therefore went to the OSM wiki and searched for documentation on tagging bathrooms. I based my subsequent contributions on the examples from the [wiki page](https://wiki.openstreetmap.org/wiki/Proposed_features/Toilet_Tagging_Improvements#Add_gender_designations_suffix_to_all_toilet_tags), using the tag "toilets:for:unisex." 
+
+While working on this mapping, I subscribed to the Diversity-Talk mailing list. When someone sent a message asking about how gender-inclusive restroom mapping should work, I joined the discussion debating whether or not the current tag system was overly-complicated or simply unambiguous. I noted that the tag was not intuitive (few other tags are a three word phrase) but that, unlike some proposed alternatives, it distinguished between separate bathrooms for both males and females or a gender-inclusive bathroom.
+
+## Issues Along the Way
+While trying to make my contribution I ran into several technical issues. To my surprise, my first edits to my own neighborhood were never saved to the map. I suspect that this is because OSM has a two-step process to save changes and I likely only completed the first step. You must first click a button to "check" your changes and then a second "save" button to complete your revision. Some other small stumbling blocks were also UI-related. For example, actually being able to click on the buildings proved impossible until I found that some nodes are only interactive if you are zoomed in closely enough.
+
+## Reflections 
+Most of my expectations about participating in OSM mapping were met. As anticipated, I was able to make edits with relatively few issues. The technical problems that I did have were easily solved by quickly moving through an interactive tutorial and some tinkering. My initial investigation of OSM showed me that there was extensive documentation; this did indeed aid with my selection of a project and my adherence to community standards.

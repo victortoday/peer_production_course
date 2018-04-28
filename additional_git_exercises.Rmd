@@ -178,6 +178,7 @@ dhcp-10-157-4-224:practice howison$ git commit -m "added second file to first se
 [first_set_branch b74cb32] added second file to first set
  1 file changed, 1 insertion(+)
  create mode 100644 first_set_file2
+dhcp-10-157-4-224:practice howison$ git add first_set_file2
 dhcp-10-157-4-224:practice howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
 * b74cb32 (HEAD -> first_set_branch) added second file to first set
 * d71ade9 first set edit
