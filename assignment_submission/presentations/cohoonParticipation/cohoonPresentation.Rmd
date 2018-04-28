@@ -1,0 +1,96 @@
+---
+title: "Open Street Map"
+author: "Hannah Cohoon"
+date: "4/24/2018"
+output: 
+  ioslides_presentation:
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Map Anything {.largeFont .centered}
+> Any building or feature from the real world can be mapped in Open Street Map
+
+## Map Anything
+
+```{r, out.width = "800px"}
+knitr::include_graphics("osmUT.png")
+```
+
+## Initial Slip Ups
+
+```{r, out.width = "800px"}
+knitr::include_graphics("savingTwoStep.png")
+```
+
+## Training
+
+```{r, out.width = "800px"}
+knitr::include_graphics("walkthrough.png")
+```
+
+## Looking for a Project
+
+```{r, out.width = "800px"}
+knitr::include_graphics("reddit.png")
+```
+
+## Looking for a Project
+
+```{r, out.width = "800px"}
+knitr::include_graphics("diversityTalk.png")
+```
+
+## Gender Neutral Toilets
+
+```{r, out.width = "800px"}
+knitr::include_graphics("utList.png")
+```
+
+## Gender Neutral Toilets
+
+```{r, out.width = "800px"}
+knitr::include_graphics("utInfo.png")
+```
+
+## Gender Neutral Toilets
+
+```{r, out.width = "800px"}
+knitr::include_graphics("editToilet.png")
+```
+
+## Gender Neutral Toilets
+
+```{r, out.width = "800px"}
+knitr::include_graphics("commit.png")
+```
+
+## Gender Neutral Toilets
+
+```{r, out.width = "800px"}
+knitr::include_graphics("completeEdit.png")
+```
+
+## Mailing Lists
+
+```{r, out.width = "800px"}
+knitr::include_graphics("mailDiscussion.png")
+```
+
+## Reflection
+
+### Trouble was mostly with UI
+
+* can't see/access building info unless zoomed in
+* two step process to save
+
+## Reflection
+
+### Help
+
+* social resources helped me find a project (reddit, mailing lists)
+* documentation ensured I followed conventions (wiki, walk-thru)
+* low barrier to entry (not all fields required)

@@ -1,0 +1,24 @@
+---
+title: "Peer Production Participation Project"
+author: "Pedro Seguel"
+date: "4/26/2018"
+output: html_document
+---
+
+## Request-yo-bike
+
+I participated in an Open Austin (OA) project called [*Request-yo-racks*](https://docs.requestyoracks.org/). OA is a local community of volunteers, that advocates for open government, open data, and the development of civic applications. They support a diverse set of projects and selecting one of them was harder than I expected.
+
+Initially, I was planning to work on a project named *Crowdsource Texas school board election info*, which didn&#39;t meet my expectations. Later, I noticed that this project was quite inactive and that I had to create an account on a website that I didn't trust. Moreover, the project didn&#39;t provide a space to interact and learn from others. 
+
+Despite at that moment, I had already assisted to many of the  meetings from OA, I decided to go to their last *Community Action Night*, hoping to find help to select a project.
+
+Although five leaders presented their initiatives, only one of those was looking for contributors. This was *Request-yo-bike*, which aims to simplify the process of requesting a free installation of bike corrals through the creation of an online-based mapping tool.
+
+There is where I met Remy, who is a French software engineer that has been living in Austin for about 3 years and started this project &quot;just for fun&quot;. He and the other volunteers guide me through the setup process, that involved following the online resources guide. This was quite more complex than I expected and I noticed a serial of bugs in the documentation and codes that were advised to use. Remy asked me to report these bugs as &quot;issues&quot; in the [GiHhub](https://github.com/request-yo-racks) site of the project, and that was how I started my first set of contributions with the aim to improve the project&#39;s documentation. After the meeting, I continued working and reporting on the setup processes, and Remy accepted and reviewed those issues on Github. We also communicated through a Slack channel for more extended conversations and ideas.
+
+Right now, I&#39;m trying to work on new issues related to the API, which has forced me to learn new skills. I believe that having a direct feedback with the leader was very important to maintain my interest in keep contributing to the project, as well as the way that everyone promotes a low-stress learning environment. This allowed me to feel less uncomfortable with my lack of skills. Also, as a biker myself, I felt that the project&#39;s goal is related to my interests.
+
+## Inclusion and Diversity
+
+Finally, I want to reflect on some inclusion practices and challenges from OA. First, related to gender inclusion, at the start of every meeting, every person was asked to say the gender pronoun (she/her, they/them, he/him, ze/hir) that they preferred. This was a novel experience of group work for me. Second, they frequently mentioned that they have an explicit Anti-Harassment Policy with related resources for project-leaders. Finally, OA leaders recognized that they have a current challenge to include people without a &quot;techie&quot; background. Despite this is an unresolved problem, the fact that they have recently changed the name of one of their key meetings from *Civic Hack Night*; to *Community Action Night*; is an example of how they are considering the use of an inclusive language.
