@@ -178,7 +178,6 @@ dhcp-10-157-4-224:practice howison$ git commit -m "added second file to first se
 [first_set_branch b74cb32] added second file to first set
  1 file changed, 1 insertion(+)
  create mode 100644 first_set_file2
-dhcp-10-157-4-224:practice howison$ git add first_set_file2
 dhcp-10-157-4-224:practice howison$ git log --oneline --abbrev-commit --all --graph --decorate --color
 * b74cb32 (HEAD -> first_set_branch) added second file to first set
 * d71ade9 first set edit
@@ -308,7 +307,9 @@ dhcp-10-157-4-224:practice_split howison$ ls
 README          first_set_file  first_set_file2
 ```
 
-So now if we create pull requests from each of those branches, they'll contain just the content we wanted in each of them. Hurray.
+So now if we create pull requests from each of those branches, they'll contain just the content we wanted in each of them. Hurray!
+
+QUESTION: If upstream merges a cherry picked branch in, the commits on downstream's master branch stay, right? Undoing them is a separate process? Would pulling upstream later affect those files?
 
 Now we just have to consider what to do about the additional commits on `master`.  This is going to depend on a few things. Do you have additional commits on `master` that you haven't distributed among new branches? Do you want `master` to exactly reflect the history of `master` on `upstream`? How tolerant are you of "messy history"?  It's also going to depend on whether `master` had been pushed up and whether others might have built on top of it.
 
@@ -430,7 +431,7 @@ That seems neater, but keep in mind that if you'd pushed `master` to github whil
 
 ## Rebase examples
 
-When one is working on a problem, others may be working in parallel. And their parallel work may be finished before one's own work is. Thus the starting point for one person's work (branching point) can "go stale" making it harder to integrate. While `git merge` and resolving syntax level conflicts can resolve some of this, it is often easier to understand and review work if it is presented as changes against an updated starting point. 
+When one is working on a problem, others may be working in parallel. And their parallel work may be finished before one's own work is. Thus the starting point for one person's work (branching point) can "go stale" making it harder to integrate. While `git merge` and resolving syntax level conflicts can resolve some of this, it is often easier to understand and review work if it is presented as changes against an updated starting point.
 
 As a concrete example imagine a project to build a dashboard. Imagine that you fork the repo in January to implement a new type of visualization (let's say a pie chart). You work on this during January and February, finally nailing it down at the start of March.  Meanwhile, though, others in the project have spent February replacing the database infrastructure, introducing a new way of accessing databases. By the time you make a pull request at the start of March things have changed a lot since you branched in January. The developers ask you to update your branch to make it work with the new database system.
 
@@ -445,7 +446,7 @@ master--|--|-----------------------|----|-------
 
 ```
 
-Two options: 
+Two options:
 
 1. Either merge master into pie_chart_branch yourself
 2. Rebase pie_chart_branch on master (as though pie_chart_branch was created in late February)
