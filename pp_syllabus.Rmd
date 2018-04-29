@@ -113,9 +113,9 @@ There are three graded components, each to be submitted via a pull request.
 
 1. Identifying and describing a peer production community. ~500 words. Authored in plain text or markdown. This paper should clearly identify the community and argue for it being a peer production community. The paper should describe how the student thinks the peer production community works and their expectations about participation.
 
-2. Participating and describing that participation in an experience report of ~500 words, authored in Markdown. Students should describe their experience in the project. At a minimum the paper should desribe the work done, how it was contributed, as well as whether and how the work was reviewed. Students should compare their experience with their expectations described in the first paper.
+2. Participating and describing that participation in an experience report of ~500 words, authored in Markdown. Students should describe their experience in the project. At a minimum the paper should desribe the work done, how it was contributed, as well as whether and how the work was reviewed. Students should compare their experience with their expectations described in the first paper. Submit via a pull request from a branch created just for this submission (ie not master). Due Sunday night.
 
-3. Creating and giving a presentation on their participation. This should be 4-6 slides long and be authored using Markdown that produces slides. Presentations will occur in our final two class meetings.
+3. Creating and giving a presentation on their participation. Presentations are limited to 5 minutes, this should be approx 4-6 slides long and be authored using Markdown that produces slides. Presentations will occur in our final class meeting. Submit via a pull request from a branch created just for this submission (ie not master). Due at 6pm Monday.
 
 ## Materials
 
@@ -178,7 +178,7 @@ readings <- tribble(
   "Wikipedia Student Tutorial", 
     "https://en.wikipedia.org/wiki/Wikipedia:Training/For_students",
     "Wikipedia Editing", 
-  "Datacamp Rmarkdown - Chapter 1",
+  "Datacamp Rmarkdown - All 4 chapters",
     "https://campus.datacamp.com/courses/reporting-with-r-markdown/chapter-one-authoring-r-markdown-reports",
     "Executable Papers",
   "Marking your work with a CC license",
@@ -338,9 +338,27 @@ insight_readings <- tribble(
   "https://doi.org/10.1145/1357054.1357227",
   "Peer production in Wikipedia",
 "Baker, M. J., Détienne, F., & Barcellini, F. (2017). Argumentation and Conflict Management in Online Epistemic Communities: A Narrative Approach to Wikipedia Debates. In Interpersonal Argumentation in Educational and Professional Contexts (pp. 141–157). Springer, Cham.",
-"https://doi.org/10.1007/978-3-319-59084-4_7",
-"Peer production in Wikipedia"
-  
+   "https://doi.org/10.1007/978-3-319-59084-4_7",
+   "Peer production in Wikipedia",
+#-----------------
+"Stodden, V. (2010). The Scientific Method in Practice: Reproducibility in the Computational Sciences (SSRN Scholarly Paper No. ID 1550193). Rochester, NY: Social Science Research Network.",
+  "http://papers.ssrn.com/abstract=1550193",
+  "Peer production in Science",
+"Ince, D. C., Hatton, L., & Graham-Cumming, J. (2012). The case for open computer programs. Nature, 482(7386), 485–488.",
+   "https://doi.org/10.1038/nature10836",
+  "Peer production in Science",
+"Prlić, A., & Procter, J. B. (2012). Ten Simple Rules for the Open Development of Scientific Software. PLOS Comput Biol, 8(12), e1002802.",
+  "https://doi.org/10.1371/journal.pcbi.1002802",
+  "Peer production in Science",
+"Gil Yolanda, David Cédric H., Demir Ibrahim, Essawy Bakinam T., Fulweiler Robinson W., Goodall Jonathan L., … Yu Xuan. (2016). Toward the Geoscience Paper of the Future: Best practices for documenting and sharing research from data to software to provenance. Earth and Space Science, 3(10), 388–415.",
+"https://doi.org/10.1002/2015EA000136",
+   "Peer production in Science",
+"Howison, J., & Herbsleb, J. D. (2013). Incentives and integration in scientific software production. In Proceedings of the ACM Conference on Computer Supported Cooperative Work (pp. 459–470). San Antonio, TX.",
+   "https://doi.org/10.1145/2441776.2441828",
+   "Peer production in Science",
+"Optional: Jupyter, Mathematica, and the Future of the Research Paper (Paul Romer, famous economist)",
+"https://paulromer.net/jupyter-mathematica-and-the-future-of-the-research-paper/",
+"Peer production in Science"
   )
 
 skills_topics <- tribble(
@@ -357,7 +375,8 @@ skills_topics <- tribble(
   "Documentation and Q&A", "github flavored markdown", 
   "Wikipedia Editing", "wiki syntax, referencing", 
   "Executable Papers", "rmarkdown, knitr, rstudio", 
-  "Machine Readable Creative Commons Licenses", "CC web tools and xml"
+  "Rewinding Git", "git revert, rebase, cherry-pick"
+  # "Machine Readable Creative Commons Licenses", "CC web tools and xml"
 ) %>% rownames_to_column()
 
 insight_topics <- tribble(
@@ -374,7 +393,8 @@ insight_topics <- tribble(
   "Bias and lack of diversity",
   "Peer production in Wikipedia",
   "Peer production in Science",
-  "Peer production in Art and Culture"
+  ""
+  # "Peer production in Art and Culture"
 ) %>% rownames_to_column()
 
 content_classes <- full_join(insight_topics, skills_topics, by="rowname") %>% 

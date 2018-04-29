@@ -1,0 +1,158 @@
+---
+title: "PPSEGUEL_AdaptationPaper"
+output: html_document
+---
+**INF 385T - Special Topics in Information Science: Peer Production (Open Source Software, Wikipedia, &amp; Beyond)**
+
+**Adaptation Paper**
+
+**Professor: James Howison**
+
+**Student: Pedro Pablo Seguel Varas**
+
+---
+# Citizen science through the open source lenses
+
+Citizen science could be defined as &quot;a form of research collaboration involving members of the public in scientific research projects to address real-world problems&quot; (Wiggins &amp; Crowston, 2011, p. 1). The active participation of citizens and educators differentiates these projects form other forms of scientific collaboration. These projects are often employed as a form of volunteer monitoring of natural resources (Firehock &amp; West, 1995) or as an informal mechanism to promote scientific understanding or science education (Wiggins &amp; Crowston, 2011). They cover a variety of areas such as microbiomes, native bees, water quality or galaxies (Bonney et al., 2014).
+
+Citizen Science Projects (CSP) have seen to share characteristics with other open communities, and many of them are mediated by information and communication technologies (ICTs) (Wiggins &amp; Crowston, 2011). In this essay we use the lenses of the open source way, to do a general overview of CSP characteristics as ways of organizing. The analysis is structured in four parts: 1) harnessing a diverse set of motivations, 2) organization and distribution of tasks, 3) task structure and 4) ownership and transparency. These four elements are an adaptation of Benkler&#39;s (2016) five distinctive attributes of Peer Production. Furthermore, during this essay Peer Production and Open Source Software (OSS) will be used as synonymous to describe a certain type of organization of work. This essay doesn&#39;t provide a historical argument to argue that CSP are an adaptation of OSS principles. However, it is analyzed in that way, by interrogating CSP from the logics and forms of OSS literature.
+
+Additionally, in this essay, we also include some feedback provided by the interview with Martin Perez, who is a chemist that has participated in CSP and is the Subdirector of Ciencia Ciudana (_Citizen Science_). This is a Chilean foundation that focuses on the promotion of &quot;a new scientific culture that generates research activities with the active participation of the citizens.&quot; (&quot;Somos | Ciencia Ciudadana,&quot; n.d.). This phone interview provided examples of cases, platforms, and challenges of CSP, as well as some opinions related to the distinction and possible mixes between open science principles and procedures. Despite the original conversations took place in Spanish, all quotes and references have been translated into English.
+
+By analyzing CSP from the open source way lenses, we hope to contribute to collaboration studies that focus on the cross- and distinctive-elements of emerging forms of collaboration.
+
+## 1) Harnessing a diverse set of motivations
+
+One common an distinctive characteristic of OSS projects is that they harness diverse motivations (Benkler, 2016) while maintaining a massive amount of participation. Most noticeable is that they can get work done without monetary incentives. This is an aspect that is a key element of CSP too, and for which design efforts to engage citizens have developed diverse strategies.
+
+First, prior studies have pointed out that participants in CSP have distinct characteristics related to their motivations. For instance, they tend to demonstrate greater scientific knowledge, skills and positive attitudes towards science and the environment that the general audience (Brossard, Lewenstein, &amp; Bonney, 2005). Therefore, the contribution to scientific and environmental endeavors seems to be a critical motivational aspect.
+
+Also, the fun and enjoyment element has been seen as a key aspect, that has been particularly promoted by the introduction of gamification designs (Bowser et al., 2013, 2014). Furthermore, new technologies, such as mobile apps and online/computer gaming, are expected to improve current designs (Newman et al., 2012). CSP have been proven to be a more systematic field to the development of gamification platforms in comparison with OSS development (Pedreira, Garcia, Brisaboa, &amp; Piattini, 2015).
+
+Additionally, CSP target a diverse set of audiences to collaborate, maybe even broader than common OSS. Educators play a key role because they can use CSP to achieve their educational goals in novel ways while helping citizen scientist leaders to attract audiences that not necessary had a prior attitude or knowledge. In words of Newman et al.: 
+
+>Citizen science creates a nexus between science and education that, when coupled with emerging technologies, expands the frontiers of ecological research and public engagement. (Newman et al., 2012, p. 298).
+
+In a similar way, during our conversation, Martin mentioned his participation on the CSP platform eBird ( [https://ebird.org](https://ebird.org)), while he was an educator himself:
+
+>I participated in eBird while I was giving ecology classes. I saw that the platform had several tools to categorize animals... birds and I thought I could use that as a good experience for my students. So, I told them to enter there as part of the class.
+
+The hobby can also be seen as an important motivational aspect from CSP. Similarly, Shah (2006) has noted that seen coding and debugging as a hobby can become in a relevant motivation for long-term participation in OSS and that it might explain specific dynamics with hierarchical mechanisms of governance. In a similar sense, Cooper (2017), who is a CSP evangelist and the founder of SciStarter (https://scistarter.com/), has insisted that one of the benefits of CSP is that it offers people a way to connect with the experience of being a scientist as a hobby. Moreover, targeting outdoor hobby/recreation groups and engaging them with data collection tasks in outdoor settings is seen as a recommended practice in CSP (Cooper, Dickinson, Phillips, &amp; Bonney, 2007). Again, eBird serves as a good example of the match between hobby and scientific interest, by creating and sustaining a network for &quot;birders&quot; all over the world to improve their observational hobby (Sullivan et al., 2009).
+
+Finally, it is possible to observe that CSP promotors and participants often rises narratives that go beyond the what could be considered traditionally as &quot;scientific&quot;. Not only the need to reinforce education, but also the need to expand democratic aspects of science and environmental care are promoted. For instance, one of the ten principles promoted by Ciencia Ciudadana Foundation is to &quot;democratize science&quot;. CSP tend to have multidimensional goals.
+
+From this point of view, CSP can be seen as a part of social movements that promote openness in different areas of society. Furthermore, we believe that it could be studied as a cultural expression and an enactment of an emergent participation culture in parallel with the cultural expressions of Free Software (Kelty, 2008).
+
+## 2) Organization and distribution of tasks
+
+A second aspect that is central to the OSS literature, is the way the tasks are conceived and organized. OSS projects tend to be conceived as self-organized communities (Crowston, Li, Wei, Eseryel, &amp; Howison, 2007), which conceive and execute problems and solutions in a decentralized way (Benkler, 2016).
+
+In contrast, CSP tend to lack those self-organizing attributes (Wiggins &amp; Crowston, 2011). Moreover: &quot;Citizen science does not represent peer production in the same sense as seen in prior work because the power structure of these projects is usually hierarchical&quot; (Wiggins &amp; Crowston, 2011, p. 2). Citizens&#39; lack of freedom to operate besides the limits of the hierarchal scientific design process, making CSP comparable to crowdsourcing or online labor markets (Benkler, 2016), and this is often one of the main critics towards its participative narrative.
+
+The hierarchy can be explained by the scientific nature of these endeavors. In order to meet scientific standards leaders within CSP will tend to control, rather than coordinate participant contributions. Despite individual activity might not be controlled in terms of when it occurs, CSP might need to standardized protocols or platforms of participation for citizens in order to maintain data quality. In order words, the traditional distinction between _legos_ and _logos_ (Callon, 2004) difficult the &quot;peer&quot; aspect of production.
+
+However, OSS literature is not all about decentralization either and can also show the existence of hierarchical components. For instance, firm-based open source (Benkler, 2016), or hybrid coordination processes that reflect heterogeneous authoritative structures (Shah, 2006) might be comparable with CSP hierarchical structure. Furthermore, despite its hierarchical forms CSP have been seen to &quot;create a different sense of community with respect to authority, leadership, decision-making and sustainability&quot; (Wiggins, 2012, p. 4).
+
+Organization in CSP can vary in the level and the form of engaging citizens and stakeholders. Typologies usually distinct projects considering the level of involvement in their stage of scientific inquiry (Cooper et al., 2007; Wiggins, 2012), such as question definition, data interpretation, result&#39;s dissemination, among others. Furthermore, these views have been summarized as contributory, collaborative, and co-created projects (Bonney et al, 2009 in Wiggins &amp; Crowston, 2011). In this sense, it could be expected that a major level of involvement could manifest higher levels of decentralization practices. However, for the case of Chile, Martin motioned that most of the projects that he remembered tend to be hierarchical, and citizens are only requested to collect data or to analyze images following specific protocols.
+
+In terms of task conception, it is worth mentioning that Danielsen et al. (2009) classified CSP in terms of how the research questions are formed, and the level of control over the inquiry. Consequently, two groups of CSP can be distinguished: scientist-driven (top-down) or community-driven (bottom-up). The second group is expected to be more decentralized.
+
+Organizations such as citsci.org ( [www.citsci.org](http://www.citsci.org)) support the formation of bottom-up projects (Newman et al., 2012). Moreover, new technologies have been seen as an opportunity to decentralize process (Newman et al., 2012). For instance, participants may develop new questions aided by data visualization, as well as specific platform designs or mobile Apps that might promote more direct and dynamic ways to discuss questions with scientists.
+
+By the same token, while asking Martin about decentralized or horizontal examples of CSP, he said:
+
+>I think that the Flint Michigan project is a good example. That one that won the disobedience award from the MIT. Flint was a suburban community, highly criminalized... the Police criminalized them and they were very abandoned. The community created alliances with scientists, and they developed a design for research with the people. I mean, the water analysis was done in the lab, but the paper, the reports to the police was a very collective design.
+
+Here, Martin refers to the Flint Water study ( [http://flintwaterstudy.org/](http://flintwaterstudy.org/)), and the award that the research leaders Mona Hanna-Attisha and Marc Edwards won. In summary, this project was recognized for:
+
+ >using rigorous research to investigate the concerns of citizens in Flint, Michigan to unravel a mystery that many in positions of power would have preferred to keep under wraps. Both faced harassment and ridicule for their work and risked academic sanctions for defying conventions of peer review as they sought to bring attention to Flint&#39;s water crisis before more people were affected. (&quot;Disobedience Award,&quot; n.d.).
+
+Flint&#39;s case could be interpreted as a radical and successful example of a decentralized way of doing CSP, and as one with a high level of self-organization. However, it also evidences the struggle that scientist endure through pursuing such endeavors.
+
+So, despite decentralization and self-organization in CSP could be seen with more tension than in the OSS lenses, we can argue that it isn&#39;t entirely impossible or even desirable for certain actors, to maintain non-authoritative mechanisms in their projects. Furthermore, CSP can evidence interesting counter-examples to governance studies of OSS that focus on hybrid forms of organization.
+
+## 3) Task structure
+
+In relation to what was described previously, OSS literature offers distinctive concepts in relation to how the tasks are overall structured. Benkler&#39;s explains that OSS tends to operate in parallel-complementary task organization models, which &quot;allow each discrete contribution to offer a complete solution to the problem but depend on complementarity between the alternative solutions to attain the best outcome&quot; (2016, p. 4). In a different and more specific way, Howison &amp; Crowston (2014) have found out that FOSS projects collaborate through Open Superposition, which is defined as &quot;the process of depositing motivationally independent layers of work on top of each other over time&quot;.
+
+These concepts seem to be rather absent in the CSP literature. Probably, for the reason that most of CSP focus on the creation of dataset or reports, rather than physical products that could be produced in parallel or in layers. In other words, not many of the CSPs have a problem-solving setting that could make use of these settings.
+
+However, gamified projects such as Dizeez ( [http://sulab.scripps.edu/dizeez](http://sulab.scripps.edu/dizeez)), which invite citizens to uncover diverse structures and linkages from genes to diseases could be seen as a form of parallel-complementary and collaborative form of problem-solving. Despite this kind of CSP address the essence of Benkler&#39;s ideas, it wouldn&#39;t be correct to think of them as Superposition. Mainly because of the absence of layered work, or versions that are most common to software products. It would be interesting for future researchers to analyze how new technologies can afford superposition structures in favor of CSP, and how it could be convenient or not to achieve scientific or educational goals.
+
+Finally, we can add that when Martin was asked for examples of parallel forms of work in CSP, he didn&#39;t really recall any examples either in relation to citizens. However, he gave an example of collaboration between scientific teams on a CSP network:
+
+>Well... eBird, that is a centralized platform works a little in parallel. I know that local teams of researchers use the data to publish different types of work simultaneously. It is identified by them, is a form of scientific production that comes in the form of nodes.
+
+Despite, this doesn&#39;t seem to be a totally equivalent example to superposition, it seems that layered work is more likely to be found between scientific communities that use CSP data.
+
+## 4) Ownership and transparency
+
+The last characteristic to analyze CSP is in relation to ownership and attribution of the outcomes, as well as the openness of its processes. For instance, Benkler&#39;s (2016) described that the separation of governance and management from property and contract is a distinctive feature of OSS.
+
+In relation to CSP, these topics have often been seen in connection to open science principles, which stress the need for openness in the scientific knowledge creation and dissemination. However, Fecher &amp; Friesike (2014) have identified five different schools of thought in relation to the meaning of open science, in which only two consider citizens as involved groups. Therefore, is not a surprise that CSP not necessarily incorporates open science principles. Furthermore, Wiggins &amp; Crowston have pointed out that:&quot;Many citizen science projects share data, but may not make the full research process publicly viewable for comment and discussion&quot; (2011, p. 2). Moreover, the relation between Open Science and CSP, in terms of how it affects motivation, governance is hasn&#39;t been fully explored.
+
+For Martin, the match between both trends seems to be ideal, although it might not be the common practice:
+
+>As Ciencia Ciudadana we promote both, the participation aspect, but also the open science aspect: the protocols, the transparency, the accountability through digital mechanisms. Citizen Science requires participation, it can be used as a way to empower citizenship. Open Science can provide the normative frames for that empowerment.
+
+## Conclusion
+
+We have analyzed CSP from the lenses of open source way, focusing in four characteristics. Summarizing the main conclusions of this analysis are:
+
+First, CSP efforts show a diverse set of practices to engage a diverse set of audiences, displaying a capable use of diverse motivations, where the notions of the hobby and the role of educators take a central role on long-term participation and design.
+
+Second, most of the CSP tend to have a hierarchical distribution of work. However, non-authoritative mechanisms are also present in many of CSP designs. Research on hybrid forms of OSS and CSP can contribute to each other, by understanding how the specific sense of community is created with respect to authority, leadership, decision-making, and sustainability.
+
+Third, despite it is possible to interpret the existence of parallel-complementary task models in CSP, superposition forms of work with citizens or educators are lacking in the CSP literature.
+
+Finally, ownership and transparency issues of CSP should be connected to broader discussions in relation to Open Science, and the underlying different approaches and mechanisms towards it.
+
+
+
+
+
+# References:
+
+Benkler, Y. (2016). Peer production and cooperation. _Handbook on the Economics of the Internet_, _91_.
+
+Bonney, R., Shirk, J. L., Phillips, T. B., Wiggins, A., Ballard, H. L., Miller-Rushing, A. J., &amp; Parrish, J. K. (2014). Next steps for citizen science. _Science_, _343_(6178), 1436&mdash;1437.
+
+Bowser, A., Hansen, D., He, Y., Boston, C., Reid, M., Gunnell, L., &amp; Preece, J. (2013). Using gamification to inspire new citizen science volunteers. In _Proceedings of the first international conference on gameful design, research, and applications_ (pp. 18&mdash;25). ACM.
+
+Bowser, A., Hansen, D., Preece, J., He, Y., Boston, C., &amp; Hammock, J. (2014). Gamifying citizen science: a study of two user groups. In _Proceedings of the companion publication of the 17th ACM conference on Computer supported cooperative work &amp; social computing_ (pp. 137&mdash;140). ACM.
+
+Brossard, D., Lewenstein, B., &amp; Bonney, R. (2005). Scientific knowledge and attitude change: The impact of a citizen science project. _International Journal of Science Education_, _27_(9), 1099&mdash;1121.
+
+Callon, M. (2004). The role of hybrid communities and socio-technical arrangements in the participatory design. _Journal of the Center for Information Studies_, _5_(3), 3&mdash;10.
+
+Cooper, C. (2017). _Citizen science: How ordinary people are changing the face of discovery_. Gerald Duckworth &amp; Co.
+
+Cooper, C., Dickinson, J., Phillips, T., &amp; Bonney, R. (2007). Citizen Science as a Tool for Conservation in Residential Ecosystems. _Ecology and Society_, _12_(2).
+
+Crowston, K., Li, Q., Wei, K., Eseryel, U. Y., &amp; Howison, J. (2007). Self-organization of teams for free/libre open source software development. _Information and Software Technology_, _49_(6), 564&mdash;575.
+
+Danielsen, F., Burgess, N. D., Balmford, A., Donald, P. F., Funder, M., Jones, J. P., ... Brashares, J. (2009). Local participation in natural resource monitoring: a characterization of approaches. _Conservation Biology_, _23_(1), 31&mdash;42.
+
+Disobedience Award: winners and finalists. (n.d.). Retrieved April 4, 2018, from https://www.media.mit.edu/posts/disobedience-winners-finalists/
+
+Fecher, B., &amp; Friesike, S. (2014). Open science: One term, five schools of thought. In _Opening science_ (pp. 17&mdash;47). Springer.
+
+Firehock, K., &amp; West, J. (1995). A brief history of volunteer biological water monitoring using macroinvertebrates. _Journal of the North American Benthological Society_, _14_(1), 197&mdash;202.
+
+Howison, J., &amp; Crowston, K. (2014). Collaboration through open superposition. _Mis Quarterly_, _38_(1), 29&mdash;50.
+
+Kelty, C. M. (2008). _Two bits: The cultural significance of free software_. Duke University Press.
+
+Newman, G., Wiggins, A., Crall, A., Graham, E., Newman, S., &amp; Crowston, K. (2012). The future of citizen science: emerging technologies and shifting paradigms. _Frontiers in Ecology and the Environment_, _10_(6), 298&mdash;304.
+
+Pedreira, O., Garcia, F., Brisaboa, N., &amp; Piattini, M. (2015). Gamification in software engineering &mdash; A systematic mapping. _Information and Software Technology_, _57_, 157&mdash;168.
+
+Shah, S. K. (2006). Motivation, Governance, and the Viability of Hybrid Forms in Open Source Software Development. _Management Science_, _52_(7), 1000&mdash;1014.
+
+Somos | Ciencia Ciudadana. (n.d.). Retrieved April 6, 2018, from http://cienciaciudadana.cl/somos/
+
+Sullivan, B. L., Wood, C. L., Iliff, M. J., Bonney, R. E., Fink, D., &amp; Kelling, S. (2009). eBird: A citizen-based bird observation network in the biological sciences. _Biological Conservation_, _142_(10), 2282&mdash;2292.
+
+Wiggins, A. (2012). Crowdsourcing Scientific Work: A Comparative Study of Technologies, Processes, and Outcomes in Citizen Science. _School of Information Studies: Dissertations_. Retrieved from https://surface.syr.edu/it\_etd/72
+
+Wiggins, A., &amp; Crowston, K. (2011). From conservation to crowdsourcing: A typology of citizen science. In _System Sciences (HICSS), 2011 44th Hawaii international conference on_ (pp. 1&mdash;10). IEEE.
