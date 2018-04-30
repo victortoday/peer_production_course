@@ -9,6 +9,7 @@ output: html_document
 ## Introduction ##
 Baidupedia is an open source platform and community for all of the users to edit and make changes for a specific topic and key word. I will show how I participated this community.
 ![Baidu](file:///Users/victor/Desktop/peer_production_course/assignment_submission/presentations/Minglang-Pre/Baidupedia.png "Baidu" "width:750px")
+![](Baidupedia.jpg)
 
 ***
 
