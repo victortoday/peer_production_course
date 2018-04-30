@@ -1,15 +1,21 @@
 ---
 title: "Presentation"
-output: html_document
+author: "Minglang Xie"
+date: "Apr/29/2018"
+output: 
+  ioslides_presentation:
+    incremental: true
+  
 ---
 
-# --Minglang Xie
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
 
 ***
 ## Introduction ##
 Baidupedia is an open source platform and community for all of the users to edit and make changes for a specific topic and key word. I will show how I participated this community.
-![Baidu](file:///Users/victor/Desktop/peer_production_course/assignment_submission/presentations/Minglang-Pre/Baidupedia.png "Baidu" "width:750px")
-![](Baidupedia.jpg)
+![](Baidupedia.png)
 
 ***
 
@@ -17,14 +23,14 @@ Baidupedia is an open source platform and community for all of the users to edit
 1. Find a topic I am familiar with
 2. Target the topic that needs corrections
 3. Edit and wait for feedback
-![Baidu](file:///Users/victor/Desktop/peer_production_course/assignment_submission/presentations/Minglang-Pre/Before1.png "Baidu" "width:150px")   ![Baidu](file:///Users/victor/Desktop/peer_production_course/assignment_submission/presentations/Minglang-Pre/Before2.png "Baidu" "width:150px")  
+![](Before1.png)   ![](Before2.png)  
 
 ***
 
-![Baidu](file:///Users/victor/Desktop/peer_production_course/assignment_submission/presentations/Minglang-Pre/Edit.png "Baidu" "width:900px")
+![](Edit.png)
 
 ***
 ## Result ##
-![Baidu](file:///Users/victor/Desktop/peer_production_course/assignment_submission/presentations/Minglang-Pre/After1.png "Baidu" "width:900px")  
-![Baidu](file:///Users/victor/Desktop/peer_production_course/assignment_submission/presentations/Minglang-Pre/After2.png "Baidu" "width:900px")
-![Baidu](file:///Users/victor/Desktop/peer_production_course/assignment_submission/presentations/Minglang-Pre/After3.png.png "Baidu" "width:400px")
+![](After1.png)  
+![](After2.png)
+![](After3.png.png)
